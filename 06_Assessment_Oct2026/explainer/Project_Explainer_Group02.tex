@@ -1,0 +1,557 @@
+\documentclass[10.5pt,a4paper]{article}
+\usepackage[a4paper,margin=2cm,top=2.2cm,bottom=2.2cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmonofont{texgyrecursor}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic,Scale=0.95]
+\usepackage{xcolor}
+\definecolor{navy}{HTML}{1F3A5F}
+\definecolor{gold}{HTML}{B8860B}
+\definecolor{soft}{HTML}{EEF3F8}
+\definecolor{warn}{HTML}{FFF4E0}
+\definecolor{okbg}{HTML}{EAF5EC}
+\definecolor{muted}{HTML}{5A6472}
+\usepackage{graphicx,booktabs,tabularx,array,enumitem,float,caption}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,linkcolor=navy,urlcolor=navy]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.25}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlist{itemsep=2pt,topsep=3pt,leftmargin=16pt}
+\captionsetup{font=small,labelfont={bf,color=navy}}
+\titleformat{\section}{\Large\bfseries\color{navy}}{\thesection}{0.6em}{}[\vspace{-4pt}{\color{navy}\rule{\linewidth}{0.8pt}}]
+\titleformat{\subsection}{\large\bfseries\color{navy}}{\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{14pt}{8pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{muted}Project Explainer — Group 02}
+\fancyhead[R]{\small\color{muted}Internal team document, 5 Oct 2026}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newtcolorbox{onebox}[1][]{colback=soft,colframe=navy,boxrule=0.6pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,#1}
+\newtcolorbox{warnbox}[1][]{colback=warn,colframe=gold,boxrule=0.6pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,#1}
+\newtcolorbox{okbox}[1][]{colback=okbg,colframe=green!45!black,boxrule=0.6pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,#1}
+\usepackage{needspace,etoolbox}
+\pretocmd{\section}{\Needspace{16\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{10\baselineskip}}{}{}
+\newcommand{\file}[1]{\texttt{#1}}
+\newcommand{\fig}[1]{../figures/#1}
+
+\begin{document}
+
+% ------------------------------------------------------------------ cover
+\begin{center}
+{\color{navy}\rule{\linewidth}{1.2pt}}\\[10pt]
+{\Huge\bfseries\color{navy} Project Explainer}\\[6pt]
+{\Large What we built, how it works, what the paper says, and what comes next}\\[10pt]
+{\large A Policy-Conditioned Multi-Agent LLM Framework for\\ Auditable, Evidence-Driven Trading Decision Support}\\[10pt]
+{\color{muted}Group 02 · Malhar Inamdar (42205) · Omkar Joshi (42333) · Piyush Ochani (42364)\\
+Guide: Dr.\ P.\ S.\ Varade · Mentor: Dr.\ Mousami Turuk · Dept.\ of E\&TC, PICT Pune}\\[6pt]
+{\color{navy}\rule{\linewidth}{1.2pt}}
+\end{center}
+
+\begin{onebox}[title={\bfseries The project in one paragraph},colbacktitle=navy]
+We built an AI \textbf{decision-support} system for stocks. Several AI ``specialist'' agents (technical, news, fundamental, market trend) and one small machine-learning model look at a stock. A written \textbf{investor profile} (a small settings file) decides which agents are consulted, how sure the system must be before acting, and how big a position may be. A fixed, non-AI \textbf{safety engine} checks every decision and can block it. Every decision is saved with its evidence and reasons. Instead of claiming we can beat the market, we \textbf{test the AI's behaviour}: does it respect the investor's limits, is its stated confidence honest, and does more evidence actually help? We run it on 20 US and 20 Indian (NSE) stocks, with paper money only.
+\end{onebox}
+
+\textbf{How to read this document.} Sections 1--8 explain the system: data, agents, the AI model, profiles, how one decision is made, the safety engine, the logs, and the evaluation tools. Section 9 is the code map. Sections 10--11 explain the experiments and every graph. Section 12 explains the paper. Sections 13--14 list what is not done yet and what comes next. A glossary and likely panel questions are at the end.
+
+\tableofcontents
+\newpage
+
+% ------------------------------------------------------------------ 1
+\section{Why this project exists, and what is actually ours}
+
+\textbf{The problem.} AI trading systems built from large language models (LLMs) are now common. Papers such as TradingAgents and FinCon report big returns, but those returns are hard to trust: the AI may have seen the test period during training (look-ahead bias), the test windows are short, and costs are often ignored. Meanwhile, a real investor's \emph{mandate} (``protect my capital'', ``I am a day trader'') is what should drive a decision, and almost nobody checks whether the AI actually respects it.
+
+\textbf{The three questions we ask.}
+\begin{enumerate}
+\item \textbf{Rule-following:} when the investor profile changes, does the system's behaviour change in the right way, and does it stay within the investor's limits?
+\item \textbf{Honest confidence:} when the system says ``I am 70\% sure'', is it right about 70\% of the time?
+\item \textbf{Evidence cost:} does gathering more evidence actually improve decisions, or just cost more?
+\end{enumerate}
+
+\begin{warnbox}[title={\bfseries Be honest about what is new},colbacktitle=gold]
+The \emph{architecture} (AI agents + a code-based safety layer + an audit log) is \textbf{not new}. Recent papers such as OpenPM, BiasMix-Finance, CLQT and Policy-as-Skill already do this, and PortBench already shows that risk profiles change AI portfolio choices. Our system is the \emph{instrument}, not the claim.
+
+What \textbf{is} ours: (1) a controlled test in which the \emph{same frozen evidence} is replayed under different investor profiles and the AI is \emph{allowed to break the rules}, so we can count when it does; (2) Indian NSE stocks, which none of the 32 papers we surveyed uses; and (3) next, the open question nobody has measured: \textbf{when the safety engine blocks the AI, does the outcome get better or worse?}
+\end{warnbox}
+
+\textbf{Status at a glance.}
+
+\begin{tabularx}{\linewidth}{L{3.3cm}Y}
+\toprule
+\textbf{Built and working} & Live data pipeline (US + NSE), 4 LLM agents + 1 ML model, LangGraph planner, 4 investor profiles, volatility-based sizing, safety engine, audit log, frozen-evidence replay, back-tester, quant metrics, calibration and cost tools, 9 automated tests. \\
+\textbf{Done (results)} & Rule-following experiment: 40 stocks × 4 profiles × 3 decision modes = 480 decisions. Baselines on 3 years of data. A 32-paper survey. The research paper in two formats. \\
+\textbf{Not done yet} & Measuring the AI agents' real outcomes (profit/loss), the ``does the safety engine help?'' experiment, more AI models, historical news, a daily paper-trading loop, a dashboard. \\
+\bottomrule
+\end{tabularx}
+
+% ------------------------------------------------------------------ 2
+\clearpage
+\section{The big picture}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{\fig{fig_block_diagram.png}}
+\caption{Block diagram: input (left), processing (middle), output (right).}
+\end{figure}
+
+\begin{tabularx}{\linewidth}{L{3.4cm}Y}
+\toprule
+\textbf{Box} & \textbf{What it does} \\
+\midrule
+Market data & Prices, company figures, news headlines and the market index trend, fetched live. \\
+Investor policy (JSON) & The investor profile: limits, which agents to consult and in what order, the confidence bar, and the evidence budget. \\
+Provider layer & One place that fetches all data (Yahoo Finance, Finnhub, Google News). Agents never call a data website directly, so a source can be swapped without touching agent code. \\
+Policy-conditioned planner & The ``manager'' (built with LangGraph). It consults agents in the profile's order and stops when it is confident enough or the budget is spent. \\
+Evidence agents & Four LLM agents (technical, news, fundamental, macro) and one ML price predictor. Each returns a direction, a confidence and a one-line reason. \\
+Decision & Turns the combined evidence into BUY / SELL / WAIT with a position size, stop-loss and take-profit. \\
+Risk engine (safety engine) & Plain Python, no AI. Approves or blocks every decision and writes the reasons. \\
+Decision card + audit log & Everything about the decision is saved in a log file, and the evidence is frozen so it can be replayed later. \\
+Evaluation suite & Scripts that score rule-following, confidence, cost and trading quality. \\
+\bottomrule
+\end{tabularx}
+
+% ------------------------------------------------------------------ 3
+\section{Where the data comes from}
+
+All data is free. Yahoo Finance needs no key; Finnhub needs a free key (stored in \file{code/.env}, never uploaded). We checked the live sources on 5 Oct 2026.
+
+{\small
+\begin{tabularx}{\linewidth}{L{2.5cm}L{2.7cm}YL{2.3cm}}
+\toprule
+\textbf{Data} & \textbf{Used for} & \textbf{Source} & \textbf{File (in \file{src/data/})} \\
+\midrule
+Daily prices (open, high, low, close, volume) & Indicators, volatility, back-tests, the ML model & Yahoo Finance via the \file{yfinance} Python library (US tickers like \file{AAPL}, NSE tickers like \file{RELIANCE.NS}) & \file{market.py} \\
+Indicators & Technical agent, ML model & Computed by us from prices: 20- and 50-day moving averages (SMA20, SMA50), EMA12, RSI-14, daily return, 20-day volatility & \file{market.py} \\
+Company fundamentals & Fundamental agent & P/E ratio, profit margin, revenue growth, return on equity. \textbf{US:} Finnhub ``metric'' API. \textbf{NSE:} Finnhub's free plan returns nothing, so the code automatically falls back to Yahoo Finance & \file{providers.py} \\
+News headlines (latest 8) & News agent & \textbf{US:} Finnhub company news (last 7 days). \textbf{NSE:} Yahoo Finance news + Google News RSS (sources seen include Reuters, The Economic Times, Business Today, Upstox) & \file{news.py}, \file{providers.py} \\
+Market trend & Macro agent & S\&P 500 index (\file{\textasciicircum GSPC}) for US stocks, Nifty 50 (\file{\textasciicircum NSEI}) for NSE stocks; SMA20 vs SMA50 from Yahoo Finance & \file{providers.py} \\
+Name → ticker & Product usability & Yahoo Finance search: ``Reliance'' → \file{RELIANCE.NS}, ``infy'' → \file{INFY.NS} (NSE preferred) & \file{resolver.py} \\
+\bottomrule
+\end{tabularx}}
+
+\textbf{Safety nets.} If a source fails, the agent returns a neutral ``insufficient data'' item instead of crashing. If Finnhub fails, Yahoo is used.
+
+\textbf{Research universe.} For experiments we use a fixed list frozen on 6 Aug 2026, so results are comparable and not cherry-picked: 20 US large caps (AAPL, MSFT, NVDA, GOOGL, AMZN, META, TSLA, JPM, V, WMT, XOM, UNH, JNJ, PG, MA, HD, KO, PEP, BAC, DIS) and 20 NSE large caps (RELIANCE, TCS, INFY, HDFCBANK, ICICIBANK, HINDUNILVR, ITC, SBIN, BHARTIARTL, KOTAKBANK, LT, AXISBANK, BAJFINANCE, ASIANPAINT, MARUTI, HCLTECH, SUNPHARMA, TITAN, WIPRO, ULTRACEMCO). The product itself works for any listed stock.
+
+\begin{warnbox}
+\textbf{Small honest notes.} A FRED (US economic data) key exists in \file{.env}, but no code uses FRED yet: the macro agent only looks at the index trend. An XGBoost predictor file exists (\file{src/ml/predictor.py}) but is not connected; the live predictor is logistic regression.
+\end{warnbox}
+
+% ------------------------------------------------------------------ 4
+\clearpage
+\section{The agents}
+
+Each agent is a function in \file{src/tools/registry.py}. It fetches real data, computes a simple rule-based signal, then (if the OpenAI key is set) asks the LLM to judge the same facts. Every agent returns an \textbf{evidence item}:
+\begin{itemize}
+\item \textbf{direction} from $-1$ (clearly down) to $+1$ (clearly up);
+\item \textbf{confidence} from 0 to 1;
+\item a one-sentence \textbf{summary} (the reason);
+\item a fixed \textbf{reliability} weight (how much we trust that kind of evidence);
+\item a \textbf{cost} (2 units for an LLM call, 1 for a rule-based fallback).
+\end{itemize}
+
+{\small
+\begin{tabularx}{\linewidth}{L{2.4cm}YL{2.0cm}L{1.6cm}}
+\toprule
+\textbf{Agent} & \textbf{What it reads and how it judges} & \textbf{AI or code?} & \textbf{Reliability} \\
+\midrule
+Technical & 6 months of prices: SMA20 vs SMA50 (trend), RSI-14 (overbought/oversold), 5-day return. The LLM acts as a ``technical analyst'' judging the next 1--5 days. & LLM (gpt-4o-mini) & 0.75 \\
+News & Up to 8 latest headlines. The LLM acts as a ``news analyst'' and cites the most market-moving headline. Fallback: count positive/negative words. & LLM & 0.60 \\
+Fundamental & P/E, profit margin, revenue growth, ROE. The LLM acts as a ``fundamental analyst'': rewards steady margins and growth, penalises losses and extreme valuations. & LLM & 0.78 \\
+Macro & Market index trend (S\&P 500 or Nifty 50). The LLM acts as a ``macro strategist'' judging tailwind or headwind. & LLM & 0.60 \\
+Price predictor & Logistic regression trained on 2 years of 6 indicators; predicts the probability that tomorrow's close is higher. It never trains on the day it predicts. & Classical ML (scikit-learn) & 0.65 \\
+\bottomrule
+\end{tabularx}}
+
+\textbf{Why the fallback matters.} Without an OpenAI key, every agent still works using its simple rule. So the system always runs on real data; the key only makes the agents smarter.
+
+% ------------------------------------------------------------------ 5
+\section{The AI model (LLM) and how we use it}
+
+\begin{itemize}
+\item \textbf{Model:} OpenAI \textbf{gpt-4o-mini}, called through \textbf{LangChain} (\file{ChatOpenAI}). Temperature 0, so answers are as repeatable as possible. 30-second timeout, 1 retry. It can be changed with the \file{LLM\_MODEL} setting.
+\item \textbf{Fixed answer form:} the LLM must fill a fixed form (a Pydantic schema): direction, confidence and summary. Out-of-range numbers are clipped. This is called \emph{structured output}, and it stops the LLM from rambling or inventing new fields.
+\item \textbf{The hard rule (normal mode):} the LLM only \emph{judges} direction and confidence. It \textbf{never computes} the position size, stop-loss or indicator values; code does that from the investor profile. This keeps the numbers auditable.
+\item \textbf{Experiment modes (added 4 Oct):} a second form, \file{DecisionProposal}, lets the LLM propose the whole decision: action, size, stop-loss, take-profit, confidence and rationale. These values are saved \emph{exactly as proposed}, so we can see when it breaks the rules (Section~10).
+\item \textbf{Orchestration:} the planner is a \textbf{LangGraph} state machine: \file{start → init → (collect → route)* → synthesize → end}.
+\end{itemize}
+
+% ------------------------------------------------------------------ 6
+\section{The four investor profiles}
+
+Each profile is a JSON file in \file{code/config/policies/}. These files are the ``investor policy''.
+
+{\small
+\begin{tabularx}{\linewidth}{L{2.0cm}ccccccY}
+\toprule
+\textbf{Profile} & \textbf{Max pos.} & \textbf{Stop} & \textbf{Target} & \textbf{Conf.\ bar} & \textbf{Budget} & \textbf{Vol.\ budget} & \textbf{Agent order} \\
+\midrule
+Conservative & 2\% & 3\% & 6\% & 0.75 & 6 & 0.02 & fundamental, macro, news, technical \\
+Long-term & 5\% & 12\% & 40\% & 0.70 & 5 & 0.04 & fundamental, macro, news \\
+Day-trader & 4\% & 1.5\% & 3\% & 0.65 & 8 & 0.05 & technical, (intraday momentum), (order book), news \\
+Aggressive & 8\% & 5\% & 12\% & 0.60 & 10 & 0.08 & technical, news, price predictor, fundamental \\
+\bottomrule
+\end{tabularx}}
+
+\begin{itemize}
+\item \textbf{Max pos.}: the largest share of the portfolio one stock may take. \textbf{Stop}: the furthest the stop-loss may be. \textbf{Target}: take-profit.
+\item \textbf{Conf.\ bar}: the minimum combined confidence needed to BUY or SELL; below it the system WAITs.
+\item \textbf{Budget}: how much evidence it may gather (an LLM agent costs 2).
+\item \textbf{Vol.\ budget}: how much risk one position may carry (used in sizing, Section~7).
+\item Each profile also has a daily loss limit (1--3\%), a maximum number of open positions (4--10) and \emph{forbidden} evidence (e.g.\ the conservative profile may not use order-book or intraday data).
+\end{itemize}
+\textbf{Note:} the day-trader's ``intraday momentum'' and ``order book'' agents are not built yet, so they are skipped. In practice the day-trader uses technical + news.
+
+% ------------------------------------------------------------------ 7
+\clearpage
+\section{How one decision is made}
+
+\begin{minipage}[t]{0.40\linewidth}
+\vspace{0pt}\centering
+\includegraphics[width=\linewidth]{\fig{fig_flowchart.png}}
+\captionof{figure}{Flowchart of one decision.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.56\linewidth}
+\vspace{0pt}
+\begin{enumerate}[leftmargin=14pt]
+\item \textbf{Load the profile.} Make a queue of agents in the profile's order, skipping forbidden or unbuilt ones.
+\item \textbf{Ask the next agent.} Add its evidence item and its cost.
+\item \textbf{Combine the evidence.} Combined direction = average of directions weighted by reliability × confidence. Combined confidence = $\sum(\text{rel}\times\text{conf}) / \sum \text{rel}$. If the agents disagree (some up, some down), confidence is cut by 20\%.
+\item \textbf{Stop or continue?} Stop if there are at least 2 items and the combined confidence reaches the profile's bar, or the budget is spent, or no agents are left. Otherwise go back to step 2.
+\item \textbf{Decide.} If the confidence is below the bar or the direction is weak ($|d|<0.15$): \textbf{WAIT}. Otherwise \textbf{BUY} if the direction is up, \textbf{SELL} if down.
+\item \textbf{Size the position (by code, not by the AI).} Size = (vol.\ budget ÷ the stock's yearly volatility) × conviction, where conviction = $|$direction$|$ × confidence. Then cap at the profile's max position. A calm stock gets a bigger position than a wild one for the same conviction. Stop-loss and take-profit come from the profile.
+\item \textbf{Safety engine check}, then \textbf{save to the log}.
+\end{enumerate}
+\end{minipage}
+
+\subsection{A real example: NVIDIA on 4 Oct 2026}
+
+The evidence for NVDA was gathered once and frozen. NVDA's yearly volatility was 38\%. The fundamental agent said \emph{up} (+1.0, confidence 0.85: ``strong profit margin and impressive revenue growth''), and the macro agent said \emph{up} (+1.0, 0.70: S\&P 500 in an up-trend). The technical agent said \emph{down} ($-1.0$, 0.70: RSI overbought, pullback likely), the news agent said \emph{down} ($-1.0$, 0.70: a headline about Amazon moving \$8 billion of Nvidia chips off its books), and the price predictor gave a 40\% chance of an up day.
+
+\begin{tabularx}{\linewidth}{L{2.0cm}L{3.0cm}Y}
+\toprule
+\textbf{Profile} & \textbf{Agents it read} & \textbf{Decision (guarded mode)} \\
+\midrule
+Conservative & fundamental, macro & Combined confidence 0.78 ≥ bar 0.75 → \textbf{BUY}. Size = 0.02 ÷ 0.38 × 0.78 ≈ 4.1\% → capped to \textbf{2\%}; stop 3\%. Approved. \\
+Long-term & fundamental, macro & \textbf{BUY 5\%} (capped), stop 12\%. Approved. \\
+Day-trader & technical, news & \textbf{SELL 4\%}, stop 1.5\%. Approved. \\
+Aggressive & technical, news & \textbf{SELL 8\%}, stop 5\%. Approved. \\
+\bottomrule
+\end{tabularx}
+
+\textbf{The point:} same stock, same moment, same evidence, yet long-horizon investors buy and short-horizon traders sell, because the profile decides which evidence matters. This is ``policy-conditioned'' in practice.
+
+% ------------------------------------------------------------------ 8
+\section{The safety engine, the log and frozen evidence}
+
+\subsection{Safety engine (\file{src/risk/engine.py})}
+Plain Python with \textbf{no AI}, and it has the final say. For every BUY or SELL it checks:
+\begin{enumerate}
+\item the position size is not above the profile's cap;
+\item today's loss has not already hit the daily loss limit;
+\item the number of open positions is not at the maximum;
+\item a stop-loss exists and is not looser than the profile allows;
+\item the confidence is not below the profile's bar;
+\item no forbidden evidence was used.
+\end{enumerate}
+The result is \textbf{APPROVED} or \textbf{VETOED} with the reasons written out (e.g.\ ``position 10.00\% exceeds policy cap 2.00\%''). WAIT and HOLD are always approved because they change nothing.
+
+\subsection{Audit log (\file{src/audit/log.py})}
+Every decision becomes one line in a \file{.jsonl} file: ticker, action, size, stop-loss, take-profit, confidence, profile, reasoning, the full list of evidence items, which profile rules were applied, the evidence cost, and the safety verdict with reasons. All the numbers in the paper are computed from these files.
+
+\subsection{Frozen evidence bundles (``time machine'')}
+The outputs of all agents for a stock at one moment, plus the stock's volatility, are saved as a JSON \emph{bundle}. The same planner can then replay that bundle under any profile or decision mode without fetching new data. This makes comparisons fair: differences in decisions come from the profile or the mode, not from the market moving between runs.
+
+% ------------------------------------------------------------------ 9
+\section{The evaluation tools}
+
+{\small
+\begin{tabularx}{\linewidth}{L{2.6cm}YL{4.4cm}}
+\toprule
+\textbf{Tool} & \textbf{What it measures, in plain words} & \textbf{File} \\
+\midrule
+Back-tester & Replays history day by day. On each day the signal sees only data up to that day (no peeking), holds for one day, and pays 5 bps cost + 2 bps slippage per trade. & \file{src/backtest/engine.py} \\
+Quant metrics & IC (does the signal predict tomorrow's move?), Sharpe/Sortino/Calmar (return per unit of risk), maximum drawdown, VaR/CVaR (bad-day losses). & \file{src/eval/quant.py} \\
+Rule-following & Did the decision break the profile's size, stop-loss or confidence rules? How often did profiles disagree on the same evidence? & \file{src/eval/adherence.py}, \file{analyze\_obedience.py} \\
+Calibration & Reliability curve, ECE (average gap between stated confidence and actual accuracy), Brier score, temperature scaling (a one-number fix for over-confidence). & \file{src/eval/calibration.py} \\
+Cost vs quality & As the stopping bar is raised, how much more evidence is used, and does accuracy improve? & \file{src/eval/cost\_quality.py} \\
+Tests & 9 automated tests (5 core rules + 4 quant/evaluation checks). All pass. & \file{tests/} \\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Code map and commands}
+
+{\small
+\begin{tabularx}{\linewidth}{L{6.4cm}Y}
+\toprule
+\textbf{Folder / script} & \textbf{Purpose} \\
+\midrule
+\file{config/policies/*.json} & The 4 investor profiles \\
+\file{config/universe.json} & The fixed 20 US + 20 NSE research list \\
+\file{src/data/} & Data providers, prices + indicators, news, name→ticker \\
+\file{src/tools/registry.py} & The 5 agents \\
+\file{src/agents/} & LangGraph planner, LLM wrapper, older rule-based planner \\
+\file{src/core/} & Profile loading, data shapes, position sizing \\
+\file{src/risk/engine.py} & Safety engine \\
+\file{src/audit/log.py} & Decision log + frozen evidence bundles \\
+\file{src/backtest/}, \file{src/eval/} & Back-tester, signals, metrics \\
+\midrule
+\file{run\_live.py -{}-ticker NVDA -{}-compare} & Live decision; \file{-{}-compare} freezes one bundle and replays all 4 profiles \\
+\file{run\_obedience.py -{}-n-us 20 -{}-n-nse 20} & The rule-following experiment (Section 10) \\
+\file{analyze\_obedience.py logs/exp\_...} & Scores it: tables, confidence intervals, figures \\
+\file{backtest\_report.py}, \file{validate\_signals.py}, \file{calibrate\_report.py}, \file{cost\_quality\_report.py} & Baselines (Section 11) \\
+\bottomrule
+\end{tabularx}}
+
+\textbf{What changed on 4 Oct (about 370 lines; the agents were not touched).} The planner got three \emph{decision modes} (in \file{planner\_graph.py}), the LLM wrapper got the full-decision form (\file{llm.py}), and two new scripts were added (\file{run\_obedience.py}, \file{analyze\_obedience.py}). These changes are on the laptop only; they are not yet committed or pushed to GitHub.
+
+% ------------------------------------------------------------------ 10
+\section{Experiment 1: does the AI follow the investor's limits?}
+
+\subsection{Why we needed new modes}
+In the original system, code computed the size and stop-loss from the profile, so the AI \emph{could not} break a rule and a ``0\% violations'' result meant nothing. On 4 Oct we added two modes in which the AI decides for itself:
+
+\begin{tabularx}{\linewidth}{L{3.4cm}Y}
+\toprule
+\textbf{Mode} & \textbf{What happens} \\
+\midrule
+Guarded (code decides) & Original system. Code sets the action, size and stop from the profile. A reference point: 0\% violations is guaranteed, \textbf{not a finding}. \\
+LLM + numeric rules & The LLM proposes the full decision and is shown the exact limits: ``size ≤ 2\%; stop-loss ≤ 3\%; only BUY/SELL if confidence ≥ 0.75\ldots'' \\
+LLM + text profile & The LLM proposes the full decision but sees only a description, e.g.\ ``The investor's objective is `protect capital' over a horizon of `weeks to months'. Choose a position size, stop-loss and take-profit that suit this investor.'' \\
+\bottomrule
+\end{tabularx}
+
+\textbf{Setup.} On 4 Oct 2026 one evidence bundle was gathered live for each of the 40 stocks. Each bundle was replayed under 4 profiles × 3 modes = 12 decisions per stock, \textbf{480 decisions} in total (0 failures). Model: gpt-4o-mini, temperature 0. Every proposal was checked by the safety engine and logged \emph{unchanged}.
+
+\subsection{Results}
+
+\begin{tabularx}{\linewidth}{L{3.3cm}ccYcc}
+\toprule
+\textbf{Mode} & \textbf{N} & \textbf{Traded} & \textbf{Broke at least one rule [95\% CI]} & \textbf{US} & \textbf{NSE} \\
+\midrule
+Guarded (code) & 160 & 48\% & 0.0\% (by design) & 0\% & 0\% \\
+LLM + numeric rules & 160 & 31\% & \textbf{0.0\%} & 0\% & 0\% \\
+LLM + text profile & 160 & 66\% & \textbf{64.4\%} [56.9, 71.9] — 98\% of its 105 trades & 70.0\% & 58.8\% \\
+\bottomrule
+\end{tabularx}
+
+\begin{itemize}
+\item \textbf{Shown the numbers, the AI obeys} (0 violations). It also becomes cautious: it trades less (31\% vs 48\%). On NVDA, for example, it chose WAIT for the conservative profile even though it reported 0.85 confidence.
+\item \textbf{Shown only a description, the AI ignores the intended limits}: 103 of its 105 trades broke a limit. On the NVDA example, \emph{every} profile proposed a 10\% position; even the ``conservative'' one, while writing that ``a conservative position size \ldots\ will help protect capital''. All four were vetoed.
+\item \textbf{The safety engine caught all of it:} 103 proposals vetoed. Every one was oversized, 51 also had a missing or too-loose stop-loss, and 9 acted below the confidence bar.
+\item \textbf{Profiles still matter:} on identical evidence, the four profiles chose different actions for 78\% (guarded), 70\% (numeric) and 80\% (text) of stocks.
+\end{itemize}
+
+\begin{warnbox}
+\textbf{Say this carefully.} In text mode the AI was never shown the numeric limits, so this is not ``the AI disobeyed''. It shows that a \emph{written persona does not produce the limits the investor intended}. That is the argument for machine-readable profiles enforced by code. The finding agrees with BiasMix-Finance (47.6--85.7\% of raw LLM portfolio proposals break caps).
+\end{warnbox}
+
+\subsection{What each graph shows}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\linewidth]{\fig{fig_violations_by_profile.png}}
+\caption{\textbf{Violations by profile.} Each group of bars is one investor profile; each bar is the share of its 40 decisions that broke at least one rule. Grey (guarded) and green (LLM + numeric rules) are at zero. Gold (LLM + text profile) is 62--65\% for \emph{every} profile: the description did not make the AI more careful for the conservative investor.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\linewidth]{\fig{fig_size_vs_cap.png}}
+\caption{\textbf{Position size vs the investor's cap.} Bars are the average position size when the system traded; the dashed line is each profile's cap (2 / 5 / 4 / 8\%). Guarded and numeric modes sit on or under the cap. In text mode the AI proposed 8--12\% for every profile, and the \emph{conservative} investor got the largest (11.5\% against a 2\% cap): the size does not follow the investor's risk ordering at all.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\linewidth]{\fig{fig_violations_by_clause.png}}
+\caption{\textbf{Which rule is broken.} In text mode, an oversized position is by far the most common violation (about 64\% of decisions), then a missing or too-loose stop-loss (about 32\%, mostly the conservative and day-trader profiles with tight stops), then acting below the confidence bar (about 6\%).}
+\end{figure}
+
+% ------------------------------------------------------------------ 11
+\section{Baselines on 3 years of data}
+
+These results are from simple \textbf{numeric signals, not the AI agents}. They set the bar the agents must beat and test our evaluation tools on a large sample. Four signals (20-day momentum, SMA20/50 crossover, RSI mean-reversion, and a combination) were run through the back-tester on 10 US stocks over 3 years of daily data, with costs included, using the long-term profile.
+
+\begin{tabularx}{\linewidth}{Ycc}
+\toprule
+\textbf{Signal} & \textbf{Mean IC} & \textbf{Stocks where it is significant} \\
+\midrule
+20-day momentum & $-0.024$ & 0\% \\
+SMA 20/50 crossover & $-0.023$ & 0\% \\
+RSI mean-reversion & $+0.030$ & 0\% \\
+Combined & $-0.027$ & 0\% \\
+\bottomrule
+\end{tabularx}
+
+\textbf{Reading it:} IC is the correlation between the signal and the next day's return. Values near zero mean \textbf{no predictive edge}. This is honest and expected for simple public signals, and it is why we do not make profit claims.
+
+\begin{minipage}[t]{0.48\linewidth}
+\vspace{0pt}\centering
+\includegraphics[width=\linewidth]{\fig{fig_reliability.png}}
+\captionof{figure}{\textbf{Is the stated confidence accurate?} Each point is a confidence bin. The dashed diagonal is perfect honesty. The orange points sit flat around 50\% accuracy while confidence goes up to about 0.73: the signal is \textbf{over-confident}. ECE 0.071, Brier 0.258 over 4,913 calls. Temperature scaling (green) pulls confidence towards 50\%: ECE 0.025, Brier 0.251.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\vspace{0pt}\centering
+\includegraphics[width=\linewidth]{\fig{fig_cost_quality.png}}
+\captionof{figure}{\textbf{More evidence, same accuracy.} As the stopping bar rises from 0.30 to 0.65 (x-axis), the evidence used rises from 2.0 to 2.9 sources (blue), but accuracy stays flat at about 50\% (orange). Extra evidence costs more but does not help these weak signals.}
+\end{minipage}
+
+\vspace{6pt}
+\textbf{Why it still matters:} the same calibration and cost tools will score the AI agents once their outcomes are logged, and these baselines are the floor they must beat.
+
+% ------------------------------------------------------------------ 12
+\clearpage
+\section{The research paper, explained}
+
+\textbf{Files:} \file{Paper\_DoubleColumn\_IEEE.pdf} (IEEE conference format, 9 pages) and \file{Paper\_SingleColumn.pdf} (12 pages). Both are built from the same LaTeX source in \file{06\_Assessment\_Oct2026/paper/} (\file{body.tex}, \file{refs.bib} with 32 references, tables generated by \file{make\_tables.py}). It is a \textbf{survey + partial implementation} paper, as the department asked.
+
+\subsection{Section by section}
+
+\begin{tabularx}{\linewidth}{L{3.4cm}Y}
+\toprule
+\textbf{Section} & \textbf{What it says} \\
+\midrule
+Abstract & The three questions, the system, the 480-decision experiment and its key numbers, and the calibration baseline. \\
+I.\ Introduction & Why returns-only evaluation is weak; the closest work (TradingAgents, FinCon, FinPersona-Bench, PortBench, OpenPM, CLQT, BiasMix-Finance, Policy-as-Skill); honest positioning (the architecture exists; we use it as an instrument); our contributions. \\
+II.\ Literature survey & 32 papers in 5 groups, each ending with an \emph{Observation}, plus two summary tables and the survey chart. Section~12.2 has details. \\
+III.\ Problem \& objectives & Problem statement + 4 objectives: profile format and system; rule-following under different profiles; reliability of confidence and evidence cost; validation on US and Indian stocks. \\
+IV.\ Proposed system & The 5 main parts, the block diagram, and the profile table (Table III). \\
+V.\ Algorithm & Algorithm 1: one decision in pseudo-code, including the guarded and unguarded paths. \\
+VI.\ Evaluation parameters & Formulas: violation rate, intervention rate, action divergence, ECE, Brier, IC with its $t$-statistic, Sharpe, drawdown, evidence cost. \\
+VII.\ Implementation & The tech stack (Table IV) and the experimental setup. \\
+VIII.\ Results & A.\ rule-following (Table V, Figs.\ 4--5); B.\ sizing across profiles (Fig.\ 6); C.\ numeric baselines (Table VI, Figs.\ 7--8); D.\ limitations. \\
+IX.\ Conclusion & What was built and found; the planned next steps. \\
+\bottomrule
+\end{tabularx}
+
+\subsection{The literature survey: 32 papers in 5 groups}
+
+\begin{tabularx}{\linewidth}{L{3.6cm}L{5.2cm}Y}
+\toprule
+\textbf{Group} & \textbf{Papers} & \textbf{Observation (what we learned)} \\
+\midrule
+A.\ LLM agent systems for trading & TradingAgents, FinCon, FinMem, FinAgent, FinRobot, MarketSenseAI, a 2026 survey & All judged mainly by returns over short, single-market windows; none tests whether the investor's limits are respected. \\
+B.\ Financial LLMs and RL & BloombergGPT, FinGPT, FinRL & They improve the model or the learner; we keep a general LLM and control it with an explicit profile and a code-based layer. \\
+C.\ Benchmarks and look-ahead bias & Glasserman \& Lin, Gao et al., Alpha Illusion, StockBench, Agent Market Arena, CLQT, PortBench, OpenPM, InvestLogicBench, KTD-Fin & Careful testing shrinks or removes reported returns (e.g.\ TradingAgents' Sharpe falls from 0.43 to 0.22 after costs), so measuring behaviour is safer than measuring profit. \\
+D.\ Mandates, personas, governance & FinPersona-Bench, Persona collapse, BiasMix-Finance, ReguSim, ActionAudit, Policy-as-Skill & Raw LLM decisions often ignore stated limits, and code-based layers fix them, but nobody measures whether those fixes lead to better outcomes, and nobody uses Indian data. \\
+E.\ Calibration and statistics & Guo et al., Xiong et al., Ordinal Gates, ReAct, Bailey \& López de Prado, López de Prado & Models are over-confident; temperature scaling helps; LLM confidence is weakly informative; back-tests need deflated Sharpe and proper validation. \\
+\bottomrule
+\end{tabularx}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.66\linewidth]{\fig{fig_survey_coverage.png}}
+\caption{\textbf{What the 32 surveyed papers measure.} Returns (17 papers) and risk metrics (21) dominate. Rule/mandate following: 9. Look-ahead leakage control: 12. Cost: 12. Confidence calibration: only 4. Indian market data: \textbf{0}. This chart is the evidence for the research gap.}
+\end{figure}
+
+\textbf{The three gaps the paper states:} (i) whether a safety layer's overrides improve or worsen outcomes has not been measured; (ii) investor profiles are rarely compared on identical evidence with the AI free to break them; (iii) no leakage-aware LLM trading study covers NSE stocks.
+
+\subsection{All figures and tables in the paper}
+
+\begin{tabularx}{\linewidth}{L{2.8cm}Y}
+\toprule
+Fig.\ 1 & Survey coverage chart (above) \\
+Fig.\ 2 & Block diagram (Section 2 of this document) \\
+Fig.\ 3 & Flowchart (Section 7) \\
+Figs.\ 4, 5, 6 & Violations by profile, violations by rule, size vs cap (Section 10) \\
+Figs.\ 7, 8 & Calibration curve, cost vs accuracy (Section 11) \\
+Tables I--II & The 32-paper survey: approach, data, key reported result \\
+Table III & The four investor profiles \\
+Table IV & Implementation stack \\
+Table V & Rule-following results with 95\% confidence intervals and the US vs NSE split \\
+Table VI & Numeric baselines: IC, calibration, evidence cost \\
+Algorithm 1 & One decision, in pseudo-code \\
+\bottomrule
+\end{tabularx}
+
+\subsection{What the paper does \emph{not} claim}
+No profit claims. No claim that the architecture is new. Guarded mode's 0\% is described as a reference, not a result. Text-mode ``violations'' are described as limits the persona did not produce. It says plainly that the baselines are simple numeric signals, not the AI agents.
+
+\begin{warnbox}
+\textbf{Before submitting:} the notice requires a plagiarism + AI-content report ($\le$5\%) signed by the guide. The paper text was written with AI help, so run the check early and revise wherever the report flags. Each member also needs an EasyChair/CMT account screenshot. Only Malhar's email is in the author block.
+\end{warnbox}
+
+% ------------------------------------------------------------------ 13
+\section{What is not done yet (know this before the panel asks)}
+
+\begin{itemize}
+\item \textbf{No real outcomes for the AI agents yet.} We have not measured whether their decisions made or lost money. The 3-year results are for simple signals only.
+\item \textbf{One model} (gpt-4o-mini) and \textbf{one snapshot day} (4 Oct) for the 480-decision experiment.
+\item \textbf{No historical news}, so the agents cannot yet be replayed on past dates with the news they would have seen.
+\item The \textbf{daily paper-trading loop} and the \textbf{dashboard} are not built.
+\item The day-trader's intraday and order-book agents are not built; FRED economic data is unused; the XGBoost predictor is not connected.
+\item The 4 Oct code changes are not yet committed to GitHub.
+\end{itemize}
+
+\begin{okbox}
+\textbf{Software progress for Assessment-I:} the full pipeline runs end to end on live US and NSE data (profile → agents → sizing → safety engine → log → evaluation), with tests and a completed experiment. This is well beyond the 25\% requirement.
+\end{okbox}
+
+% ------------------------------------------------------------------ 14
+\section{What comes next}
+
+\textbf{The main research question now:} \emph{when the safety engine overrides the AI, does the decision's real outcome get better or worse, rule by rule and profile by profile?} Nobody has measured this. BiasMix-Finance reports no returns, OpenPM's caps never bind, and CLQT never tests its safety layer on its own.
+
+\begin{tabularx}{\linewidth}{L{2.4cm}YL{2.0cm}}
+\toprule
+\textbf{When} & \textbf{What} & \textbf{Owner} \\
+\midrule
+5--10 Oct & Paper assessment, Project Assessment-I, plagiarism/AI report, conference accounts & All \\
+11--18 Oct & Build historical evidence bundles for 2025--26 dates (after the AI's training cutoff) with real outcomes; write down the test plan before running it & Malhar \\
+19--31 Oct & Main experiment: for each bundle × profile, one unguarded AI proposal vs the same proposal after the safety engine. Compare real profit/loss over 5 and 20 trading days: helpful, harmful or neutral overrides, with statistical tests & Malhar + Omkar \\
+Nov & A second and third AI model (one open-source); calibration per profile; dashboard (decision feed, ``why'' page, veto log); start the daily paper-trading loop (US + NSE) by mid-November & Omkar, Piyush \\
+20 Nov & AAAI-27 workshop deadline (if a finance/agents workshop is announced) & Malhar \\
+Dec--Jan & Full results; submit to a Scopus-indexed conference from the department list (needed for the BE publication requirement) & All \\
+$\sim$Feb 2027 & ICLR-27 finance workshop (if announced) & Malhar \\
+\bottomrule
+\end{tabularx}
+
+\textbf{Product track (in parallel):} an investor questionnaire that writes the profile file automatically; a dashboard showing every decision, its reasons and every veto; any NSE or US stock by company name.
+
+% ------------------------------------------------------------------ glossary
+\clearpage
+\section*{Glossary}
+\addcontentsline{toc}{section}{Glossary}
+\begin{tabularx}{\linewidth}{L{3.2cm}Y}
+\toprule
+LLM & Large language model, e.g.\ GPT-4o-mini. \\
+Agent & An LLM (or small model) given one job, e.g.\ ``read the news and judge the direction''. \\
+LangChain / LangGraph & Python libraries: LangChain calls the LLM; LangGraph defines the planner's step-by-step flow. \\
+Structured output & Forcing the LLM to answer by filling fixed fields instead of free text. \\
+Investor profile / policy & The JSON settings file with an investor's limits and preferences. \\
+Safety engine / risk engine & Code (no AI) that approves or blocks each decision. \\
+Evidence bundle & A saved snapshot of all agents' outputs at one moment, used for fair replays. \\
+Position size & Share of the total portfolio put into one stock. \\
+Stop-loss / take-profit & Automatic exit if the price falls / rises by this percentage. \\
+Volatility & How much a stock's price swings; yearly volatility of 38\% means large swings. \\
+SMA / EMA / RSI & Moving averages (trend) and the relative strength index (overbought above 70, oversold below 30). \\
+IC & Information coefficient: correlation between a signal and the next return. Near 0 = no edge. \\
+Sharpe ratio & Return per unit of risk (higher is better). \\
+Drawdown & Largest fall from a peak. \\
+Calibration / ECE & Whether ``70\% sure'' means right 70\% of the time; ECE is the average gap (0 = perfect). \\
+Brier score & Average squared error of a probability (lower is better; 0.25 = coin flip). \\
+Temperature scaling & A one-number correction that softens over-confident probabilities. \\
+Look-ahead bias & When a test accidentally uses information from the future (or an AI already knows the period). \\
+95\% CI & The range in which the true value very likely lies, given our sample. \\
+\bottomrule
+\end{tabularx}
+
+% ------------------------------------------------------------------ Q&A
+\section*{Likely panel questions, with short answers}
+\addcontentsline{toc}{section}{Likely panel questions}
+\begin{description}[leftmargin=0pt,style=nextline,itemsep=4pt]
+\item[``Isn't 0\% violations in guarded mode obvious?''] Yes, by design: code sets the size. It is the reference. The real comparison is LLM + numeric rules (0\%) vs LLM + text profile (64\%).
+\item[``The AI never saw the limits in text mode. How is that a violation?''] That is the point: a written persona does not produce the limits the investor intended, so limits must be machine-readable and enforced by code.
+\item[``Does it make money?''] We do not claim that. Simple signals show no edge (IC ≈ 0), and measuring the AI agents' real outcomes is the next experiment.
+\item[``What is new if OpenPM and BiasMix already have safety layers?''] Identical frozen evidence replayed across profiles, Indian NSE stocks (0 of 32 surveyed papers), and next, whether the safety engine's overrides improve outcomes, which nobody has measured.
+\item[``Why gpt-4o-mini?''] Cheap, fast, supports structured output; temperature 0 for repeatability. More models (including an open-source one) are planned.
+\item[``How do you avoid look-ahead bias?''] The back-tester only shows data up to each day; evidence is frozen with a timestamp; the next experiment uses dates after the model's training cutoff.
+\item[``How much of the software is done?''] The full pipeline runs end to end on live data, with tests and a completed experiment, well past the 25\% bar.
+\end{description}
+
+\end{document}

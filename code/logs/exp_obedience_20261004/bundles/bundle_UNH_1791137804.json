@@ -1,0 +1,64 @@
+{
+  "ticker": "UNH",
+  "ts": 1791137804.008297,
+  "context": {
+    "ann_vol": 0.2184706120739114
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "UNH",
+      "summary": "The SMA20 is below the SMA50 indicating a bearish trend.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.75,
+      "ts": 1791137798.3310232,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "UNH",
+      "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+      "direction": 0.014174735190055854,
+      "confidence": 0.014174735190055854,
+      "reliability": 0.65,
+      "ts": 1791137798.637839,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "UNH",
+      "summary": "The most market-moving headline is that UnitedHealth is shutting plans for 390,000 Medicare Advantage members, which signals potential challenges ahead for the company in 2027.",
+      "direction": -1.0,
+      "confidence": 0.8,
+      "reliability": 0.6,
+      "ts": 1791137801.2100759,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "UNH",
+      "summary": "UNH shows moderate revenue growth and a reasonable P/E ratio, indicating potential for stable performance.",
+      "direction": 0.5,
+      "confidence": 0.7,
+      "reliability": 0.78,
+      "ts": 1791137802.934525,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "UNH",
+      "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137804.00828,
+      "cost_units": 2.0
+    }
+  ]
+}

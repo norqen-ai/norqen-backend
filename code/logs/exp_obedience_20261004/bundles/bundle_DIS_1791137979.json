@@ -1,0 +1,64 @@
+{
+  "ticker": "DIS",
+  "ts": 1791137979.8056588,
+  "context": {
+    "ann_vol": 0.25841036668859246
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "DIS",
+      "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+      "direction": -1.0,
+      "confidence": 0.75,
+      "reliability": 0.75,
+      "ts": 1791137975.1915112,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "DIS",
+      "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+      "direction": -0.053847589122831385,
+      "confidence": 0.053847589122831385,
+      "reliability": 0.65,
+      "ts": 1791137975.3916612,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "DIS",
+      "summary": "Disney is facing challenges in its media and theme park segments, highlighted by the former CEO's comments on declining engagement with the parks.",
+      "direction": -0.5,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137977.065399,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "DIS",
+      "summary": "Disney's moderate profit margin and revenue growth indicate stable performance, but the trailing P/E suggests it may be fairly valued.",
+      "direction": 0.5,
+      "confidence": 0.7,
+      "reliability": 0.78,
+      "ts": 1791137978.668328,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "DIS",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137979.805629,
+      "cost_units": 2.0
+    }
+  ]
+}

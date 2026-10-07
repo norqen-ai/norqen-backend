@@ -1,0 +1,64 @@
+{
+  "ticker": "V",
+  "ts": 1791137736.708569,
+  "context": {
+    "ann_vol": 0.1862015962295251
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "V",
+      "summary": "The RSI indicates oversold conditions, but the SMA analysis suggests a bearish trend.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.75,
+      "ts": 1791137731.9035451,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "V",
+      "summary": "P(up next day)=0.45 (logistic regression, walk-forward-safe)",
+      "direction": -0.10336000673373813,
+      "confidence": 0.10336000673373813,
+      "reliability": 0.65,
+      "ts": 1791137732.129462,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "V",
+      "summary": "Visa's entry into new payment rails in Britain could enhance its market position, but the competitive landscape with new stablecoin initiatives introduces uncertainty.",
+      "direction": 0.5,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137734.0379908,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "V",
+      "summary": "The strong profit margin and revenue growth suggest positive momentum, but the high P/E ratio indicates potential overvaluation.",
+      "direction": 0.5,
+      "confidence": 0.7,
+      "reliability": 0.78,
+      "ts": 1791137735.6082618,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "V",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137736.7085109,
+      "cost_units": 2.0
+    }
+  ]
+}

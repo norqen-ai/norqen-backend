@@ -1,0 +1,64 @@
+{
+  "ticker": "HCLTECH.NS",
+  "ts": 1791138360.9396548,
+  "context": {
+    "ann_vol": 0.2981048656743019
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "HCLTECH.NS",
+      "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+      "direction": -0.2,
+      "confidence": 0.6,
+      "reliability": 0.75,
+      "ts": 1791138354.6895082,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "HCLTECH.NS",
+      "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+      "direction": -0.025762449383826325,
+      "confidence": 0.025762449383826325,
+      "reliability": 0.65,
+      "ts": 1791138354.887885,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "HCLTECH.NS",
+      "summary": "HCL Tech shares have crashed over 10% following a Q4 miss and weak FY27 guidance, leading to brokerages downgrading the stock.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.6,
+      "ts": 1791138357.641063,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "HCLTECH.NS",
+      "summary": "HCLTECH.NS shows solid profitability with a decent ROE and profit margin, but low revenue growth may limit its medium-term potential.",
+      "direction": 0.5,
+      "confidence": 0.7,
+      "reliability": 0.78,
+      "ts": 1791138359.815778,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "HCLTECH.NS",
+      "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+      "direction": -0.7,
+      "confidence": 0.65,
+      "reliability": 0.6,
+      "ts": 1791138360.9396322,
+      "cost_units": 2.0
+    }
+  ]
+}

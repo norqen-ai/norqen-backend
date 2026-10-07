@@ -1,0 +1,64 @@
+{
+  "ticker": "WMT",
+  "ts": 1791137758.490339,
+  "context": {
+    "ann_vol": 0.27373193692151365
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "WMT",
+      "summary": "The RSI indicates oversold conditions, and both SMAs suggest a downtrend.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.75,
+      "ts": 1791137753.563487,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "WMT",
+      "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+      "direction": 0.11607159464749262,
+      "confidence": 0.11607159464749262,
+      "reliability": 0.65,
+      "ts": 1791137754.072716,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "WMT",
+      "summary": "Walmart's CEO outlines future plans, indicating strategic direction amidst competitive pressures from discount chains and peers.",
+      "direction": 0.0,
+      "confidence": 0.5,
+      "reliability": 0.6,
+      "ts": 1791137755.709632,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "WMT",
+      "summary": "WMT's high trailing P/E ratio combined with a low profit margin suggests overvaluation and limited profitability.",
+      "direction": -1.0,
+      "confidence": 0.8,
+      "reliability": 0.78,
+      "ts": 1791137757.411895,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "WMT",
+      "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137758.4903228,
+      "cost_units": 2.0
+    }
+  ]
+}

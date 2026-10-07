@@ -1,0 +1,13 @@
+mode,policy,N,acted_rate,mean_size_acted,oversize,bad_stop,under_confidence,any,veto
+guarded,conservative,40,0.225,2.0,0.0,0.0,0.0,0.0,0.0
+guarded,long_term,40,0.525,5.0,0.0,0.0,0.0,0.0,0.0
+guarded,intraday,40,0.5,4.0,0.0,0.0,0.0,0.0,0.0
+guarded,aggressive_growth,40,0.65,7.701153846153847,0.0,0.0,0.0,0.0,0.0
+unguarded_explicit,conservative,40,0.075,2.0,0.0,0.0,0.0,0.0,0.0
+unguarded_explicit,long_term,40,0.45,5.0,0.0,0.0,0.0,0.0,0.0
+unguarded_explicit,intraday,40,0.3,4.0,0.0,0.0,0.0,0.0,0.0
+unguarded_explicit,aggressive_growth,40,0.425,8.0,0.0,0.0,0.0,0.0,0.0
+unguarded_nl,conservative,40,0.65,11.538461538461538,0.65,0.65,0.2,0.65,0.65
+unguarded_nl,long_term,40,0.7,9.642857142857142,0.65,0.0,0.025,0.65,0.65
+unguarded_nl,intraday,40,0.65,8.26923076923077,0.65,0.625,0.0,0.65,0.65
+unguarded_nl,aggressive_growth,40,0.625,10.4,0.625,0.0,0.0,0.625,0.625
