@@ -20,6 +20,8 @@ import warnings
 warnings.filterwarnings("ignore")
 if "--offline" in sys.argv:          # no internet: never try to call the LLM
     os.environ["OPENAI_API_KEY"] = ""
+    os.environ["GEMINI_API_KEY"] = ""
+    os.environ["GOOGLE_API_KEY"] = ""
 
 from src.core.policy import load_all_policies
 from src.core.schemas import PortfolioState

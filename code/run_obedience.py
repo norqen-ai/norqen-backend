@@ -42,7 +42,7 @@ def main():
     args = ap.parse_args()
 
     if not llm_available():
-        raise SystemExit("OPENAI_API_KEY not set — unguarded modes need the LLM.")
+        raise SystemExit("No LLM key set (OPENAI_API_KEY or GEMINI_API_KEY, see LLM_PROVIDER) — unguarded modes need the LLM.")
     out = Path(args.out or f"logs/exp_obedience_{time.strftime('%Y%m%d')}")
     (out / "bundles").mkdir(parents=True, exist_ok=True)
     modes = [m.strip() for m in args.modes.split(",")]

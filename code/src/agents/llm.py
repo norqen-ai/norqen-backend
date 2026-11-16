@@ -1,11 +1,15 @@
-"""LLM layer — OpenAI via LangChain, with a hard rule and a soft fallback.
+"""LLM layer — OpenAI or Gemini via LangChain, with a hard rule and a soft fallback.
+
+Provider switch: set LLM_PROVIDER=openai|gemini in .env. If unset, it is inferred from
+whichever key is present (OPENAI_API_KEY, else GEMINI_API_KEY). LLM_MODEL overrides the
+provider's default model.
 
 HARD RULE: the LLM only ever produces a *judgement* (direction, confidence,
 one-line summary). It never computes position sizes, stops, or indicator values —
 those come from policy + Malhar's numeric tools. This keeps RQ2 (is the confidence
 honest?) meaningful and keeps numbers auditable.
 
-SOFT FALLBACK: if OPENAI_API_KEY is not set (or a call fails), `judge()` returns
+SOFT FALLBACK: if the selected provider's key is not set (or a call fails), `judge()` returns
 None and the caller uses its deterministic signal. So the whole pipeline runs on
 real market data with zero API access — the key just makes the agents smarter.
 
@@ -24,7 +28,37 @@ except Exception:
 
 from pydantic import BaseModel, Field
 
-DEFAULT_MODEL = os.environ.get("LLM_MODEL", "gpt-4o-mini")
+PROVIDERS = ("openai", "gemini")
+_KEY_ENV = {"openai": ("OPENAI_API_KEY",), "gemini": ("GEMINI_API_KEY", "GOOGLE_API_KEY")}
+_DEFAULT_MODELS = {"openai": "gpt-4o-mini", "gemini": "gemini-2.5-flash"}
+
+
+def _api_key(provider: str) -> str | None:
+    for name in _KEY_ENV[provider]:
+        v = os.environ.get(name)
+        if v:
+            return v
+    return None
+
+
+def llm_provider() -> str:
+    """Selected provider: LLM_PROVIDER if set, else inferred from which key exists."""
+    p = os.environ.get("LLM_PROVIDER", "").strip().lower()
+    if p:
+        if p not in PROVIDERS:
+            raise ValueError(f"LLM_PROVIDER must be one of {PROVIDERS}, got {p!r}")
+        return p
+    for cand in PROVIDERS:
+        if _api_key(cand):
+            return cand
+    return "openai"
+
+
+def default_model() -> str:
+    return os.environ.get("LLM_MODEL") or _DEFAULT_MODELS[llm_provider()]
+
+
+DEFAULT_MODEL = default_model()
 
 
 class Judgement(BaseModel):
@@ -35,14 +69,27 @@ class Judgement(BaseModel):
 
 
 def llm_available() -> bool:
-    """True only if an API key is configured. Callers branch on this."""
-    return bool(os.environ.get("OPENAI_API_KEY"))
+    """True only if the selected provider has an API key configured."""
+    try:
+        return bool(_api_key(llm_provider()))
+    except ValueError:
+        return False
 
 
-@lru_cache(maxsize=2)
-def _chat(model: str, temperature: float):
+@lru_cache(maxsize=4)
+def _chat(provider: str, model: str, temperature: float):
+    key = _api_key(provider)
+    if provider == "gemini":
+        from langchain_google_genai import ChatGoogleGenerativeAI
+        return ChatGoogleGenerativeAI(model=model, temperature=temperature, google_api_key=key,
+                                      timeout=30, max_retries=1)
     from langchain_openai import ChatOpenAI
-    return ChatOpenAI(model=model, temperature=temperature, timeout=30, max_retries=1)
+    return ChatOpenAI(model=model, temperature=temperature, api_key=key, timeout=30, max_retries=1)
+
+
+def _model(model: str | None) -> tuple[str, str]:
+    provider = llm_provider()
+    return provider, model or default_model()
 
 
 class DecisionProposal(BaseModel):
@@ -63,7 +110,7 @@ def propose_decision(system: str, human: str, model: str | None = None,
     if not llm_available():
         return None
     try:
-        chat = _chat(model or DEFAULT_MODEL, temperature).with_structured_output(DecisionProposal)
+        chat = _chat(*_model(model), temperature).with_structured_output(DecisionProposal)
         r = chat.invoke([("system", system), ("human", human)])
         action = str(r.action).upper().strip()
         if action not in ("BUY", "SELL", "HOLD", "WAIT"):
@@ -82,7 +129,7 @@ def judge(system: str, human: str, model: str | None = None, temperature: float 
     if not llm_available():
         return None
     try:
-        chat = _chat(model or DEFAULT_MODEL, temperature).with_structured_output(Judgement)
+        chat = _chat(*_model(model), temperature).with_structured_output(Judgement)
         r = chat.invoke([("system", system), ("human", human)])
         d = max(-1.0, min(1.0, float(r.direction)))
         c = max(0.0, min(1.0, float(r.confidence)))
