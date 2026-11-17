@@ -16,3 +16,7 @@ __pycache__/
 code/logs/bundles/
 code/logs/decisions_*.jsonl
 code/logs/demo_*
+
+# SQLite side files created while the cache is open
+*.sqlite-shm
+*.sqlite-wal

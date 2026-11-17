@@ -40,6 +40,8 @@ MODELS = {
     "gpt-5-mini":    {"provider": "openai", "id": "gpt-5-mini-2025-08-07", "cutoff": "2024-05", "reasoning": True},
     "llama-3.3-70b": {"provider": "groq", "id": "llama-3.3-70b-versatile", "cutoff": "2023-12"},
     "gpt-oss-120b":  {"provider": "groq", "id": "openai/gpt-oss-120b", "cutoff": "2024-06", "reasoning": True},
+    "gpt-oss-20b":   {"provider": "groq", "id": "openai/gpt-oss-20b", "cutoff": "2024-06", "reasoning": True},
+    "llama-4-scout": {"provider": "groq", "id": "meta-llama/llama-4-scout-17b-16e-instruct", "cutoff": "2024-08"},
 }
 
 _clients: dict = {}

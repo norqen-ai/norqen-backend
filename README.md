@@ -19,6 +19,43 @@ decision is logged with its full evidence so it can be replayed and scored.
 
 ---
 
+## Current work: FinFM @ AAAI-27 short paper (deadline 20 Nov 2026 AoE)
+
+**Team guide: [`TODO_FinFM_2027.md`](TODO_FinFM_2027.md)** — read it first. It covers what the paper is,
+the gap, what's done, the code map, setup commands, each person's tasks, and the timeline.
+
+*Fix What Is Checked, Inflate What Is Not: How LLM Trading Agents Respond to Investor-Mandate
+Enforcement.* On 1,900 point-in-time cases (100 US + NSE large caps, Jan 2025–Jul 2026, after the
+models' training cutoffs) we enforce investor mandates on the same LLM trade proposals in four ways
+(block, LLM risk manager, deterministic repair, rule-engine feedback) and score each on real
+outcomes. Main findings:
+- Blocking and a standard-prompt LLM risk manager reach 0% violations by keeping 6.8% and 2.1% of
+  the proposed trades; deterministic repair keeps 80.4%.
+- Told the rule engine's rejection reasons, models fix size and stop and raise their stated confidence
+  to the required bar in 92% of cases, vs 10% when the confidence rule is left out of the feedback
+  (n = 2,570 per arm). Stated confidence doesn't rank outcomes (AUC 0.503).
+- No return claim: the evidence signals are weak (IC between −0.07 and +0.05).
+
+| Where | What |
+|---|---|
+| `paper_finfm/` · `paper_finfm_overleaf.zip` | the paper (AAAI-27 template, compile with **pdfLaTeX**) |
+| `code/run_finfm_arms.py` | feedback arm, its control, LLM risk-manager re-test |
+| `code/score_finfm_arms.py` | comparison tables for the new arms |
+| `code/make_finfm_tables.py` | every table and number in the paper → `paper_finfm/tables/` |
+| `code/logs/exp_pit_20261012/` | October run: frozen cases, 45,600 decisions, scored outcomes |
+| `code/logs/finfm_2027/` | new-experiment outputs + `scores.txt` |
+
+```bash
+cd code && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python score_finfm_arms.py && .venv/bin/python make_finfm_tables.py   # no API key needed
+```
+
+> 🔒 This branch contains licensed news and price data and the LLM response cache. **Keep the repo
+> private; never anonymise or publish this branch.** Code for reviewers goes in a separate code-only
+> repo (guide, Section 7G).
+
+---
+
 ## What it does
 
 ```bash

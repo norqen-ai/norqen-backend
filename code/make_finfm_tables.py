@@ -18,7 +18,12 @@ ARMS = Path("logs/finfm_2027")
 PAPER = Path("../paper_finfm")
 RNG = np.random.default_rng(20261117)
 MODEL_NAMES = {"gpt-4o-mini": "gpt-4o-mini", "gpt-4.1-mini": "gpt-4.1-mini", "gpt-5-mini": "gpt-5-mini",
-               "llama-3.3-70b": "Llama-3.3-70B"}   # rows appear only when that model's files exist
+               "llama-3.3-70b": "Llama-3.3-70B", "llama-4-scout": "Llama-4-Scout",
+               "gpt-oss-120b": "gpt-oss-120b", "gpt-oss-20b": "gpt-oss-20b"}   # rows appear only when files exist
+# Table 1 and the pooled headline macros use only these models, so adding an open-weight model never
+# silently changes the abstract's numbers. To pool more models, add them here AND update "three models"
+# in the abstract, Setup and captions.
+MAIN_MODELS = {"gpt-4o-mini", "gpt-4.1-mini", "gpt-5-mini"}
 
 
 def boot(df: pd.DataFrame, col: str, B: int = 2000):
@@ -41,6 +46,7 @@ def wilson(k: int, n: int, z: float = 1.96):
 
 def enforcement(macros: dict) -> str:
     df = pd.read_pickle(SCORED)
+    df = df[df["model"].isin(MAIN_MODELS)]
     nl, ex = df[df["style"] == "nl"], df[df["style"] == "explicit"]
     u_tr = nl["u_trade"]
     rows = [("Raw persona proposal", nl, "raw"), ("Block (veto $\\to$ WAIT)", nl, "block"),
@@ -93,8 +99,9 @@ def confidence(macros: dict) -> str:
                     raised += 1
                 kept += r["final"]["action"] in ("BUY", "SELL") and r["final"]["size"] > 0
             cells.append((n, raised, kept))
-            pooled["hidden" if tag else "shown"][0] += raised
-            pooled["hidden" if tag else "shown"][1] += n
+            if m in MAIN_MODELS:
+                pooled["hidden" if tag else "shown"][0] += raised
+                pooled["hidden" if tag else "shown"][1] += n
         if cells[0] is None:
             continue
         (n, r1, k1), c2 = cells[0], cells[1]
@@ -114,7 +121,8 @@ def confidence(macros: dict) -> str:
         m, rest = f.stem[len("riskmgr_"):].split("_by_")
         variant = "RepairFirst" if rest.endswith("repair_first") else "Orig"
         tag = {"gpt-4o-mini": "FourO", "gpt-4.1-mini": "FourOne", "gpt-5-mini": "Five",
-               "llama-3.3-70b": "Llama"}.get(m, m)
+               "llama-3.3-70b": "Llama", "llama-4-scout": "Scout",
+               "gpt-oss-120b": "OssBig", "gpt-oss-20b": "OssSmall"}.get(m, m)
         macros[f"RiskMgrKept{variant}{tag}"] = f"{100 * kept / len(rows):.1f}"
     for k, (r, n) in pooled.items():
         if n:
