@@ -196,7 +196,7 @@ If step 3 prints tables and a list of numbers, you're set up.
 ```
 GROQ_API_KEY=...
 ```
-`.env` is git-ignored. **Never commit it, never paste keys in WhatsApp or GitHub.** Re-running anything already run is free: answers come from the cache.
+`.env` is git-ignored. **Never commit it, never paste keys in WhatsApp or GitHub.** Re-running an LLM step that was already run costs nothing (answers come from `data/pit/llm_cache.sqlite`), but the script still needs that provider's key set to start. The scoring and table scripts need no key at all.
 
 ⚠️ The data in this branch (news headlines, prices) is for our private use only. This branch must never be made public.
 
