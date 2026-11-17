@@ -1,0 +1,66 @@
+{
+ "ticker": "BAJAJ-AUTO.NS",
+ "ts": 1747267200.0,
+ "context": {
+  "ann_vol": 0.3057793746478466,
+  "date": "2025-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The stock is in a neutral position with a positive return, but no clear trend direction is indicated.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09126553195333154,
+   "confidence": 0.09126553195333154,
+   "reliability": 0.65,
+   "ts": 1747267200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The headlines do not provide significant information directly related to Bajaj Auto's stock performance, leading to uncertainty in direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "Bajaj Auto shows strong revenue growth and solid profit margins, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

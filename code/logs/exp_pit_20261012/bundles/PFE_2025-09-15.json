@@ -1,0 +1,66 @@
+{
+ "ticker": "PFE",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.24532610385329512,
+  "date": "2025-09-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "PFE",
+   "summary": "The RSI indicates a neutral to slightly bearish condition, and the SMA20 is below the SMA50, suggesting a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "PFE",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.052220684004867124,
+   "confidence": 0.052220684004867124,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "PFE",
+   "summary": "The most market-moving headline is the report that Trump officials plan to link 25 child deaths to the COVID vaccine, causing shares of Pfizer and Moderna to plunge.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "PFE",
+   "summary": "Pfizer's solid profit margin and revenue growth indicate strong fundamentals, supporting a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "PFE",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

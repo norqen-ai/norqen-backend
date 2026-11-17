@@ -1,0 +1,66 @@
+{
+ "ticker": "COALINDIA.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.27869745732576756,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "COALINDIA.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI suggests the stock is neither overbought nor oversold.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "COALINDIA.NS",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09792875259402245,
+   "confidence": 0.09792875259402245,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "COALINDIA.NS",
+   "summary": "Coal India is highlighted as one of the top PSU stocks with the highest dividend yields, indicating strong investor interest and potential for stock appreciation.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "COALINDIA.NS",
+   "summary": "Despite a low P/E ratio and strong ROE, the negative revenue growth suggests potential challenges ahead.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "COALINDIA.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

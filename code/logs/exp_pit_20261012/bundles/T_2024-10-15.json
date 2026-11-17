@@ -1,0 +1,66 @@
+{
+ "ticker": "T",
+ "ts": 1728950400.0,
+ "context": {
+  "ann_vol": 0.21334182685978917,
+  "date": "2024-10-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is slightly negative.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "P(up next day)=0.59 (logistic regression, walk-forward-safe)",
+   "direction": 0.17688397854587512,
+   "confidence": 0.17688397854587512,
+   "reliability": 0.65,
+   "ts": 1728950400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "T",
+   "summary": "Ericsson shares jumped 10% on strong third-quarter earnings driven by growth in North America sales, indicating bullish sentiment for the stock.",
+   "direction": 1.0,
+   "confidence": 0.9,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "T",
+   "summary": "The company has a low P/E ratio and decent profit margins, but the revenue growth is minimal.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "T",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "NTPC.NS",
+ "ts": 1739750400.0,
+ "context": {
+  "ann_vol": 0.27327687643396664,
+  "date": "2025-02-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NTPC.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a downtrend, and the RSI is below 30 suggesting oversold conditions.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NTPC.NS",
+   "summary": "P(up next day)=0.57 (logistic regression, walk-forward-safe)",
+   "direction": 0.14637288849097363,
+   "confidence": 0.14637288849097363,
+   "reliability": 0.65,
+   "ts": 1739750400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NTPC.NS",
+   "summary": "The acquisition of Ayana Renewable Power by the ONGC-NTPC green joint venture for $2.3 billion is a significant positive development for NTPC's growth in renewable energy.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NTPC.NS",
+   "summary": "NTPC.NS has a reasonable P/E ratio and solid profit margins, but low revenue growth tempers the outlook.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NTPC.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

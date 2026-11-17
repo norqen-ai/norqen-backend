@@ -1,0 +1,66 @@
+{
+ "ticker": "ADANIPORTS.NS",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.20059018041254906,
+  "date": "2025-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "The stock is in a neutral position with a positive return and RSI indicating no overbought or oversold conditions.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.15016402478301316,
+   "confidence": 0.15016402478301316,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "Adani Ports stock rises 1.5% after Investec initiates coverage with a 'buy' rating, indicating strong market confidence.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "The strong profit margin and revenue growth suggest a positive outlook, but the relatively high P/E ratio indicates potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

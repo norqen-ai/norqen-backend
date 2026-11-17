@@ -1,0 +1,66 @@
+{
+ "ticker": "M&M.NS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.2505135048437969,
+  "date": "2025-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "M&M.NS",
+   "summary": "The RSI indicates a neutral position while the SMA20 is above SMA50, suggesting potential for a slight upward movement but overall bearish sentiment due to recent negative returns.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "M&M.NS",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.05307339060949312,
+   "confidence": 0.05307339060949312,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "M&M.NS",
+   "summary": "Motilal Oswal's buy recommendation for Mahindra and Mahindra with a target of Rs 3643 is the most market-moving headline.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "M&M.NS",
+   "summary": "The company shows solid revenue growth and a reasonable profit margin, suggesting moderate bullish potential.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "M&M.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating potential bullish momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

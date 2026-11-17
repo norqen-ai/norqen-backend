@@ -1,0 +1,66 @@
+{
+ "ticker": "GRASIM.NS",
+ "ts": 1723766400.0,
+ "context": {
+  "ann_vol": 0.2660340780965532,
+  "date": "2024-08-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "P(up next day)=0.57 (logistic regression, walk-forward-safe)",
+   "direction": 0.13924418991194987,
+   "confidence": 0.13924418991194987,
+   "reliability": 0.65,
+   "ts": 1723766400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GRASIM.NS",
+   "summary": "Grasim's Q1 results show a standalone net loss of \u20b952.12 crore despite a revenue increase, indicating potential financial struggles ahead.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GRASIM.NS",
+   "summary": "The high trailing P/E ratio combined with low profit margins suggests potential overvaluation and limited profitability.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GRASIM.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

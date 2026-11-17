@@ -1,0 +1,66 @@
+{
+ "ticker": "QCOM",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.8629561314579082,
+  "date": "2026-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "QCOM",
+   "summary": "The SMA20 is below the SMA50 indicating a downtrend, and the RSI is below 30 suggesting oversold conditions.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "QCOM",
+   "summary": "P(up next day)=0.20 (logistic regression, walk-forward-safe)",
+   "direction": -0.6058986796005691,
+   "confidence": 0.6058986796005691,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "QCOM",
+   "summary": "Qualcomm is being highlighted as a potential growth stock in the AI sector, which could drive investor interest despite recent stock price declines.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "QCOM",
+   "summary": "Qualcomm's solid revenue growth and strong ROE suggest positive medium-term potential, despite a relatively high P/E ratio.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "QCOM",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

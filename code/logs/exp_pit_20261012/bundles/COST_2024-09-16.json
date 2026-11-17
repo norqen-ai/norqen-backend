@@ -1,0 +1,66 @@
+{
+ "ticker": "COST",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.21108259886159153,
+  "date": "2024-09-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "The SMA indicators suggest a potential uptrend, but the RSI indicates a neutral position.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.10359456211041218,
+   "confidence": 0.10359456211041218,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "COST",
+   "summary": "Costco's stock is currently at an all-time high, raising concerns about its valuation and potential for a downturn according to Barron's.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "COST",
+   "summary": "The high trailing P/E ratio of 63.4 suggests an extreme valuation, which, combined with a low profit margin of 2.6%, indicates potential overvaluation and limited profitability.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "COST",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+02:31:27 news
+DONE 2500 empty 9 [('ABT', '2025-02-18', 0), ('CAT', '2025-03-17', 0), ('HON', '2025-04-15', 0), ('LIN', '2025-02-18', 0), ('TITAN.NS', '2025-02-17', 0), ('WIPRO.NS', '2025-03-17', 0), ('DIVISLAB.NS', '2025-01-15', 0), ('DIVISLAB.NS', '2025-03-17', 0), ('DIVISLAB.NS', '2025-06-16', 0)]
+02:32:48 bundles
+done 2500 in 80s; failures: 0 []
+02:34:09 decisions 4o + 4.1
+[gpt-4o-mini] done 20000 rows (0 failed) in 230s -> logs/exp_pit_20261012/decisions_gpt-4o-mini.jsonl
+[gpt-4.1-mini] done 20000 rows (0 failed) in 224s -> logs/exp_pit_20261012/decisions_gpt-4.1-mini.jsonl
+02:39:04 risk agent 4o + 4.1
+[gpt-4.1-mini] 7000/7390 58s
+[gpt-4.1-mini] reviewed 7390 proposals in 63s
+02:41:06 decisions 5-mini
+[gpt-5-mini] done 20000 rows (0 failed) in 464s -> logs/exp_pit_20261012/decisions_gpt-5-mini.jsonl
+02:49:58 risk agent 5-mini
+[gpt-5-mini] reviewed 8196 proposals in 70s
+02:51:08 EXTENSION DONE

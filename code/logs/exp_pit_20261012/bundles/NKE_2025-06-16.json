@@ -1,0 +1,66 @@
+{
+ "ticker": "NKE",
+ "ts": 1750032000.0,
+ "context": {
+  "ann_vol": 0.5425095679127553,
+  "date": "2025-06-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "The indicators suggest a neutral trend with no clear direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.16527270064039723,
+   "confidence": 0.16527270064039723,
+   "reliability": 0.65,
+   "ts": 1750032000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NKE",
+   "summary": "Nike's mis-steps erode market share and test investor loyalty, indicating potential challenges ahead for the stock.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NKE",
+   "summary": "Nike's strong ROE and reasonable P/E suggest solid fundamentals, but low revenue growth raises concerns.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NKE",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

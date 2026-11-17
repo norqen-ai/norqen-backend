@@ -1,0 +1,66 @@
+{
+ "ticker": "INDUSINDBK.NS",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.24075869048475237,
+  "date": "2025-09-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "The stock is in a downtrend with SMA20 below SMA50 and an RSI indicating oversold conditions.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "P(up next day)=0.43 (logistic regression, walk-forward-safe)",
+   "direction": -0.14263322148761703,
+   "confidence": 0.14263322148761703,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "The most significant headline is the new CEO's message to prioritize compliance and fix process loopholes, indicating potential operational challenges ahead for IndusInd Bank.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "The negative revenue growth and high trailing P/E indicate potential overvaluation and declining performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

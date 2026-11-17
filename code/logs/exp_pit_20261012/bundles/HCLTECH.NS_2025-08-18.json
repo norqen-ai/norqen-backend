@@ -1,0 +1,66 @@
+{
+ "ticker": "HCLTECH.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.17723764036515682,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HCLTECH.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HCLTECH.NS",
+   "summary": "P(up next day)=0.43 (logistic regression, walk-forward-safe)",
+   "direction": -0.1464239869860009,
+   "confidence": 0.1464239869860009,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HCLTECH.NS",
+   "summary": "Analyst Nilesh Jain highlights HCL Tech as a favorable investment alongside other major IT firms, indicating positive sentiment in the sector.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HCLTECH.NS",
+   "summary": "HCLTECH.NS shows solid profitability and reasonable growth, but the P/E ratio suggests it may be fairly valued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HCLTECH.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

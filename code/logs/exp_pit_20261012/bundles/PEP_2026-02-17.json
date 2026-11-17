@@ -1,0 +1,66 @@
+{
+ "ticker": "PEP",
+ "ts": 1771286400.0,
+ "context": {
+  "ann_vol": 0.21394517346719097,
+  "date": "2026-02-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "The RSI is approaching overbought territory while the SMAs indicate an uptrend, suggesting a potential for slight bullish movement but with caution due to recent negative returns.",
+   "direction": 0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.07972764610716443,
+   "confidence": 0.07972764610716443,
+   "reliability": 0.65,
+   "ts": 1771286400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "PEP",
+   "summary": "Multiple headlines highlight PEP as a top dividend stock, indicating strong investor interest and confidence.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "PEP",
+   "summary": "Despite a strong ROE, the low revenue growth and relatively high P/E ratio suggest potential overvaluation and limited growth prospects.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "PEP",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

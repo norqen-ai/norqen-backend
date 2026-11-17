@@ -1,0 +1,66 @@
+{
+ "ticker": "NVDA",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.544581476534014,
+  "date": "2024-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NVDA",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NVDA",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.11975901104209874,
+   "confidence": 0.11975901104209874,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NVDA",
+   "summary": "Nvidia's stock has seen significant gains recently, with a nearly 150% increase in the first half of 2024, indicating strong market momentum despite concerns about valuation and the AI bubble's sustainability.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NVDA",
+   "summary": "Despite a high trailing P/E ratio indicating potential overvaluation, strong profit margins and revenue growth suggest a positive medium-term outlook.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NVDA",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

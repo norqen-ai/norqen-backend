@@ -1,0 +1,66 @@
+{
+ "ticker": "BHARTIARTL.NS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.20510475359014307,
+  "date": "2025-01-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BHARTIARTL.NS",
+   "summary": "The indicators suggest a neutral to slightly bullish outlook as the RSI is in the middle range and SMAs indicate a potential uptrend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BHARTIARTL.NS",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.18048256470081303,
+   "confidence": 0.18048256470081303,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BHARTIARTL.NS",
+   "summary": "Analysts predict Airtel will experience the highest revenue growth and user addition in Q3, indicating strong performance ahead.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BHARTIARTL.NS",
+   "summary": "The extremely high trailing P/E ratio of 123.0 suggests overvaluation, outweighing the moderate revenue growth and profit margin.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BHARTIARTL.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

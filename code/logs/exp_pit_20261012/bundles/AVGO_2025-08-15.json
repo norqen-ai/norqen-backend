@@ -1,0 +1,66 @@
+{
+ "ticker": "AVGO",
+ "ts": 1755216000.0,
+ "context": {
+  "ann_vol": 0.29698697690028686,
+  "date": "2025-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AVGO",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AVGO",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.11067123613769536,
+   "confidence": 0.11067123613769536,
+   "reliability": 0.65,
+   "ts": 1755216000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AVGO",
+   "summary": "Trump's plan for 300% semiconductor tariffs is likely to negatively impact chip stocks, including Broadcom (AVGO).",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AVGO",
+   "summary": "The extremely high trailing P/E ratio of 246.8 suggests overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AVGO",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

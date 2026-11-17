@@ -1,0 +1,66 @@
+{
+ "ticker": "DIVISLAB.NS",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.26204014799092845,
+  "date": "2024-12-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "DIVISLAB.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.04618270149347259,
+   "confidence": 0.04618270149347259,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "DIVISLAB.NS",
+   "summary": "Citi's recommendation to buy Divi\u2019s Labs shares amid market volatility is the most significant market-moving headline.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The high trailing P/E ratio of 96.3 suggests extreme valuation concerns despite decent profit margins.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

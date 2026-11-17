@@ -1,0 +1,66 @@
+{
+ "ticker": "PFE",
+ "ts": 1773619200.0,
+ "context": {
+  "ann_vol": 0.22317816241553173,
+  "date": "2026-03-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "PFE",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is negative.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "PFE",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.11898567931230164,
+   "confidence": 0.11898567931230164,
+   "reliability": 0.65,
+   "ts": 1773619200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "PFE",
+   "summary": "Pfizer's trials to broaden future revenue and defend franchises indicate a proactive approach to maintaining market position.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "PFE",
+   "summary": "Pfizer's solid profit margin and revenue growth indicate a stable outlook, despite a moderate P/E ratio.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "PFE",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ULTRACEMCO.NS",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.3309487376045733,
+  "date": "2026-06-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI suggests the stock is neither overbought nor oversold.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.012849008983375931,
+   "confidence": 0.012849008983375931,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "UltraTech Cement's acquisition of a 13.99% stake in FPEL Services to enhance renewable energy use is a significant move that could reduce power costs and improve profitability.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The high trailing P/E ratio of 54.8 suggests an extreme valuation, which, combined with modest profit margins and growth, indicates a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

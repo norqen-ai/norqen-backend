@@ -1,0 +1,66 @@
+{
+ "ticker": "ACN",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.22423125745856687,
+  "date": "2024-09-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ACN",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ACN",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.10273694121226296,
+   "confidence": 0.10273694121226296,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ACN",
+   "summary": "Accenture's Tom Greiner discusses AI and cloud trends, indicating potential growth opportunities for the company.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ACN",
+   "summary": "ACN's solid profit margin and strong ROE indicate healthy profitability, but the high P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ACN",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

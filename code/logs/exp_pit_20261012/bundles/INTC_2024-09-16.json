@@ -1,0 +1,66 @@
+{
+ "ticker": "INTC",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.7478598353706243,
+  "date": "2024-09-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "INTC",
+   "summary": "The RSI indicates neutral momentum, and the SMA20 is below the SMA50, suggesting a potential bearish trend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "INTC",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09492067410188532,
+   "confidence": 0.09492067410188532,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "INTC",
+   "summary": "Intel's stock is experiencing significant gains due to a $3 billion military chip funding announcement, which is the most market-moving headline.",
+   "direction": 1.0,
+   "confidence": 0.9,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "INTC",
+   "summary": "Intel's high P/E ratio combined with negative revenue growth and low profit margins indicates significant challenges ahead.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "INTC",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

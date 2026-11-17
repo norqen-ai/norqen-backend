@@ -1,0 +1,66 @@
+{
+ "ticker": "IBM",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.42146683646606553,
+  "date": "2026-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "IBM",
+   "summary": "The SMA20 is below the SMA50 indicating a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "IBM",
+   "summary": "P(up next day)=0.57 (logistic regression, walk-forward-safe)",
+   "direction": 0.13053325439777286,
+   "confidence": 0.13053325439777286,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "IBM",
+   "summary": "IBM's shares are facing downward pressure as they report the lowest year-to-date performance among mega-cap stocks, indicating significant investor concern.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "IBM",
+   "summary": "IBM's strong profit margin and revenue growth, combined with a solid ROE, indicate a positive medium-term outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "IBM",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

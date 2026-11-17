@@ -1,0 +1,66 @@
+{
+ "ticker": "APOLLOHOSP.NS",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.1456989905124619,
+  "date": "2025-11-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 is below the SMA50, suggesting a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.16763447735287673,
+   "confidence": 0.16763447735287673,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "Apollo Hospitals Enterprise is highlighted for its ability to manage debt responsibly, which is crucial for investor confidence amid market volatility.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The high trailing P/E ratio of 74.3 suggests an extreme valuation, which, combined with a relatively low profit margin, indicates potential overvaluation and risk.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

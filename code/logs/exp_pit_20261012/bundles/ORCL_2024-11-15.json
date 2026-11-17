@@ -1,0 +1,66 @@
+{
+ "ticker": "ORCL",
+ "ts": 1731628800.0,
+ "context": {
+  "ann_vol": 0.3352558828550832,
+  "date": "2024-11-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ORCL",
+   "summary": "The RSI indicates a potential for upward movement but is not yet overbought, while the SMA20 is above the SMA50 suggesting a mild uptrend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ORCL",
+   "summary": "P(up next day)=0.62 (logistic regression, walk-forward-safe)",
+   "direction": 0.24627140569359884,
+   "confidence": 0.24627140569359884,
+   "reliability": 0.65,
+   "ts": 1731628800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ORCL",
+   "summary": "Oracle CEO's statement about reaching a trillion-dollar valuation indicates strong future growth potential for the company.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ORCL",
+   "summary": "The high trailing P/E ratio of 48.4 suggests overvaluation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ORCL",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

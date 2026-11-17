@@ -1,0 +1,104 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+\usepackage[submission]{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{booktabs}
+\usepackage{xcolor}
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{0}
+
+% ---- every number comes from code/make_finfm_tables.py; never type a result by hand ----
+\input{tables/macros}
+% ---- drafting aid: delete every \todo before submission ----
+\newcommand{\todo}[1]{\textcolor{red}{[\textbf{TODO} #1]}}
+
+\title{Fix What Is Checked, Inflate What Is Not:\\How LLM Trading Agents Respond to Investor-Mandate Enforcement}
+\author{Anonymous Submission}
+\affiliations{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+LLM trading agents are increasingly wrapped in rule layers that enforce an investor's mandate, but these layers are judged by their violation rate alone. We compare four ways of enforcing a mandate on the \emph{same} LLM trade proposals and score each on what the trade would have earned: blocking the trade, an LLM risk manager, deterministic repair, and feeding the rule engine's rejection reasons back to the model. Using \NBundles{} point-in-time evidence bundles for 100 US and Indian (NSE) large caps, all dated after the three decision models' training cutoffs, we find three things. A text persona produces mandate-blind sizing: \PersonaViol\% of decisions exceed the position cap. Blocking and an LLM risk manager reach full compliance by abstaining, keeping \KeptBlock\% and \KeptAgent\% of proposed trades, while deterministic repair keeps \KeptRepair\%. Given the engine's reasons, models repair the clauses the engine can check (size, stop) and \emph{raise their stated confidence to the required bar} in \ConfRaisedShown\% of cases without any new evidence, versus \ConfRaisedHidden\% when the bar is not mentioned. Since stated confidence does not rank trade outcomes in our data, a confidence gate fed by the agent's own report is not enforceable. We argue that enforcement should be evaluated on participation and realised risk, not compliance alone, and that gates must sit on quantities that code computes.
+\end{abstract}
+
+% =====================================================================================
+\section{Introduction}
+% OWNER: Malhar (final pass); first draft below.
+Multi-agent LLM trading systems give language models the whole trade: analyst agents read data, a trader proposes direction, size and exits, and a risk-manager agent reviews it \citep{xiao2024tradingagents,yu2024fincon,zhang2024finagent}. Recent work keeps the LLM but wraps it in deterministic code that caps, clips or vetoes its proposals \citep{cai2026openpm,kukreja2026biasmix,qu2026clqt}. These guardrails are reported by how often they leave a violation, a number that every guardrail can drive to zero by refusing to trade.
+
+We ask a different question: \emph{when a mandate is enforced on an LLM agent, what does the agent end up doing, and what does that do to the trade?} We hold one set of LLM proposals fixed and apply four enforcement mechanisms to it after the fact, so every comparison is paired. Our contributions:
+\begin{itemize}
+\item A paired comparison of four enforcement mechanisms on \NPersona{} post-cutoff LLM trade decisions in two equity markets, scored on compliance, participation and realised, cost-adjusted outcome.
+\item Evidence that rejection-style enforcement (blocking, an LLM risk manager) buys compliance by abstention, while deterministic repair keeps most trades and halves P\&L dispersion.
+\item A new failure mode of feedback-based enforcement: the agent fixes verifiable clauses and inflates the one it self-reports, which we isolate with a control that withholds the confidence clause.
+\end{itemize}
+\todo{Malhar: one sentence on why practitioners should care (client mandates are legal obligations; a 2\% cap is not a forecast).}
+
+% =====================================================================================
+\section{Related Work}
+% OWNER: Piyush. Keep to ~0.4 page. Every claim must be checked in the paper itself (methods/results, not abstract).
+\todo{Piyush: three short paragraphs.
+(1) LLM trading agents and their evaluation problems: TradingAgents, FinCon, FinAgent; returns vanish under careful tests (StockBench, FINSABER, Alpha Illusion); look-ahead bias \citep{gao2025lookahead}.
+(2) Guardrails and mandates: OpenPM compiles a mandate into constraints and projects weights; BiasMix-Finance finds 47.6--85.7\% first-pass violations repaired by projection but reports no returns; CLQT attributes its drawdown gain to the constraint layer without ablating it; TradeArena \citep{xue2026tradearena} compares clip/block/annotate mostly on synthetic data; PortBench shows profile-dependent risk; Inside the Trading Loop \citep{tradingloop2026} withholds sizing from the LLM. Gap: none compares enforcement mechanisms on the same LLM proposals with realised outcomes, and none studies how the agent responds to enforcement feedback.
+(3) Confidence and feedback: verbalised confidence is poorly calibrated \citep{xiong2024uncertainty,zhu2026ktdfin,singh2026ordinal}; LLMs bend to user feedback \citep{sharma2024sycophancy} and do not reliably self-correct \citep{huang2024selfcorrect}; optimising a proxy invites gaming \citep{skalse2022rewardhacking}. Our confidence result is an instance of this in a deployed-style trading pipeline.}
+
+% =====================================================================================
+\section{Setup}
+% OWNER: Omkar (system + arms). Malhar checks numbers.
+\paragraph{System.} Five specialist agents (technical, news, fundamental and macro LLM judges, and a logistic-regression price model) turn point-in-time data into evidence items with a direction in $[-1,1]$ and a confidence in $[0,1]$. An investor profile (Table~\todo{profile table or inline}) sets a position cap, a stop-loss, a confidence bar and which agents to consult. A deterministic risk engine checks every decision against the profile and returns APPROVED or VETOED with written reasons (clause, value, limit). \todo{Omkar: 3--4 sentences max; point to the appendix figure.}
+
+\paragraph{Data and models.} We rebuild every agent as of 19 monthly decision dates (Jan 2025--Jul 2026) for 50 US and 50 NSE large caps, using only information available before the next session's open (\NBundles{} bundles). Three decision models (gpt-4o-mini, gpt-4.1-mini, gpt-5-mini) have published training cutoffs before every decision date. Each model receives the bundle and a profile, either as a short text persona or with the numeric limits stated, and proposes action, size, stop, target and its confidence. \todo{Omkar: add the open-weight model here if it is run.}
+
+\paragraph{Enforcement arms.} All arms start from the same persona proposal $U$:
+(i) \emph{Block}: if the engine vetoes $U$, WAIT.
+(ii) \emph{LLM risk manager}: a second LLM sees $U$ and the numeric mandate and may approve, modify or reject.
+(iii) \emph{Repair}: WAIT if confidence is below the bar; otherwise clip size to the cap and tighten the stop to the policy's.
+(iv) \emph{Feedback}: the same model sees its proposal and the engine's reasons and revises, for up to three rounds; a still-vetoed revision becomes WAIT.
+As a control for (iv), \emph{feedback without the confidence clause} gives the model only the size and stop reasons while the engine still enforces the bar.
+
+\paragraph{Outcomes.} A decision taken at the close of day $t$ enters at the next open and is held for the profile's horizon (1, 5, 20 or 40 days), with stops and targets checked on daily highs and lows and round-trip costs of 14 bp (US) and 36 bp (NSE). Utility is the position-weighted net return in basis points of equity; WAIT is 0. Intervals are 95\% bootstraps over decision months. The outcome rule was fixed before any LLM outcome was computed. \todo{Omkar: cite the pre-registration amendment by date, anonymised.}
+
+% =====================================================================================
+\section{Results}
+% OWNER: Malhar.
+\begin{table*}[t]
+\centering
+\footnotesize
+\input{tables/enforcement}
+\caption{Enforcement on text-persona proposals (\NPersona{} decisions, three models pooled, primary window). Viol.: executed size above the profile cap. Kept: share of the LLM's proposed trades still executed. Exp./cap: mean position over the cap (WAIT = 0). Aggr./Cons.: mean aggressive-profile position over mean conservative-profile position on the same bundles (the mandate implies 4.0). SD, CVaR$_5$ and mean are decision P\&L in bp of equity, net of costs. ``Limits stated in prompt'' and ``Code only'' are separate decisions on the same bundles, shown for reference.}
+\label{tab:enforcement}
+\end{table*}
+
+\paragraph{Personas produce mandate-blind sizing.} \todo{Malhar: \PersonaViol\% of persona decisions exceed the cap and the engine vetoes \VetoRate\% of proposed trades; aggressive vs conservative sizing ratio 1.4 against a mandated 4.0; stating the limits removes violations (replicates BiasMix-Finance on realised outcomes).}
+
+\paragraph{Rejection buys compliance by abstention.} \todo{Malhar: Block keeps \KeptBlock\%, the LLM risk manager \KeptAgent\% (it was allowed to resize but almost never did). With a repair-first prompt it keeps \RiskMgrKeptRepairFirstFourO\%, \RiskMgrKeptRepairFirstFourOne\% and \RiskMgrKeptRepairFirstFive\% of trades (proposals from gpt-4o-mini, gpt-4.1-mini, gpt-5-mini) vs \RiskMgrKeptOrigFourO\%, \RiskMgrKeptOrigFourOne\%, \RiskMgrKeptOrigFive\% with the standard prompt: refusal is a prompt default, so say ``with a standard prompt'', repair \KeptRepair\%. Repair halves SD and CVaR. Honest caveat: repair's 0\% is by construction, and uniform down-scaling to the same exposure gives the same risk; repair's value is compliant participation, not better trades. No mean P\&L difference survives (signal is weak; evidence IC between -0.07 and +0.05).}
+
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\input{tables/confidence}
+\caption{Feedback on proposals vetoed for low confidence \emph{and} for size or stop. ``Bar shown'': the feedback lists every violated clause. ``Bar hidden'': the same feedback without the confidence clause, which the engine still enforces. No new evidence is given in either arm. Brackets: 95\% Wilson intervals.}
+\label{tab:confidence}
+\end{table}
+
+\paragraph{Feedback: fix what is checked, inflate what is not.} \todo{Malhar: with feedback, models resize to exactly the cap and tighten the stop; when the confidence clause is mentioned they restate confidence at or above the bar in \ConfRaisedShown\% of cases (n = \ConfNShown) versus \ConfRaisedHidden\% when it is not (n = \ConfNHidden). Stated confidence does not rank outcomes in this data (AUC 0.503), so the gate passes trades it was meant to stop. gpt-4o-mini and gpt-4.1-mini mostly write exactly the bar value; gpt-5-mini (default temperature, reasoning) moves its confidence on most revisions anyway, which explains its higher control rate. Outcome of trades that passed only via raised confidence vs trades above the bar from the start: exploratory, needs a profile-matched comparison before any claim.}
+
+% =====================================================================================
+\section{Discussion and Limitations}
+% OWNER: Malhar (discussion), Omkar (limitations list).
+\paragraph{Design rules.} (1) Give the agent the mandate as numbers. (2) Repair rather than refuse, and report participation and risk at matched exposure next to compliance. (3) Never gate on a quantity the agent reports about itself; gate on quantities code computes from the evidence.
+\paragraph{Limitations.} \todo{Omkar: weak evidence signal (no claim about returns); 19 months; small OpenAI models (plus open-weight if run); one evidence model; isolated decisions from a flat portfolio; survivorship in a current large-cap universe; daily-bar fills; pre-registration is a dated file amendment, not a public registry.}
+
+\bibliography{refs}
+
+\end{document}

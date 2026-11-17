@@ -1,0 +1,66 @@
+{
+ "ticker": "GS",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.31960392710947877,
+  "date": "2026-06-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "The SMA20 is above SMA50 indicating an uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "P(up next day)=0.57 (logistic regression, walk-forward-safe)",
+   "direction": 0.14232742300940804,
+   "confidence": 0.14232742300940804,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GS",
+   "summary": "Goldman Sachs has issued a blunt message for AI stock investors, indicating potential caution in the sector.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GS",
+   "summary": "Strong profit margins and solid revenue growth indicate a positive outlook for GS.",
+   "direction": 0.7,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GS",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

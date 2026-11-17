@@ -1,0 +1,66 @@
+{
+ "ticker": "CMCSA",
+ "ts": 1750032000.0,
+ "context": {
+  "ann_vol": 0.28872392623378224,
+  "date": "2025-06-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CMCSA",
+   "summary": "The indicators suggest a neutral to slightly bullish outlook as the SMA20 is above the SMA50 and RSI is in the mid-range.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CMCSA",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.0344598432730463,
+   "confidence": 0.0344598432730463,
+   "reliability": 0.65,
+   "ts": 1750032000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CMCSA",
+   "summary": "Disney's acquisition of full control over Hulu from NBCUniversal signals a significant shift in the streaming landscape, potentially putting pressure on Comcast's content strategy and stock performance.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CMCSA",
+   "summary": "CMCSA's low P/E ratio combined with solid profit margins and strong ROE indicates a favorable investment opportunity.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CMCSA",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

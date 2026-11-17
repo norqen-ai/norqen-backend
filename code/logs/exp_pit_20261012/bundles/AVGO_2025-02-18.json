@@ -1,0 +1,66 @@
+{
+ "ticker": "AVGO",
+ "ts": 1739836800.0,
+ "context": {
+  "ann_vol": 0.7573391484091809,
+  "date": "2025-02-18",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AVGO",
+   "summary": "The RSI is approaching overbought territory while the SMA indicators suggest a slight uptrend.",
+   "direction": 0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AVGO",
+   "summary": "P(up next day)=0.39 (logistic regression, walk-forward-safe)",
+   "direction": -0.2269932257071059,
+   "confidence": 0.2269932257071059,
+   "reliability": 0.65,
+   "ts": 1739836800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AVGO",
+   "summary": "Intel's stock surge due to potential breakup and Broadcom's involvement suggests a bearish outlook for Broadcom as it may face increased competition and market pressure.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AVGO",
+   "summary": "The extremely high trailing P/E ratio of 183.1 suggests overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AVGO",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

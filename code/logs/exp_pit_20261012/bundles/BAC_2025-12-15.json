@@ -1,0 +1,66 @@
+{
+ "ticker": "BAC",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.20379490970172606,
+  "date": "2025-12-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.04320678003163425,
+   "confidence": 0.04320678003163425,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAC",
+   "summary": "Bank of America shares are recovering from the 2008 financial crisis, indicating a positive trend for the stock.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAC",
+   "summary": "BAC's solid profit margin and reasonable P/E suggest moderate growth potential, but low revenue growth and ROE indicate caution.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAC",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a moderate bullish sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

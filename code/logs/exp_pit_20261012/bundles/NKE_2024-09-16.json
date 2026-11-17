@@ -1,0 +1,66 @@
+{
+ "ticker": "NKE",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.482947447635765,
+  "date": "2024-09-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 being above SMA50 suggests a bearish trend.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.12060690514529893,
+   "confidence": 0.12060690514529893,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NKE",
+   "summary": "The headline 'The Man Who Made Nike Uncool' suggests negative sentiment towards Nike's brand image, which could impact stock performance.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NKE",
+   "summary": "Nike's strong ROE and reasonable P/E suggest potential for growth, but low revenue growth may limit upside.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NKE",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

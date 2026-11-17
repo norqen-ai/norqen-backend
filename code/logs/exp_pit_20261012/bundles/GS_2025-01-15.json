@@ -1,0 +1,66 @@
+{
+ "ticker": "GS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.3617316505527582,
+  "date": "2025-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "The RSI is approaching overbought territory while the SMA20 is above the SMA50, indicating a potential continuation of the uptrend but with caution due to the high RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.03378429844727626,
+   "confidence": 0.03378429844727626,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GS",
+   "summary": "Goldman Sachs reported its biggest quarterly profit in three years, driven by strong performance in investment banking and trading, indicating robust financial health and investor confidence.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GS",
+   "summary": "The negative revenue growth and high P/E ratio indicate potential overvaluation and declining performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

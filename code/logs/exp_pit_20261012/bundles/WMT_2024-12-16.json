@@ -1,0 +1,66 @@
+{
+ "ticker": "WMT",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.1653054176661936,
+  "date": "2024-12-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "WMT",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "WMT",
+   "summary": "P(up next day)=0.62 (logistic regression, walk-forward-safe)",
+   "direction": 0.2391640582186667,
+   "confidence": 0.2391640582186667,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "WMT",
+   "summary": "Walmart being named the 2024 Yahoo Finance Company of the Year is a significant endorsement of its business performance and outlook, likely boosting investor confidence.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "WMT",
+   "summary": "WMT's high trailing P/E ratio of 48.8 suggests overvaluation, especially given its low profit margin of 2.39%.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "WMT",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

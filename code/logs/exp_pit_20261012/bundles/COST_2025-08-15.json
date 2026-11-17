@@ -1,0 +1,66 @@
+{
+ "ticker": "COST",
+ "ts": 1755216000.0,
+ "context": {
+  "ann_vol": 0.1730202318121364,
+  "date": "2025-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "The RSI is approaching overbought territory while the SMA indicators suggest a potential downtrend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.06785900159500802,
+   "confidence": 0.06785900159500802,
+   "reliability": 0.65,
+   "ts": 1755216000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "COST",
+   "summary": "Amazon's expansion into same-day grocery delivery poses a significant competitive threat to Costco, impacting its market position in the grocery sector.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "COST",
+   "summary": "The high trailing P/E ratio of 58.4 suggests an extreme valuation, which, combined with a low profit margin of 2.9%, indicates potential overvaluation and limited profitability.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "COST",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

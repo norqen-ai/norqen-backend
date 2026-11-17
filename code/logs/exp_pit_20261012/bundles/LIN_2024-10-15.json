@@ -1,0 +1,66 @@
+{
+ "ticker": "LIN",
+ "ts": 1728950400.0,
+ "context": {
+  "ann_vol": 0.12839144441659572,
+  "date": "2024-10-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "LIN",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates a neutral position.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "LIN",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.015040668125464896,
+   "confidence": 0.015040668125464896,
+   "reliability": 0.65,
+   "ts": 1728950400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "LIN",
+   "summary": "The most relevant headline discusses potential investment returns in materials stocks, but lacks strong directional impact on LIN's stock specifically.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "LIN",
+   "summary": "The negative revenue growth indicates potential challenges ahead, overshadowing the decent profit margin and ROE.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "LIN",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

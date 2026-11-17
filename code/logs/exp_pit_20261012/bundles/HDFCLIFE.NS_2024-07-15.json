@@ -1,0 +1,66 @@
+{
+ "ticker": "HDFCLIFE.NS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.22184547090085677,
+  "date": "2024-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": -0.0024418468844904506,
+   "confidence": 0.0024418468844904506,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "HDFC Life's Q1 net profit up 15% and plans to raise \u20b92,000 crore with NCD issue indicates strong financial performance and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The extremely high trailing P/E ratio of 86.7 combined with a low profit margin of 1.64% suggests overvaluation and weak profitability.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

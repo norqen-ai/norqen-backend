@@ -1,0 +1,66 @@
+{
+ "ticker": "ABT",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.1545275341298012,
+  "date": "2025-11-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ABT",
+   "summary": "The RSI is approaching overbought territory, and the SMA20 is above the SMA50, indicating a potential for a slight bullish trend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ABT",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.047149711636638725,
+   "confidence": 0.047149711636638725,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ABT",
+   "summary": "The FDA's expansion of the urgent baby formula recall to all products made by one manufacturer raises significant concerns about Abbott Labs' product safety and market reputation, likely leading to bearish sentiment in the near term.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ABT",
+   "summary": "ABT's strong profit margin and solid ROE indicate robust financial health and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ABT",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

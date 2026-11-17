@@ -1,0 +1,66 @@
+{
+ "ticker": "HINDALCO.NS",
+ "ts": 1739750400.0,
+ "context": {
+  "ann_vol": 0.2429355175858036,
+  "date": "2025-02-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HINDALCO.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HINDALCO.NS",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.0259664021362771,
+   "confidence": 0.0259664021362771,
+   "reliability": 0.65,
+   "ts": 1739750400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HINDALCO.NS",
+   "summary": "Hindalco's share price jumped over 2% following a strong Q3 profit increase of 60%, significantly beating street estimates.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HINDALCO.NS",
+   "summary": "The negative revenue growth indicates underlying challenges, outweighing the reasonable P/E ratio.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HINDALCO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

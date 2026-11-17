@@ -1,0 +1,66 @@
+{
+ "ticker": "V",
+ "ts": 1771286400.0,
+ "context": {
+  "ann_vol": 0.23871413484407125,
+  "date": "2026-02-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.012904202101061246,
+   "confidence": 0.012904202101061246,
+   "reliability": 0.65,
+   "ts": 1771286400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "V",
+   "summary": "Visa's recent 5% decline this week indicates negative market sentiment and potential bearish momentum for the stock in the near term.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "V",
+   "summary": "V's strong profit margin and high ROE indicate solid fundamentals, but the elevated P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "V",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

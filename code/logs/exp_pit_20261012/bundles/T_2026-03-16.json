@@ -1,0 +1,66 @@
+{
+ "ticker": "T",
+ "ts": 1773619200.0,
+ "context": {
+  "ann_vol": 0.25338252872298994,
+  "date": "2026-03-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral suggesting limited momentum.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09541402885242678,
+   "confidence": 0.09541402885242678,
+   "reliability": 0.65,
+   "ts": 1773619200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "T",
+   "summary": "AT&T's significant investment of $250B in AI and a hiring spree indicates strong growth potential, positively impacting investor sentiment.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "T",
+   "summary": "The negative revenue growth indicates underlying weakness, overshadowing the reasonable P/E and profit margin.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "T",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

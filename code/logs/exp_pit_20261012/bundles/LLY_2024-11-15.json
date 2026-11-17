@@ -1,0 +1,66 @@
+{
+ "ticker": "LLY",
+ "ts": 1731628800.0,
+ "context": {
+  "ann_vol": 0.2790826827126869,
+  "date": "2024-11-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "LLY",
+   "summary": "The RSI indicates oversold conditions, and both SMA20 and SMA50 suggest a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "LLY",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.08316003661709814,
+   "confidence": 0.08316003661709814,
+   "reliability": 0.65,
+   "ts": 1731628800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "LLY",
+   "summary": "Eli Lilly's stock is likely to face downward pressure due to its lawsuit against the US over rejected changes to a drug discounting program, which could impact revenue and investor sentiment.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "LLY",
+   "summary": "The extremely high trailing P/E ratio of 127.1 suggests overvaluation despite strong revenue growth and profit margins.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "LLY",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

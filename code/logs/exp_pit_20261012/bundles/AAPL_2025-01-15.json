@@ -1,0 +1,66 @@
+{
+ "ticker": "AAPL",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.17544297704808534,
+  "date": "2025-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AAPL",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 being below SMA50 suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AAPL",
+   "summary": "P(up next day)=0.65 (logistic regression, walk-forward-safe)",
+   "direction": 0.2942688122208379,
+   "confidence": 0.2942688122208379,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AAPL",
+   "summary": "Apple's iPhone sales fell 5% in Q4, contributing to a slip in global market share, which is a significant concern for investors.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AAPL",
+   "summary": "Despite a strong profit margin and ROE, the high trailing P/E ratio and low revenue growth suggest potential overvaluation and limited growth prospects.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AAPL",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

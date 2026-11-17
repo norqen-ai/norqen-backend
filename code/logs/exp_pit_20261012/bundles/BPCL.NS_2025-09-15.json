@@ -1,0 +1,66 @@
+{
+ "ticker": "BPCL.NS",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.21027928657582146,
+  "date": "2025-09-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BPCL.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, but the RSI is neutral.",
+   "direction": 0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BPCL.NS",
+   "summary": "P(up next day)=0.40 (logistic regression, walk-forward-safe)",
+   "direction": -0.1972458561680016,
+   "confidence": 0.1972458561680016,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BPCL.NS",
+   "summary": "The focus on India's diesel revolution and related stocks suggests a competitive environment that may negatively impact BPCL's market position in the near term.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BPCL.NS",
+   "summary": "The negative revenue growth and low profit margin suggest potential challenges ahead for BPCL.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BPCL.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

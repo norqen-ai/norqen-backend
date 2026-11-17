@@ -1,0 +1,66 @@
+{
+ "ticker": "GOOGL",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.2820917681974847,
+  "date": "2024-12-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GOOGL",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GOOGL",
+   "summary": "P(up next day)=0.61 (logistic regression, walk-forward-safe)",
+   "direction": 0.2108473691926469,
+   "confidence": 0.2108473691926469,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GOOGL",
+   "summary": "Alphabet stock is experiencing positive momentum as it is highlighted as a solid buy after a significant surge this year.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GOOGL",
+   "summary": "GOOGL shows solid profit margins and revenue growth, but the P/E ratio suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GOOGL",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "MARUTI.NS",
+ "ts": 1739750400.0,
+ "context": {
+  "ann_vol": 0.22564013873692693,
+  "date": "2025-02-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MARUTI.NS",
+   "summary": "The RSI indicates overbought conditions, while the SMA20 is above the SMA50, suggesting potential for a pullback.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MARUTI.NS",
+   "summary": "P(up next day)=0.38 (logistic regression, walk-forward-safe)",
+   "direction": -0.2361781063068481,
+   "confidence": 0.2361781063068481,
+   "reliability": 0.65,
+   "ts": 1739750400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MARUTI.NS",
+   "summary": "The price hike of the new Maruti Suzuki Dzire by Rs 10,000 may negatively impact sales, indicating potential bearish sentiment for the stock.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MARUTI.NS",
+   "summary": "Maruti's strong revenue growth of 19.97% and decent profit margin indicate positive medium-term potential despite a relatively high P/E ratio.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MARUTI.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

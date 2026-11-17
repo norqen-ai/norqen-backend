@@ -1,0 +1,66 @@
+{
+ "ticker": "SHRIRAMFIN.NS",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.4901891809335577,
+  "date": "2026-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "The stock is in a downtrend with SMA20 below SMA50 and an RSI indicating oversold conditions.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.047295398076540485,
+   "confidence": 0.047295398076540485,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "Shriram Finance lagged in a market where the Nifty and Sensex fell nearly 3%, indicating bearish sentiment.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "The strong profit margin and solid revenue growth indicate a positive outlook for SHIRAMFIN.NS.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

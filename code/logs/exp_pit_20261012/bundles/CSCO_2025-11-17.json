@@ -1,0 +1,66 @@
+{
+ "ticker": "CSCO",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.20951622917484294,
+  "date": "2025-11-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CSCO",
+   "summary": "The SMA indicators suggest an uptrend, but the RSI indicates potential overbought conditions.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CSCO",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.04182285141863362,
+   "confidence": 0.04182285141863362,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CSCO",
+   "summary": "Cisco's stock is experiencing upward momentum due to high demand for its AI networking gear, despite concerns about the sustainability of the AI rally as it surpasses dot-com bubble peaks.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CSCO",
+   "summary": "Cisco's solid profit margin and ROE indicate strong profitability, but the high trailing P/E suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CSCO",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

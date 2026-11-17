@@ -1,0 +1,66 @@
+{
+ "ticker": "MSFT",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.3418662478471791,
+  "date": "2026-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MSFT",
+   "summary": "The RSI is approaching overbought territory while SMA indicators suggest a potential downtrend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MSFT",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.018493716924873227,
+   "confidence": 0.018493716924873227,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MSFT",
+   "summary": "Citi's price target cuts ahead of earnings indicate bearish sentiment and potential challenges for Microsoft stock in the near term.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MSFT",
+   "summary": "Microsoft's strong profit margin and revenue growth indicate solid fundamentals, justifying a bullish outlook despite a relatively high P/E ratio.",
+   "direction": 0.8,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MSFT",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

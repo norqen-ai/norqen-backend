@@ -1,0 +1,66 @@
+{
+ "ticker": "CIPLA.NS",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.2070027032321711,
+  "date": "2025-03-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CIPLA.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CIPLA.NS",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.022648026960155665,
+   "confidence": 0.022648026960155665,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CIPLA.NS",
+   "summary": "The headlines do not provide a clear market-moving event for Cipla, indicating uncertainty in near-term direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CIPLA.NS",
+   "summary": "CIPLA.NS shows solid revenue growth and profit margins, but the trailing P/E suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CIPLA.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

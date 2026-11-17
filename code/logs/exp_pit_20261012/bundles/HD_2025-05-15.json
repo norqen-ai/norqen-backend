@@ -1,0 +1,66 @@
+{
+ "ticker": "HD",
+ "ts": 1747267200.0,
+ "context": {
+  "ann_vol": 0.29047334351575765,
+  "date": "2025-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HD",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HD",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.04466833270041359,
+   "confidence": 0.04466833270041359,
+   "reliability": 0.65,
+   "ts": 1747267200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HD",
+   "summary": "The most relevant headline is about The Home Depot expanding tax-free items for military customers, which may positively impact sales but lacks significant market-moving implications.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HD",
+   "summary": "Despite a reasonable P/E ratio, the low ROE and profit margin suggest limited growth potential.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HD",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

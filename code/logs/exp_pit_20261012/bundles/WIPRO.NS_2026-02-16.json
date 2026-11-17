@@ -1,0 +1,66 @@
+{
+ "ticker": "WIPRO.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.28126336963749055,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA analysis shows a clear downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.15922098218177516,
+   "confidence": 0.15922098218177516,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "WIPRO.NS",
+   "summary": "The Nifty IT index, including Wipro, has seen its worst fall since the 2008 financial crisis, dropping 32% from its peak, indicating significant bearish sentiment in the sector.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "WIPRO.NS",
+   "summary": "The negative revenue growth indicates potential challenges ahead for WIPRO.NS.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "WIPRO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

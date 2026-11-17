@@ -1,0 +1,66 @@
+{
+ "ticker": "KO",
+ "ts": 1731628800.0,
+ "context": {
+  "ann_vol": 0.13795997354032946,
+  "date": "2024-11-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "KO",
+   "summary": "The RSI indicates oversold conditions, and both SMAs suggest a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "KO",
+   "summary": "P(up next day)=0.27 (logistic regression, walk-forward-safe)",
+   "direction": -0.45250304087479676,
+   "confidence": 0.45250304087479676,
+   "reliability": 0.65,
+   "ts": 1731628800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "KO",
+   "summary": "Food stocks, including Coca-Cola, are under pressure as investors react to potential increased scrutiny and public health changes under RFK Jr., which is the most market-moving headline.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "KO",
+   "summary": "Coca-Cola's strong profit margin and ROE indicate solid profitability, but the trailing P/E suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "KO",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

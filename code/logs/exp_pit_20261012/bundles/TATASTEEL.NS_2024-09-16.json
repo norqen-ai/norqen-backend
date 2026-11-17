@@ -1,0 +1,66 @@
+{
+ "ticker": "TATASTEEL.NS",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.24954287942858708,
+  "date": "2024-09-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The indicators suggest a neutral outlook with no clear trend direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.026868908269910063,
+   "confidence": 0.026868908269910063,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATASTEEL.NS",
+   "summary": "Tata Steel's Kalinganagar expansion is set to position Odisha as a top investment site, indicating strong growth potential for the company.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATASTEEL.NS",
+   "summary": "TATASTEEL.NS is facing negative profit margins and revenue growth, indicating significant financial distress.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

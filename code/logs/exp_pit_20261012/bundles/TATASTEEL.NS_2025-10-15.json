@@ -1,0 +1,66 @@
+{
+ "ticker": "TATASTEEL.NS",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.25447269024686725,
+  "date": "2025-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "P(up next day)=0.43 (logistic regression, walk-forward-safe)",
+   "direction": -0.1372233314208514,
+   "confidence": 0.1372233314208514,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The most significant headline is about Tata Steel's initiative to include female staff in all shifts, indicating a progressive move that may enhance operational efficiency and public perception.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATASTEEL.NS",
+   "summary": "TATASTEEL.NS shows weak revenue growth and a high trailing P/E ratio, indicating overvaluation and poor profitability.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "APOLLOHOSP.NS",
+ "ts": 1768521600.0,
+ "context": {
+  "ann_vol": 0.1594910114568804,
+  "date": "2026-01-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, but the RSI is neutral.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "P(up next day)=0.43 (logistic regression, walk-forward-safe)",
+   "direction": -0.14821694365120552,
+   "confidence": 0.14821694365120552,
+   "reliability": 0.65,
+   "ts": 1768521600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "Apollo Hospitals may face further earnings downgrades as indicated by bearish warnings from Macquarie, which is the most market-moving headline.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The high trailing P/E ratio of 71.8 suggests an extreme valuation, which, combined with a modest profit margin, indicates potential overvaluation and risk.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

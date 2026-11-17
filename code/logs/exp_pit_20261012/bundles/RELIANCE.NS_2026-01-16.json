@@ -1,0 +1,66 @@
+{
+ "ticker": "RELIANCE.NS",
+ "ts": 1768521600.0,
+ "context": {
+  "ann_vol": 0.18292487307833666,
+  "date": "2026-01-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA analysis suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "P(up next day)=0.57 (logistic regression, walk-forward-safe)",
+   "direction": 0.14855070969265638,
+   "confidence": 0.14855070969265638,
+   "reliability": 0.65,
+   "ts": 1768521600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "RELIANCE.NS",
+   "summary": "Reliance Industries missed profit expectations due to higher expenses and retail weakness, indicating potential near-term challenges.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "RELIANCE.NS",
+   "summary": "Despite moderate revenue growth and profit margins, the high trailing P/E ratio suggests overvaluation.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.78,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "RELIANCE.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

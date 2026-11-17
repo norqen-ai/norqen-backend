@@ -1,0 +1,66 @@
+{
+ "ticker": "NKE",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.21534816470467943,
+  "date": "2025-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.11297468799006183,
+   "confidence": 0.11297468799006183,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NKE",
+   "summary": "Nike's significant discount on popular products like the LeBron Witness 8 and Dunk Lows suggests potential struggles in demand, indicating a bearish outlook for the stock.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NKE",
+   "summary": "Nike's strong ROE and reasonable P/E suggest potential for growth, but low revenue growth may limit upside.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NKE",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

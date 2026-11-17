@@ -1,0 +1,66 @@
+{
+ "ticker": "NESTLEIND.NS",
+ "ts": 1747267200.0,
+ "context": {
+  "ann_vol": 0.1893085095194054,
+  "date": "2025-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates a neutral position.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.06853989953929496,
+   "confidence": 0.06853989953929496,
+   "reliability": 0.65,
+   "ts": 1747267200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The headlines do not provide a clear market-moving event specifically related to NESTLEIND.NS, indicating uncertainty in near-term direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The extremely high trailing P/E ratio of 95.4 suggests overvaluation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

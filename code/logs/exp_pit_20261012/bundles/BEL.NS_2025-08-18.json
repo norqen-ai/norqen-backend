@@ -1,0 +1,66 @@
+{
+ "ticker": "BEL.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.20810185631793904,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BEL.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BEL.NS",
+   "summary": "P(up next day)=0.30 (logistic regression, walk-forward-safe)",
+   "direction": -0.40691405458893415,
+   "confidence": 0.40691405458893415,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BEL.NS",
+   "summary": "The most market-moving headline is the launch of Mission Sudarshan Chakra by PM Modi, which boosts sentiment for defense stocks including BEL.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BEL.NS",
+   "summary": "The high trailing P/E ratio of 52.2 suggests an extreme valuation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BEL.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

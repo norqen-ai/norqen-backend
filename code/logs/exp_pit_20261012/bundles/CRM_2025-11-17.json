@@ -1,0 +1,66 @@
+{
+ "ticker": "CRM",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.3265806878751425,
+  "date": "2025-11-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CRM",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CRM",
+   "summary": "P(up next day)=0.60 (logistic regression, walk-forward-safe)",
+   "direction": 0.19300644520193333,
+   "confidence": 0.19300644520193333,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CRM",
+   "summary": "The headlines do not provide a clear bullish or bearish signal for Salesforce (CRM), with mixed news surrounding the tech sector and no direct mention of CRM's performance or outlook.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CRM",
+   "summary": "The company shows solid revenue growth and profit margins, but the high P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CRM",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

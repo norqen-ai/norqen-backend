@@ -1,0 +1,66 @@
+{
+ "ticker": "SBIN.NS",
+ "ts": 1747267200.0,
+ "context": {
+  "ann_vol": 0.2412631904607308,
+  "date": "2025-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SBIN.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is modest.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SBIN.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.04528573094172916,
+   "confidence": 0.04528573094172916,
+   "reliability": 0.65,
+   "ts": 1747267200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SBIN.NS",
+   "summary": "SBI's plan to raise $3 billion in FY26 indicates strong growth prospects, positively impacting investor sentiment.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SBIN.NS",
+   "summary": "SBIN.NS shows strong revenue growth and solid profit margins, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SBIN.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

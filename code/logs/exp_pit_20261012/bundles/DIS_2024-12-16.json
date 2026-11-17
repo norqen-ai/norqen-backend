@@ -1,0 +1,66 @@
+{
+ "ticker": "DIS",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.23251653210806536,
+  "date": "2024-12-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "DIS",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 below SMA50 suggests a bearish trend.",
+   "direction": -0.7,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "DIS",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.0726926957210321,
+   "confidence": 0.0726926957210321,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "DIS",
+   "summary": "The ongoing legal battles over property taxes could negatively impact Disney's financial outlook.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "DIS",
+   "summary": "The extremely high trailing P/E ratio of 85.3 indicates an overvaluation, which is not supported by the low profit margin and modest ROE.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "DIS",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

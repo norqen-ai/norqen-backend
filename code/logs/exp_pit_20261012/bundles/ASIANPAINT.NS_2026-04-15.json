@@ -1,0 +1,66 @@
+{
+ "ticker": "ASIANPAINT.NS",
+ "ts": 1776211200.0,
+ "context": {
+  "ann_vol": 0.3142465839210103,
+  "date": "2026-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The RSI is approaching overbought territory while the SMA20 is above the SMA50, indicating a potential continuation of the uptrend but with caution due to the high RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.08999576063684134,
+   "confidence": 0.08999576063684134,
+   "reliability": 0.65,
+   "ts": 1776211200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "Asian Paints shares are under pressure as crude oil prices have surged above $100, negatively impacting oil-sensitive stocks.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The negative revenue growth and high trailing P/E ratio indicate potential overvaluation and declining performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ADANIPORTS.NS",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.32058817476920537,
+  "date": "2026-06-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03198733478209348,
+   "confidence": 0.03198733478209348,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "The most significant headline indicates that major Indian stocks, including Adani Ports, may benefit from easing tensions in the Middle East due to a US-Iran peace deal.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "The strong profit margin and revenue growth suggest positive momentum, but the high P/E ratio indicates potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADANIPORTS.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

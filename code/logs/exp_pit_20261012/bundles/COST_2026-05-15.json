@@ -1,0 +1,66 @@
+{
+ "ticker": "COST",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.17690727305467635,
+  "date": "2026-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "The RSI is at 70, indicating overbought conditions, which may lead to a pullback.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.08780529102868229,
+   "confidence": 0.08780529102868229,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "COST",
+   "summary": "The headline 'Costco Stock: Another Reason To Sell (Besides The Valuation)' suggests bearish sentiment towards Costco's stock, indicating potential selling pressure.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "COST",
+   "summary": "The high trailing P/E ratio of 57.5 suggests an extreme valuation, which outweighs the moderate revenue growth and profit margin.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "COST",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

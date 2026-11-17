@@ -1,0 +1,66 @@
+{
+ "ticker": "MS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.47521228864795356,
+  "date": "2025-04-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MS",
+   "summary": "The SMA indicators suggest a downtrend, while the RSI indicates a neutral position.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MS",
+   "summary": "P(up next day)=0.63 (logistic regression, walk-forward-safe)",
+   "direction": 0.2666718652625182,
+   "confidence": 0.2666718652625182,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MS",
+   "summary": "Morgan Stanley's significant cut to the SENSEX target for December 2025 by 12% is the most market-moving headline, indicating bearish sentiment for the Indian stock market.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MS",
+   "summary": "Strong profit margins and solid revenue growth indicate a positive outlook for MS.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ADBE",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.3714510445848446,
+  "date": "2024-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADBE",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the near term.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADBE",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09618081853655758,
+   "confidence": 0.09618081853655758,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADBE",
+   "summary": "The lack of relevant news regarding Adobe's core business suggests a bearish outlook as investor interest may wane.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADBE",
+   "summary": "Despite strong profit margins and revenue growth, the high trailing P/E ratio suggests overvaluation, leading to a bearish outlook.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADBE",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

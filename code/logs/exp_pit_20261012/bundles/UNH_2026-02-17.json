@@ -1,0 +1,66 @@
+{
+ "ticker": "UNH",
+ "ts": 1771286400.0,
+ "context": {
+  "ann_vol": 0.4862666894152659,
+  "date": "2026-02-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "UNH",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, despite a neutral RSI.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "UNH",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.1250173815940827,
+   "confidence": 0.1250173815940827,
+   "reliability": 0.65,
+   "ts": 1771286400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "UNH",
+   "summary": "The settlement of $466M by UnitedHealth's ex-CEO over an options case raises concerns about corporate governance and potential financial liabilities.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "UNH",
+   "summary": "UNH shows solid revenue growth and a reasonable P/E ratio, indicating potential for moderate bullish sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "UNH",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

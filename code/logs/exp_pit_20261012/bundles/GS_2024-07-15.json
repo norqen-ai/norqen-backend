@@ -1,0 +1,66 @@
+{
+ "ticker": "GS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.19130625154208256,
+  "date": "2024-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "P(up next day)=0.65 (logistic regression, walk-forward-safe)",
+   "direction": 0.2960809081607134,
+   "confidence": 0.2960809081607134,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GS",
+   "summary": "Goldman Sachs reported a significant profit increase of 150% driven by higher investment banking revenue, indicating strong financial performance and positive market sentiment.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GS",
+   "summary": "The negative revenue growth indicates underlying weakness, overshadowing the decent profit margin and P/E ratio.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GS",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ABBV",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.2541271130464779,
+  "date": "2026-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ABBV",
+   "summary": "The RSI is approaching overbought territory while SMA20 is above SMA50, indicating a potential short-term pullback.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ABBV",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.112225075521591,
+   "confidence": 0.112225075521591,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ABBV",
+   "summary": "Piper Sandler's upgrade of AbbVie's stock price target due to its strong pipeline depth is the most market-moving headline, indicating bullish sentiment among analysts.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ABBV",
+   "summary": "The extremely high trailing P/E ratio combined with negative ROE indicates significant overvaluation and underlying issues in profitability.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ABBV",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "AXISBANK.NS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.22593808244318234,
+  "date": "2025-01-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AXISBANK.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA analysis shows a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AXISBANK.NS",
+   "summary": "P(up next day)=0.60 (logistic regression, walk-forward-safe)",
+   "direction": 0.2005477678269072,
+   "confidence": 0.2005477678269072,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AXISBANK.NS",
+   "summary": "Analysts expect flat loan and deposit growth along with weak NIM for Axis Bank's Q3 results, indicating potential challenges ahead.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AXISBANK.NS",
+   "summary": "AXISBANK.NS shows strong profitability and growth with a solid profit margin and revenue growth rate.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AXISBANK.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

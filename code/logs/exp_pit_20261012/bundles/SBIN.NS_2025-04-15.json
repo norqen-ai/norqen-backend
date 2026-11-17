@@ -1,0 +1,66 @@
+{
+ "ticker": "SBIN.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.23145735724764416,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SBIN.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is slightly negative.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SBIN.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.04176493171514051,
+   "confidence": 0.04176493171514051,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SBIN.NS",
+   "summary": "SBI's decision to cut FD interest rates on select tenures signals a bearish outlook for the stock as it may indicate reduced profitability and investor returns.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SBIN.NS",
+   "summary": "SBIN.NS shows strong revenue growth and solid profit margins, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SBIN.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -163,17 +163,23 @@ class PolicyPlannerGraph:
                 f"only BUY or SELL if your confidence >= {p.confidence_to_act}, otherwise WAIT; "
                 f"daily loss limit {p.max_daily_loss_pct}% of portfolio.")
 
-    def _unguarded_card(self, state, evidence, clauses) -> DecisionCard | None:
-        p = self.policy
-        vol = self._ann_vol(state["ticker"])
+    def unguarded_prompts(self, ticker: str, evidence: list[EvidenceItem]) -> tuple[str, str]:
+        """The exact (system, user) prompt an unguarded decision-maker receives. Exposed so
+        historical replays can send the identical prompt to several models."""
+        vol = self._ann_vol(ticker)
         ev = "\n".join(f"- {e.kind} (direction {e.direction:+.2f}, confidence {e.confidence:.2f}): {e.summary}"
                        for e in evidence) or "- no evidence gathered"
         system = ("You are the final decision-maker of an equity investment committee. Decide what to do "
                   "with the stock using only the evidence given. Report action, position_size_pct (percent of "
                   "the total portfolio), stop_loss_pct, take_profit_pct, your confidence that the direction is "
                   "right, and a short rationale. " + self._policy_prompt())
-        human = (f"Stock: {state['ticker']}. Realised annual volatility: "
+        human = (f"Stock: {ticker}. Realised annual volatility: "
                  f"{(f'{vol:.0%}' if vol else 'unknown')}.\nEvidence:\n{ev}\nDecide.")
+        return system, human
+
+    def _unguarded_card(self, state, evidence, clauses) -> DecisionCard | None:
+        p = self.policy
+        system, human = self.unguarded_prompts(state["ticker"], evidence)
         prop = propose_decision(system, human)
         if prop is None:
             return None

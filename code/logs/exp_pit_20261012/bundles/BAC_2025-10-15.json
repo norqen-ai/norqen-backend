@@ -1,0 +1,66 @@
+{
+ "ticker": "BAC",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.2028255633081499,
+  "date": "2025-10-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates a neutral position.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.07144941925218173,
+   "confidence": 0.07144941925218173,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAC",
+   "summary": "Bank of America beats profit estimates on dealmaking strength, indicating strong financial performance and positive market sentiment.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAC",
+   "summary": "Despite a reasonable P/E ratio and decent profit margins, low revenue growth and ROE suggest limited medium-term upside.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAC",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

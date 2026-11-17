@@ -1,0 +1,66 @@
+{
+ "ticker": "LIN",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.27538966605266807,
+  "date": "2025-04-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "LIN",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "LIN",
+   "summary": "P(up next day)=0.61 (logistic regression, walk-forward-safe)",
+   "direction": 0.22831723599750098,
+   "confidence": 0.22831723599750098,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "LIN",
+   "summary": "Investors are showing less pessimism towards Linde Plc, indicating a potential positive sentiment in the near term.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "LIN",
+   "summary": "Despite a decent profit margin and ROE, the low revenue growth and high P/E ratio suggest potential overvaluation and limited growth prospects.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "LIN",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

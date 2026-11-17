@@ -1,0 +1,66 @@
+{
+ "ticker": "SBILIFE.NS",
+ "ts": 1773619200.0,
+ "context": {
+  "ann_vol": 0.19707842243125684,
+  "date": "2026-03-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03327835265324475,
+   "confidence": 0.03327835265324475,
+   "reliability": 0.65,
+   "ts": 1773619200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SBILIFE.NS",
+   "summary": "SBI share price has fallen to a four-week low with market capitalization slipping below \u20b910 lakh crore, indicating significant selling pressure.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SBILIFE.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth indicates an overvalued stock with weak fundamentals.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SBILIFE.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

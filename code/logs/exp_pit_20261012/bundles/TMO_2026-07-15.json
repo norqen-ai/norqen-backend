@@ -1,0 +1,66 @@
+{
+ "ticker": "TMO",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.3628918086735089,
+  "date": "2026-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TMO",
+   "summary": "The SMA20 is above the SMA50 indicating an uptrend, and the RSI is in the overbought territory.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TMO",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03153028220697773,
+   "confidence": 0.03153028220697773,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TMO",
+   "summary": "Thermo Fisher Scientific's stock is supported by steady demand and a positive price target adjustment from Baird, indicating potential for growth.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TMO",
+   "summary": "Despite a relatively high P/E ratio, TMO's solid profit margin and positive revenue growth indicate moderate bullish potential.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TMO",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "META",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.33546650768948827,
+  "date": "2025-12-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "META",
+   "summary": "The RSI indicates a neutral position, and the SMA20 is below the SMA50, suggesting potential bearish momentum.",
+   "direction": -0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "META",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": -0.0002085310657697903,
+   "confidence": 0.0002085310657697903,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "META",
+   "summary": "Meta's stock is down 19% from its 52-week high, indicating bearish sentiment as investors question its future performance leading into 2026.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "META",
+   "summary": "META's strong profit margin and revenue growth indicate solid fundamentals, supporting a bullish outlook.",
+   "direction": 0.8,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "META",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a moderate bullish sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

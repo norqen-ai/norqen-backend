@@ -1,0 +1,66 @@
+{
+ "ticker": "GRASIM.NS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.2513779208377062,
+  "date": "2025-01-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "The RSI indicates oversold conditions, and both SMA20 and SMA50 suggest a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09546063534862026,
+   "confidence": 0.09546063534862026,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GRASIM.NS",
+   "summary": "A minor safety incident leading to the suspension of operations at Grasim's Karwar plant is the most significant negative news affecting the stock's near-term outlook.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GRASIM.NS",
+   "summary": "The high trailing P/E ratio of 27.0 combined with a low profit margin of 4.34% suggests potential overvaluation and limited profitability.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GRASIM.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ICICIBANK.NS",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.16242680873244184,
+  "date": "2025-03-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The RSI is approaching overbought territory while the SMA20 is above the SMA50, indicating a potential continuation of the uptrend but with caution due to the high RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.05203247459023874,
+   "confidence": 0.05203247459023874,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The most significant headline indicates a broader market decline, with the value of top companies, including ICICIBANK, falling significantly, suggesting bearish sentiment for the stock.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ICICIBANK.NS",
+   "summary": "ICICIBANK.NS shows strong profitability and solid revenue growth, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

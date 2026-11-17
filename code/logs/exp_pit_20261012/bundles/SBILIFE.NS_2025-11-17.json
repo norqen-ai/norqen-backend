@@ -1,0 +1,66 @@
+{
+ "ticker": "SBILIFE.NS",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.15381278430982648,
+  "date": "2025-11-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.05188762307061523,
+   "confidence": 0.05188762307061523,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SBILIFE.NS",
+   "summary": "The most market-moving headline is the promoter group boosting their stake in SBI Life-owned NBFC Paisalo Digital, indicating strong insider confidence in the company's future.",
+   "direction": 1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SBILIFE.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth indicates an overvalued stock with weak fundamentals.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SBILIFE.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

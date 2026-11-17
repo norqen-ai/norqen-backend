@@ -1,0 +1,66 @@
+{
+ "ticker": "GOOGL",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.28117290330960504,
+  "date": "2024-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GOOGL",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates potential for a pullback.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GOOGL",
+   "summary": "P(up next day)=0.67 (logistic regression, walk-forward-safe)",
+   "direction": 0.33365130337382465,
+   "confidence": 0.33365130337382465,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GOOGL",
+   "summary": "Alphabet has called off its multibillion-dollar acquisition of HubSpot, which may signal challenges in its growth strategy and negatively impact investor sentiment.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GOOGL",
+   "summary": "GOOGL shows solid profit margins and revenue growth, but the P/E ratio suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GOOGL",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

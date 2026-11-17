@@ -1,0 +1,66 @@
+{
+ "ticker": "T",
+ "ts": 1731628800.0,
+ "context": {
+  "ann_vol": 0.19812743819874112,
+  "date": "2024-11-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates there is still room for growth without being overbought.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.07853757629277336,
+   "confidence": 0.07853757629277336,
+   "reliability": 0.65,
+   "ts": 1731628800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "T",
+   "summary": "Jeff Bezos selling $1.2 billion in Amazon stock indicates potential bearish sentiment for Amazon's near-term stock performance.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "T",
+   "summary": "The trailing P/E of 10.5 suggests the stock is undervalued, while the profit margin and ROE indicate solid profitability.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "T",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

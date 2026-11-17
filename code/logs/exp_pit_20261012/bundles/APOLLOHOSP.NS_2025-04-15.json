@@ -1,0 +1,66 @@
+{
+ "ticker": "APOLLOHOSP.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.2363127017978163,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The SMA indicators suggest an uptrend, but the RSI is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.0169891898595127,
+   "confidence": 0.0169891898595127,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "Apollo Hospitals plans to invest \u20b96,000 crore to add 3,500 new beds, indicating strong growth potential.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The extremely high trailing P/E ratio of 110.1 suggests overvaluation, outweighing the positive revenue growth and profit margin.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "PEP",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.195214791711137,
+  "date": "2026-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.0776752875954062,
+   "confidence": 0.0776752875954062,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "PEP",
+   "summary": "PepsiCo's $1.95 billion acquisition of Poppi is seen as a significant move that could drive future growth, contributing to a bullish outlook.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "PEP",
+   "summary": "PepsiCo shows solid profitability with a decent ROE and profit margin, but the trailing P/E suggests it may be slightly overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "PEP",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

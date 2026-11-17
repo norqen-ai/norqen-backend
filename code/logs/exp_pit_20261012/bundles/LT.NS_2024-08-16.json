@@ -1,0 +1,66 @@
+{
+ "ticker": "LT.NS",
+ "ts": 1723766400.0,
+ "context": {
+  "ann_vol": 0.36695556966838755,
+  "date": "2024-08-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "LT.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, but the RSI is neutral.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "LT.NS",
+   "summary": "P(up next day)=0.57 (logistic regression, walk-forward-safe)",
+   "direction": 0.142245296169492,
+   "confidence": 0.142245296169492,
+   "reliability": 0.65,
+   "ts": 1723766400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "LT.NS",
+   "summary": "L&T Realty's significant joint development deal in Mumbai indicates strong growth potential for the company.",
+   "direction": 1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "LT.NS",
+   "summary": "The strong revenue growth of 20.62% suggests positive momentum, but the high P/E ratio indicates potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "LT.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

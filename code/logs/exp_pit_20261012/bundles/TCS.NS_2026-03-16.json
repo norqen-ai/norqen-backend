@@ -1,0 +1,66 @@
+{
+ "ticker": "TCS.NS",
+ "ts": 1773619200.0,
+ "context": {
+  "ann_vol": 0.2635497669348465,
+  "date": "2026-03-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TCS.NS",
+   "summary": "The RSI indicates oversold conditions, and both SMAs suggest a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TCS.NS",
+   "summary": "P(up next day)=0.38 (logistic regression, walk-forward-safe)",
+   "direction": -0.24708905791053115,
+   "confidence": 0.24708905791053115,
+   "reliability": 0.65,
+   "ts": 1773619200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TCS.NS",
+   "summary": "TCS has hit a 52-week low and is among several stocks facing significant downward pressure, indicating a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TCS.NS",
+   "summary": "TCS.NS shows strong profitability with a high ROE and solid revenue growth, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TCS.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

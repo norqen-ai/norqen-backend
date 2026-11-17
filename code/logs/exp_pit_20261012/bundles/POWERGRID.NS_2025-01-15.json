@@ -1,0 +1,66 @@
+{
+ "ticker": "POWERGRID.NS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.2448230313005029,
+  "date": "2025-01-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "POWERGRID.NS",
+   "summary": "The stock is in a downtrend with SMA20 below SMA50 and an RSI indicating it is not oversold.",
+   "direction": -0.7,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "POWERGRID.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.03687832586984574,
+   "confidence": 0.03687832586984574,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "POWERGRID.NS",
+   "summary": "The most significant headline is the mention of '7 Power Stocks to Track as Q3 Earnings Season Kicks Off', indicating potential focus on the power sector, including POWERGRID.NS.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "POWERGRID.NS",
+   "summary": "Despite a solid profit margin and ROE, low revenue growth suggests limited near-term upside.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "POWERGRID.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "DIS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.29288979583233465,
+  "date": "2025-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "DIS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is negative.",
+   "direction": 0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "DIS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.05805522366983196,
+   "confidence": 0.05805522366983196,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "DIS",
+   "summary": "The most significant headline indicates a lack of strong box office performance for Disney, as it contrasts with Warner Bros.' success, suggesting potential challenges ahead for Disney's stock.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "DIS",
+   "summary": "The high trailing P/E ratio of 43.1 combined with low profit margins and ROE suggests overvaluation and weak profitability.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "DIS",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

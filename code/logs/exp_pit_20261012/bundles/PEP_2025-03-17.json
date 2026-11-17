@@ -1,0 +1,66 @@
+{
+ "ticker": "PEP",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.23327121573198412,
+  "date": "2025-03-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "The indicators suggest a neutral outlook with no clear trend direction.",
+   "direction": 0.0,
+   "confidence": 0.4,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "P(up next day)=0.60 (logistic regression, walk-forward-safe)",
+   "direction": 0.20867019611821935,
+   "confidence": 0.20867019611821935,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "PEP",
+   "summary": "PepsiCo's acquisition of the healthy soda brand Poppi for nearly $2 billion signals a strong commitment to expanding its portfolio in the better-for-you beverage segment, which is likely to boost investor confidence.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "PEP",
+   "summary": "PepsiCo's strong profit margin and high return on equity indicate solid financial health and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "PEP",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

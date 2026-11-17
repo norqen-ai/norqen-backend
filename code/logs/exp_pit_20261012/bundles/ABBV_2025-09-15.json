@@ -1,0 +1,66 @@
+{
+ "ticker": "ABBV",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.206472109231248,
+  "date": "2025-09-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ABBV",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ABBV",
+   "summary": "P(up next day)=0.37 (logistic regression, walk-forward-safe)",
+   "direction": -0.26545871552295486,
+   "confidence": 0.26545871552295486,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ABBV",
+   "summary": "AbbVie stock jumped 4.4% following the settlement of litigation with drug manufacturers over Rinvoq, indicating positive market sentiment.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ABBV",
+   "summary": "The extremely high trailing P/E ratio of 88.3 suggests overvaluation, which is concerning given the modest profit margin and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ABBV",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

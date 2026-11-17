@@ -1,0 +1,66 @@
+{
+ "ticker": "BAJAJ-AUTO.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.19453938989036776,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.04801771314509651,
+   "confidence": 0.04801771314509651,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The most significant headline is the block deal of Bajaj Auto shares worth Rs. 91.24 Crores, indicating notable trading activity but lacking clear bullish or bearish sentiment.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "Bajaj Auto shows solid profit margins and revenue growth, but the P/E ratio suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

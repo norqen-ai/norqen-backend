@@ -1,0 +1,66 @@
+{
+ "ticker": "QCOM",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.3677856258313682,
+  "date": "2024-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "QCOM",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "QCOM",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.07985459191950373,
+   "confidence": 0.07985459191950373,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "QCOM",
+   "summary": "The report indicating that only 0.3% of benchmark submissions are from Qualcomm Snapdragon X Series laptops suggests weak market performance and adoption, which is concerning for investors.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "QCOM",
+   "summary": "The significant revenue decline of -18.96% overshadows the strong profit margin and ROE, indicating bearish medium-term prospects.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "QCOM",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

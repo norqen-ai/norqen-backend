@@ -1,0 +1,66 @@
+{
+ "ticker": "TCS.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.14715444968632285,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TCS.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TCS.NS",
+   "summary": "P(up next day)=0.43 (logistic regression, walk-forward-safe)",
+   "direction": -0.1463882499151925,
+   "confidence": 0.1463882499151925,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TCS.NS",
+   "summary": "TCS faces significant negative sentiment due to massive layoffs and a substantial loss in market value, marking its worst phase since the 2008 crisis.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TCS.NS",
+   "summary": "TCS.NS demonstrates strong profitability with a high ROE and solid revenue growth, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TCS.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

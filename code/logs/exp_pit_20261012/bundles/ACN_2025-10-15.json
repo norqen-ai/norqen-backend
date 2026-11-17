@@ -1,0 +1,66 @@
+{
+ "ticker": "ACN",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.27359455174751796,
+  "date": "2025-10-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ACN",
+   "summary": "The SMA indicators suggest a downtrend, but the RSI indicates neutral momentum.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ACN",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.026144677222961432,
+   "confidence": 0.026144677222961432,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ACN",
+   "summary": "Accenture's acquisition of Decho to enhance its AI capabilities is the most significant positive development, indicating a strategic investment in growth.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ACN",
+   "summary": "ACN has a solid profit margin and ROE, but low revenue growth suggests potential challenges ahead.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ACN",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ADBE",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.4040522225133604,
+  "date": "2026-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADBE",
+   "summary": "The RSI indicates a neutral position, and the SMA20 is slightly above the SMA50, suggesting a mild bullish trend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADBE",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.16380255375327135,
+   "confidence": 0.16380255375327135,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADBE",
+   "summary": "Adobe Inc Stock (ADBE) Closed Up by 4.55% on May 15: A Full Analysis indicates strong recent performance.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADBE",
+   "summary": "Adobe's strong revenue growth and high return on equity indicate solid fundamentals, supporting a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADBE",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

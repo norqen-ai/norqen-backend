@@ -1,0 +1,66 @@
+{
+ "ticker": "KOTAKBANK.NS",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.2594597152742338,
+  "date": "2026-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The stock is in a mild uptrend with RSI approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.06564102376603442,
+   "confidence": 0.06564102376603442,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "Uday Kotak's warning about potential economic risks from the US-Iran conflict is the most market-moving headline, suggesting a bearish outlook for the banking sector.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "KOTAKBANK.NS shows strong profitability with a solid profit margin and good revenue growth, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

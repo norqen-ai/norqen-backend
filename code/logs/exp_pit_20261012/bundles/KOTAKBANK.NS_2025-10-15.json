@@ -1,0 +1,66 @@
+{
+ "ticker": "KOTAKBANK.NS",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.2243695469911433,
+  "date": "2025-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.16446554727870155,
+   "confidence": 0.16446554727870155,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "Analysts predict tightening margins for banks in the upcoming quarter, which could negatively impact KOTAKBANK.NS.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "KOTAKBANK.NS shows strong profit margins and solid revenue growth, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

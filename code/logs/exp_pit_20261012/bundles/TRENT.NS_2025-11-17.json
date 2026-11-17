@@ -1,0 +1,66 @@
+{
+ "ticker": "TRENT.NS",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.2612053462765895,
+  "date": "2025-11-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "P(up next day)=0.59 (logistic regression, walk-forward-safe)",
+   "direction": 0.1889400463898272,
+   "confidence": 0.1889400463898272,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TRENT.NS",
+   "summary": "Analysts recommend buying Trent Ltd, indicating positive sentiment despite mixed signals from other headlines.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TRENT.NS",
+   "summary": "The extremely high trailing P/E ratio of 151.6 suggests an overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TRENT.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "JNJ",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.16091314070724835,
+  "date": "2025-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JNJ",
+   "summary": "The RSI indicates a bullish momentum but is approaching overbought levels, while the SMAs suggest a slight uptrend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JNJ",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.1751614793027335,
+   "confidence": 0.1751614793027335,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JNJ",
+   "summary": "The ousting of Kenvue's CEO amid a strategic review raises concerns about leadership stability and future direction, negatively impacting investor sentiment.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JNJ",
+   "summary": "Johnson & Johnson shows solid profit margins and ROE, but the trailing P/E suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JNJ",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

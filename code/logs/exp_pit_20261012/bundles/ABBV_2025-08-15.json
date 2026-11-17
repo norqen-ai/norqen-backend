@@ -1,0 +1,66 @@
+{
+ "ticker": "ABBV",
+ "ts": 1755216000.0,
+ "context": {
+  "ann_vol": 0.19415856273948282,
+  "date": "2025-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ABBV",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ABBV",
+   "summary": "P(up next day)=0.40 (logistic regression, walk-forward-safe)",
+   "direction": -0.19422594847097385,
+   "confidence": 0.19422594847097385,
+   "reliability": 0.65,
+   "ts": 1755216000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ABBV",
+   "summary": "AbbVie is set to strengthen its manufacturing capabilities with a $195 million investment in US API production, signaling positive growth prospects.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ABBV",
+   "summary": "The extremely high trailing P/E ratio of 83.9 suggests overvaluation, outweighing the moderate profit margin and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ABBV",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "NESTLEIND.NS",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.23035673282154603,
+  "date": "2025-09-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The RSI is at 70 indicating overbought conditions, which may lead to a pullback.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.1660300349586843,
+   "confidence": 0.1660300349586843,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The headlines do not provide a clear market-moving event specifically related to Nestle India, indicating a neutral outlook for the stock.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The high trailing P/E ratio of 72.2 suggests extreme valuation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

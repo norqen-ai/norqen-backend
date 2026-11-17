@@ -1,0 +1,66 @@
+{
+ "ticker": "V",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.1742944661478391,
+  "date": "2025-11-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.06854009827131669,
+   "confidence": 0.06854009827131669,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "V",
+   "summary": "The most impactful headline is about the legal settlement involving Visa and Mastercard, which could affect consumer rewards and spending behavior, potentially influencing Visa's stock performance.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "V",
+   "summary": "Despite a high trailing P/E ratio, Visa's strong profit margin and impressive ROE indicate solid fundamentals and growth potential.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "V",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

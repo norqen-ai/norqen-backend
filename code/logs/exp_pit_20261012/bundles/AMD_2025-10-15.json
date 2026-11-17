@@ -1,0 +1,66 @@
+{
+ "ticker": "AMD",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.6924284987409886,
+  "date": "2025-10-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AMD",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AMD",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.084613963766065,
+   "confidence": 0.084613963766065,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AMD",
+   "summary": "AMD's stock is experiencing a strong upward trend, driven by positive sentiment around its AI chip business and endorsements from industry executives.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AMD",
+   "summary": "The extremely high trailing P/E ratio of 238.6 indicates an overvaluation, which is a significant concern despite some revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AMD",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

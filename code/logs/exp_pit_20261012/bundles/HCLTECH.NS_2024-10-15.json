@@ -1,0 +1,66 @@
+{
+ "ticker": "HCLTECH.NS",
+ "ts": 1728950400.0,
+ "context": {
+  "ann_vol": 0.2188481149825461,
+  "date": "2024-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HCLTECH.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HCLTECH.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03789053078388316,
+   "confidence": 0.03789053078388316,
+   "reliability": 0.65,
+   "ts": 1728950400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HCLTECH.NS",
+   "summary": "HCL Tech's Q2 results showed a net profit increase of 10.5% YoY and beat estimates, indicating strong performance and positive market sentiment.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HCLTECH.NS",
+   "summary": "HCLTECH.NS shows solid profit margins and revenue growth, but the trailing P/E suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HCLTECH.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "CVX",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.21507631903018756,
+  "date": "2025-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CVX",
+   "summary": "The RSI indicates a potential for overbought conditions, but the SMA indicators suggest a continued uptrend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CVX",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.08484273594186309,
+   "confidence": 0.08484273594186309,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CVX",
+   "summary": "Chevron's announcement of a $5B Blue Hydrogen and Ammonia project in Texas signals strong investment in future energy solutions, indicating bullish sentiment for the stock.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CVX",
+   "summary": "The negative revenue growth indicates potential challenges ahead, despite reasonable profit margins and P/E ratio.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CVX",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

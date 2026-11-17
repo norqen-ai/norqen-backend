@@ -1,0 +1,66 @@
+{
+ "ticker": "POWERGRID.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.16817163598967133,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "POWERGRID.NS",
+   "summary": "The indicators suggest a neutral outlook with no clear trend direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "POWERGRID.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.031164311599874983,
+   "confidence": 0.031164311599874983,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "POWERGRID.NS",
+   "summary": "The upcoming dividend record date for Power Grid presents a strong incentive for investors to buy, potentially boosting the stock's near-term performance.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "POWERGRID.NS",
+   "summary": "Despite a solid profit margin and ROE, the negative revenue growth raises concerns about future performance.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "POWERGRID.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

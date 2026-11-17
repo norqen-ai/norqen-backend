@@ -1,0 +1,66 @@
+{
+ "ticker": "MS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.22769703641437564,
+  "date": "2025-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MS",
+   "summary": "The SMA indicators suggest an uptrend, but the RSI indicates a potential for overbought conditions.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.038125567228995516,
+   "confidence": 0.038125567228995516,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MS",
+   "summary": "Morgan Stanley's involvement in multiple settlements and price target raises indicates a mixed sentiment, but the bullish outlook on other stocks suggests potential positive momentum.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MS",
+   "summary": "Strong profit margins and solid revenue growth indicate a positive outlook for MS.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MS",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

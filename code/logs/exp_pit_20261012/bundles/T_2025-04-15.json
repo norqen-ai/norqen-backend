@@ -1,0 +1,66 @@
+{
+ "ticker": "T",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.28518597461820194,
+  "date": "2025-04-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "The SMA indicators suggest a potential uptrend, but the RSI indicates a neutral position.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "P(up next day)=0.68 (logistic regression, walk-forward-safe)",
+   "direction": 0.365096096546897,
+   "confidence": 0.365096096546897,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "T",
+   "summary": "Boeing's stock is negatively impacted by reports of China suspending jet deliveries, indicating potential supply chain and revenue issues for the company.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "T",
+   "summary": "The negative revenue growth and moderate profit margin suggest potential challenges ahead for T.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "T",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

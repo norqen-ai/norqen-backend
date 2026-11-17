@@ -1,0 +1,66 @@
+{
+ "ticker": "NESTLEIND.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.21000078968784952,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The RSI is approaching overbought territory while the SMAs indicate a bullish trend.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03501271978614162,
+   "confidence": 0.03501271978614162,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The most significant market-moving headline is the Sensex dropping nearly 400 points, indicating a bearish trend in the market.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The extremely high trailing P/E ratio of 94.2 suggests overvaluation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

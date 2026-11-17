@@ -1,0 +1,66 @@
+{
+ "ticker": "TATACONSUM.NS",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.18147671802057339,
+  "date": "2025-09-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The stock is in a neutral position with a slight bullish trend indicated by the SMA and RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATACONSUM.NS",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": -0.009386003512947716,
+   "confidence": 0.009386003512947716,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The exit of Vice-Chair Vijay Singh from Tata Trusts indicates potential instability within the organization, which could negatively impact investor confidence.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The high trailing P/E ratio of 83.7 suggests extreme valuation concerns despite positive revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

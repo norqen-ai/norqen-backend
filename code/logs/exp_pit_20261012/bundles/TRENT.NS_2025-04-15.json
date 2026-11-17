@@ -1,0 +1,66 @@
+{
+ "ticker": "TRENT.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.5358413004652075,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "The stock is in a downtrend with SMA20 and SMA50 both above the current price, and RSI indicates neutral momentum.",
+   "direction": -0.8,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.08592029739053197,
+   "confidence": 0.08592029739053197,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TRENT.NS",
+   "summary": "The headline 'Trent's dream run just hit a speed bump' suggests significant challenges ahead for the company, indicating a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TRENT.NS",
+   "summary": "The extremely high trailing P/E ratio of 174.6 suggests an overvaluation despite decent profit margins and strong revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TRENT.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

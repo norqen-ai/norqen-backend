@@ -1,0 +1,66 @@
+{
+ "ticker": "MS",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.1742803400519107,
+  "date": "2025-09-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -0.8,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MS",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.0618843351689955,
+   "confidence": 0.0618843351689955,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MS",
+   "summary": "EPAM Systems Tanks 7% As Morgan Stanley Lowers Stock Price Target is the most market-moving headline indicating bearish sentiment.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MS",
+   "summary": "Strong profit margins and solid revenue growth indicate a positive outlook for MS.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

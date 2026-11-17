@@ -1,0 +1,66 @@
+{
+ "ticker": "BAJFINANCE.NS",
+ "ts": 1776211200.0,
+ "context": {
+  "ann_vol": 0.39462248676730305,
+  "date": "2026-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "The RSI indicates a neutral position, and the SMA20 is below SMA50, suggesting potential bearish pressure.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "P(up next day)=0.64 (logistic regression, walk-forward-safe)",
+   "direction": 0.2781755744836669,
+   "confidence": 0.2781755744836669,
+   "reliability": 0.65,
+   "ts": 1776211200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "Bajaj Housing Finance's shares fell significantly as 210 crore shares were freed for trade, indicating potential downward pressure on Bajaj Finance's stock.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "BAJFINANCE.NS shows strong profit margins and revenue growth, but the high P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

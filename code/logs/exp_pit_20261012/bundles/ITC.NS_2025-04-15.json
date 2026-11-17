@@ -1,0 +1,66 @@
+{
+ "ticker": "ITC.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.1733844247457732,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ITC.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ITC.NS",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.016385525532116918,
+   "confidence": 0.016385525532116918,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ITC.NS",
+   "summary": "ITC Hotels shares up 14% in 1 month; 5 reasons why it may rise further indicates strong bullish sentiment for ITC.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ITC.NS",
+   "summary": "The negative revenue growth indicates potential challenges ahead, overshadowing the strong profit margin and ROE.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ITC.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

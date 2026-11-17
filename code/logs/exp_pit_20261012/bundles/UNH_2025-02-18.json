@@ -1,0 +1,66 @@
+{
+ "ticker": "UNH",
+ "ts": 1739836800.0,
+ "context": {
+  "ann_vol": 0.3438910503846843,
+  "date": "2025-02-18",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "UNH",
+   "summary": "The RSI indicates oversold conditions, but the SMA analysis suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "UNH",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.013592616978267968,
+   "confidence": 0.013592616978267968,
+   "reliability": 0.65,
+   "ts": 1739836800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "UNH",
+   "summary": "The headline about superinvestors dumping a stock suggests a bearish sentiment towards UnitedHealth Group, indicating potential selling pressure.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "UNH",
+   "summary": "UNH shows strong revenue growth and a solid return on equity, indicating a positive medium-term outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "UNH",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

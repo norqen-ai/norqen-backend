@@ -1,0 +1,66 @@
+{
+ "ticker": "INTC",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.6566829616499142,
+  "date": "2025-11-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "INTC",
+   "summary": "The RSI indicates oversold conditions, and the SMA20 is below the SMA50, suggesting a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "INTC",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.07182203202289528,
+   "confidence": 0.07182203202289528,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "INTC",
+   "summary": "The most market-moving headline is that legendary investor David Tepper has sold his Intel stock, indicating a lack of confidence in the company's future prospects.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "INTC",
+   "summary": "Intel's negative profit margin and revenue growth indicate significant financial struggles.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "INTC",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

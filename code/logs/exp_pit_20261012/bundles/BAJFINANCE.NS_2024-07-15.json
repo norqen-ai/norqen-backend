@@ -1,0 +1,66 @@
+{
+ "ticker": "BAJFINANCE.NS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.30933369643244174,
+  "date": "2024-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "The indicators suggest a neutral outlook with no clear trend direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.12583999921350675,
+   "confidence": 0.12583999921350675,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "The most relevant headline is the launch of Bajaj Finserv AMC's new product, which may indicate positive developments for Bajaj Finserv's financial services, but overall sentiment remains neutral.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "BAJFINANCE.NS shows strong profit margins and revenue growth, but the P/E ratio suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAJFINANCE.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

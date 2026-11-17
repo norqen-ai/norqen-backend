@@ -1,0 +1,66 @@
+{
+ "ticker": "IBM",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.23339275550018346,
+  "date": "2024-12-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "IBM",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is slightly negative.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "IBM",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.16563534921392709,
+   "confidence": 0.16563534921392709,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "IBM",
+   "summary": "IBM's focus on AI and recruitment is overshadowed by the competitive advancements in quantum computing by Google, which could impact IBM's market position negatively.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "IBM",
+   "summary": "IBM's solid profit margin and high ROE indicate strong profitability, but the trailing P/E suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "IBM",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

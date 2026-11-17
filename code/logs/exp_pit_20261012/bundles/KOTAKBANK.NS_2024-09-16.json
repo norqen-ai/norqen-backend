@@ -1,0 +1,66 @@
+{
+ "ticker": "KOTAKBANK.NS",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.17697752579913714,
+  "date": "2024-09-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The SMA indicators suggest a slight uptrend, while the RSI indicates room for further gains.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.040008911521238866,
+   "confidence": 0.040008911521238866,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The stock market is experiencing a significant rally, with the Sensex crossing the 83K mark, indicating bullish sentiment that could positively impact Kotak Bank's stock performance.",
+   "direction": 1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "KOTAKBANK.NS shows strong revenue growth and a solid profit margin, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

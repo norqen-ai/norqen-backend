@@ -1,0 +1,66 @@
+{
+ "ticker": "CMCSA",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.21864921693473563,
+  "date": "2024-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CMCSA",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CMCSA",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.022971546046968827,
+   "confidence": 0.022971546046968827,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CMCSA",
+   "summary": "The strong debut of 'Despicable Me 4' with $122M domestic earnings indicates positive momentum for CMCSA's entertainment segment, suggesting bullish sentiment for the stock.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CMCSA",
+   "summary": "Despite a low P/E ratio indicating potential undervaluation, the minimal revenue growth suggests limited future expansion.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CMCSA",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

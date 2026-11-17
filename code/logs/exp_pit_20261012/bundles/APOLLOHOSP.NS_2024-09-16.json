@@ -1,0 +1,66 @@
+{
+ "ticker": "APOLLOHOSP.NS",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.18606340175064434,
+  "date": "2024-09-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The stock is in an uptrend with SMA20 above SMA50, but RSI is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "P(up next day)=0.65 (logistic regression, walk-forward-safe)",
+   "direction": 0.296726883016597,
+   "confidence": 0.296726883016597,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The most market-moving headline is the report about Neuberg Diagnostics seeking $100 million pre-IPO funding, indicating potential financial instability or dilution for Apollo Hospitals.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The extremely high trailing P/E ratio of 111.9 suggests overvaluation, which is concerning given the modest profit margin and while revenue growth is positive.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

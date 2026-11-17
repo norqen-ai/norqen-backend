@@ -1,0 +1,66 @@
+{
+ "ticker": "ADANIENT.NS",
+ "ts": 1728950400.0,
+ "context": {
+  "ann_vol": 0.2425615728532632,
+  "date": "2024-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADANIENT.NS",
+   "summary": "The indicators suggest a neutral trend with no clear direction.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADANIENT.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.04209719853066085,
+   "confidence": 0.04209719853066085,
+   "reliability": 0.65,
+   "ts": 1728950400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADANIENT.NS",
+   "summary": "Adani Enterprises successfully raised $500 million through a share sale, indicating strong investor confidence and financial stability.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADANIENT.NS",
+   "summary": "The company has a very high P/E ratio combined with negative revenue growth, indicating potential overvaluation and underlying business challenges.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADANIENT.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

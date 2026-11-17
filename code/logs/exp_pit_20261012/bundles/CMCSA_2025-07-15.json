@@ -1,0 +1,66 @@
+{
+ "ticker": "CMCSA",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.2045876162702555,
+  "date": "2025-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CMCSA",
+   "summary": "The indicators suggest a neutral market condition with no clear trend.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CMCSA",
+   "summary": "P(up next day)=0.61 (logistic regression, walk-forward-safe)",
+   "direction": 0.21811126324108665,
+   "confidence": 0.21811126324108665,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CMCSA",
+   "summary": "The purchase of $56M in real estate by Comcast and Sixers ownership suggests a potential diversion of resources that may not directly benefit shareholders in the near term.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CMCSA",
+   "summary": "CMCSA's low trailing P/E and solid profit margin indicate strong value and profitability, supporting a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CMCSA",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

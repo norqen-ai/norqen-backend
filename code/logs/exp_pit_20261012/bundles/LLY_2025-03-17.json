@@ -1,0 +1,66 @@
+{
+ "ticker": "LLY",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.3197826629075813,
+  "date": "2025-03-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "LLY",
+   "summary": "The RSI indicates oversold conditions and the SMA20 is below the SMA50, suggesting a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "LLY",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.12238346248022913,
+   "confidence": 0.12238346248022913,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "LLY",
+   "summary": "Eli Lilly's stock faces downward pressure as the weight loss drug market sees increased competition and negative sentiment following a broader decline in related stocks.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "LLY",
+   "summary": "The extremely high trailing P/E ratio of 140.7 suggests overvaluation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "LLY",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

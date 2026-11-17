@@ -1,0 +1,66 @@
+{
+ "ticker": "PEP",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.20133579837808227,
+  "date": "2026-06-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and not indicating overbought or oversold conditions.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.17552080816279314,
+   "confidence": 0.17552080816279314,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "PEP",
+   "summary": "PepsiCo's price target has been lowered by Piper Sandler, indicating potential bearish sentiment among analysts.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "PEP",
+   "summary": "PepsiCo's strong ROE and decent profit margin indicate solid fundamentals, but the trailing P/E suggests it may be slightly overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "PEP",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

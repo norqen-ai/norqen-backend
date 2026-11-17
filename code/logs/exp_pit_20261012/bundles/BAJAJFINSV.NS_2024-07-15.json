@@ -1,0 +1,66 @@
+{
+ "ticker": "BAJAJFINSV.NS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.23224209313167826,
+  "date": "2024-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAJAJFINSV.NS",
+   "summary": "The SMA indicators suggest a slight uptrend, but the RSI indicates neutral momentum.",
+   "direction": 0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAJAJFINSV.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.030652474299743382,
+   "confidence": 0.030652474299743382,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAJAJFINSV.NS",
+   "summary": "Bajaj Finserv AMC's launch of the Savings+ product for retail investors indicates a positive move towards enhancing customer engagement and investment options.",
+   "direction": 1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAJAJFINSV.NS",
+   "summary": "The strong revenue growth of 35.25% suggests positive momentum, but the high P/E ratio indicates potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAJAJFINSV.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

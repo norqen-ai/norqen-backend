@@ -1,0 +1,66 @@
+{
+ "ticker": "JNJ",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.24840016545930863,
+  "date": "2026-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JNJ",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JNJ",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.15564556234843607,
+   "confidence": 0.15564556234843607,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JNJ",
+   "summary": "Johnson & Johnson's earnings beat Wall Street estimates, indicating strong performance and positive near-term outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JNJ",
+   "summary": "Johnson & Johnson's strong profit margin and high return on equity indicate solid financial health and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JNJ",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

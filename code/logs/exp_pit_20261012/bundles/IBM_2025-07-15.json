@@ -1,0 +1,66 @@
+{
+ "ticker": "IBM",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.24145415230668185,
+  "date": "2025-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "IBM",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 below SMA50 suggests a bearish trend.",
+   "direction": -0.7,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "IBM",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.0565269931142236,
+   "confidence": 0.0565269931142236,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "IBM",
+   "summary": "The most relevant headline discusses IBM's competition with Amazon in cloud infrastructure, indicating a critical market comparison but lacking a clear bullish or bearish signal.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "IBM",
+   "summary": "The high trailing P/E ratio of 42.6 suggests an extreme valuation, which, combined with modest revenue growth and profit margins, indicates bearish sentiment.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "IBM",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

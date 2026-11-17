@@ -1,0 +1,66 @@
+{
+ "ticker": "V",
+ "ts": 1768435200.0,
+ "context": {
+  "ann_vol": 0.2109494553072947,
+  "date": "2026-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "The RSI indicates oversold conditions, but the SMA analysis shows a clear downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.15825830856708678,
+   "confidence": 0.15825830856708678,
+   "reliability": 0.65,
+   "ts": 1768435200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "V",
+   "summary": "The U.S. Stock Market today reports a significant crash in the banking index, with Visa and Mastercard share prices down, indicating bearish sentiment for Visa stock.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "V",
+   "summary": "V's strong profit margin and high ROE indicate solid fundamentals, but the elevated P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "V",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

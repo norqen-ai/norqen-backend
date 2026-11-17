@@ -1,0 +1,66 @@
+{
+ "ticker": "WIPRO.NS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.23529312433935085,
+  "date": "2025-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 being above SMA50 suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "P(up next day)=0.36 (logistic regression, walk-forward-safe)",
+   "direction": -0.276296512704727,
+   "confidence": 0.276296512704727,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "WIPRO.NS",
+   "summary": "Wipro's stock is likely to decline due to a significant drop in ADRs following TCS's disappointing Q1 earnings announcement, which negatively impacted the entire IT sector.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "WIPRO.NS",
+   "summary": "WIPRO.NS shows negative revenue growth, which is a significant concern despite decent profit margins and ROE.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "WIPRO.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating potential bullish momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

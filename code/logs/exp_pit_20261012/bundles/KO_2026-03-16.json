@@ -1,0 +1,66 @@
+{
+ "ticker": "KO",
+ "ts": 1773619200.0,
+ "context": {
+  "ann_vol": 0.16160586613748668,
+  "date": "2026-03-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "KO",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 is above SMA50 suggesting a potential bearish trend.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "KO",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.18359833688352822,
+   "confidence": 0.18359833688352822,
+   "reliability": 0.65,
+   "ts": 1773619200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "KO",
+   "summary": "The most impactful headline is the discussion of Coca-Cola's dividends, highlighting its strong position as a reliable income stock.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "KO",
+   "summary": "Despite a strong profit margin and ROE, the high trailing P/E ratio suggests overvaluation, which could limit upside potential.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "KO",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "JNJ",
+ "ts": 1755216000.0,
+ "context": {
+  "ann_vol": 0.18344520529447123,
+  "date": "2025-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JNJ",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JNJ",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.12416436779442841,
+   "confidence": 0.12416436779442841,
+   "reliability": 0.65,
+   "ts": 1755216000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JNJ",
+   "summary": "Short bets on the S&P 500 Healthcare sector easing may indicate a bearish sentiment towards healthcare stocks, including JNJ.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JNJ",
+   "summary": "Johnson & Johnson has solid profit margins and ROE, but the high trailing P/E suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JNJ",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

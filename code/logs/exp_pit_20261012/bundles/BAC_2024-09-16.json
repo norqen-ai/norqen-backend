@@ -1,0 +1,66 @@
+{
+ "ticker": "BAC",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.24094651847936366,
+  "date": "2024-09-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.12475482902254487,
+   "confidence": 0.12475482902254487,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAC",
+   "summary": "Warren Buffett's decision to dump Bank of America stock is the most market-moving headline, indicating potential bearish sentiment towards BAC.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAC",
+   "summary": "Bank of America's solid profit margin and revenue growth indicate a positive medium-term outlook.",
+   "direction": 0.7,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAC",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

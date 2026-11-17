@@ -1,0 +1,66 @@
+{
+ "ticker": "NFLX",
+ "ts": 1768435200.0,
+ "context": {
+  "ann_vol": 0.3452594125682217,
+  "date": "2026-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NFLX",
+   "summary": "The RSI indicates oversold conditions, and both SMAs suggest a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NFLX",
+   "summary": "P(up next day)=0.39 (logistic regression, walk-forward-safe)",
+   "direction": -0.21931830456133017,
+   "confidence": 0.21931830456133017,
+   "reliability": 0.65,
+   "ts": 1768435200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NFLX",
+   "summary": "Netflix stock is facing downward pressure, highlighted by a significant 29% slump, indicating potential bearish sentiment in the near term.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NFLX",
+   "summary": "Despite a high trailing P/E ratio, Netflix's strong profit margin and revenue growth indicate potential for continued performance.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NFLX",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "TATASTEEL.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.37526522773977206,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA analysis suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "P(up next day)=0.72 (logistic regression, walk-forward-safe)",
+   "direction": 0.4398958921558067,
+   "confidence": 0.4398958921558067,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATASTEEL.NS",
+   "summary": "Tata Steel shares jumped 6% following the announcement of a significant job cut, indicating a positive market reaction to cost-cutting measures.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATASTEEL.NS",
+   "summary": "TATASTEEL.NS is facing negative profit margins and revenue growth, indicating significant financial distress.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

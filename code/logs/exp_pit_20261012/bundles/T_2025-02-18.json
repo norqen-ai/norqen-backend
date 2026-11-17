@@ -1,0 +1,66 @@
+{
+ "ticker": "T",
+ "ts": 1739836800.0,
+ "context": {
+  "ann_vol": 0.22361136406661075,
+  "date": "2025-02-18",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "T",
+   "summary": "P(up next day)=0.57 (logistic regression, walk-forward-safe)",
+   "direction": 0.14339471831749218,
+   "confidence": 0.14339471831749218,
+   "reliability": 0.65,
+   "ts": 1739836800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "T",
+   "summary": "The most significant headline is about JPMorgan CEO Jamie Dimon potentially selling $280 million in stock, which could indicate bearish sentiment for JPMorgan's stock in the near term.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "T",
+   "summary": "The trailing P/E is reasonable, but low revenue growth and moderate profit margins suggest cautious optimism.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "T",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

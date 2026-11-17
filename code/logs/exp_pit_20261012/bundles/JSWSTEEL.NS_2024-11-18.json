@@ -1,0 +1,66 @@
+{
+ "ticker": "JSWSTEEL.NS",
+ "ts": 1731888000.0,
+ "context": {
+  "ann_vol": 0.23264440076769666,
+  "date": "2024-11-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The stock is in a downtrend with SMA20 below SMA50 and an RSI indicating neutral momentum.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.015241197598320766,
+   "confidence": 0.015241197598320766,
+   "reliability": 0.65,
+   "ts": 1731888000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The overall market correction, with the Sensex and Nifty 50 down 10% from peak, suggests a bearish sentiment affecting stocks including JSW Steel.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The high trailing P/E ratio of 26.0 suggests overvaluation, while the profit margin of 5.11% indicates limited profitability.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

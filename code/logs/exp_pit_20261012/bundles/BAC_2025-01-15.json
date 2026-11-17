@@ -1,0 +1,66 @@
+{
+ "ticker": "BAC",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.25086648446631593,
+  "date": "2025-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.056971347654280136,
+   "confidence": 0.056971347654280136,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAC",
+   "summary": "The most market-moving headline is the announcement of a transformative, long-term partnership between the U.S. Soccer Federation and Bank of America, indicating potential positive brand exposure and business opportunities.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAC",
+   "summary": "BAC's solid profit margin and revenue growth indicate strong fundamentals, supporting a bullish outlook.",
+   "direction": 0.7,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAC",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

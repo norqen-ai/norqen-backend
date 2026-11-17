@@ -1,0 +1,66 @@
+{
+ "ticker": "HINDALCO.NS",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.2217405858465908,
+  "date": "2025-12-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HINDALCO.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HINDALCO.NS",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.023378008386365723,
+   "confidence": 0.023378008386365723,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HINDALCO.NS",
+   "summary": "The most significant headline suggests a potential future rally in metals, which could positively impact Hindalco, but current market conditions are flat and uncertain.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HINDALCO.NS",
+   "summary": "HINDALCO.NS shows strong revenue growth and a solid ROE, indicating positive medium-term prospects.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HINDALCO.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

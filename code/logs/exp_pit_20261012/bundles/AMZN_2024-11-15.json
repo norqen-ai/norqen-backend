@@ -1,0 +1,66 @@
+{
+ "ticker": "AMZN",
+ "ts": 1731628800.0,
+ "context": {
+  "ann_vol": 0.29630600222749665,
+  "date": "2024-11-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AMZN",
+   "summary": "The RSI indicates a neutral position, and the SMA20 is above the SMA50, suggesting a slight bullish trend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AMZN",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.1755641772186719,
+   "confidence": 0.1755641772186719,
+   "reliability": 0.65,
+   "ts": 1731628800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AMZN",
+   "summary": "MacKenzie Scott's significant sale of Amazon shares is likely to negatively impact investor sentiment and stock price.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AMZN",
+   "summary": "Despite decent revenue growth and ROE, the high trailing P/E ratio and low profit margin suggest overvaluation and limited profitability.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AMZN",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1731628800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

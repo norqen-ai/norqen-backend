@@ -1,0 +1,66 @@
+{
+ "ticker": "ULTRACEMCO.NS",
+ "ts": 1731888000.0,
+ "context": {
+  "ann_vol": 0.17645500557923535,
+  "date": "2024-11-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The RSI indicates oversold conditions, and both SMA20 and SMA50 suggest a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.10250640653369603,
+   "confidence": 0.10250640653369603,
+   "reliability": 0.65,
+   "ts": 1731888000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "UltraTech Cement's decision to raise Rs 3,000 crore through NCDs is aimed at boosting financial flexibility, which is a positive move amid competition.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The high trailing P/E ratio of 42.6 suggests an extreme valuation, which, combined with moderate profit margins and growth, indicates a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

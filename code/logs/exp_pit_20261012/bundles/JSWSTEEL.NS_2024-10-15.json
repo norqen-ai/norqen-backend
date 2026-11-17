@@ -1,0 +1,66 @@
+{
+ "ticker": "JSWSTEEL.NS",
+ "ts": 1728950400.0,
+ "context": {
+  "ann_vol": 0.2658724329791883,
+  "date": "2024-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "P(up next day)=0.45 (logistic regression, walk-forward-safe)",
+   "direction": -0.09611292589807585,
+   "confidence": 0.09611292589807585,
+   "reliability": 0.65,
+   "ts": 1728950400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The most market-moving headline is the news about Reliance potentially announcing a bonus share record date, which could negatively impact investor sentiment towards JSW Steel as it may divert attention and investment towards Reliance inste",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The high trailing P/E ratio suggests overvaluation, while the low profit margin and moderate growth indicate potential challenges ahead.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "HCLTECH.NS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.28827031673915166,
+  "date": "2025-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HCLTECH.NS",
+   "summary": "The RSI indicates an oversold condition, but the SMA indicators suggest a strong downtrend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HCLTECH.NS",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.15849434531927153,
+   "confidence": 0.15849434531927153,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HCLTECH.NS",
+   "summary": "HCL Tech shares fell over 4% following weaker-than-expected Q1 earnings, prompting analysts to trim estimates and indicating continued downward pressure on the stock.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HCLTECH.NS",
+   "summary": "HCLTECH.NS shows solid profit margins and ROE, but the trailing P/E suggests it may be fairly valued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HCLTECH.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating potential bullish momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ULTRACEMCO.NS",
+ "ts": 1739750400.0,
+ "context": {
+  "ann_vol": 0.28686960921326704,
+  "date": "2025-02-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The indicators suggest a neutral market condition with no clear trend.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.03452488081880278,
+   "confidence": 0.03452488081880278,
+   "reliability": 0.65,
+   "ts": 1739750400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The recent headlines about the Delhi Railway Station stampede highlight a significant safety concern that could negatively impact public perception and operations, leading to bearish sentiment for ULTRACEMCO.NS.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The high trailing P/E ratio of 46.1 suggests an extreme valuation, which outweighs the positive growth and margins.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

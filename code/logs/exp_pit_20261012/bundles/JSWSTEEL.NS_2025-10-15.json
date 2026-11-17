@@ -1,0 +1,66 @@
+{
+ "ticker": "JSWSTEEL.NS",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.1787748426473637,
+  "date": "2025-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The SMA indicators suggest a mild uptrend, but the RSI indicates a neutral position.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.12825355193026855,
+   "confidence": 0.12825355193026855,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The most significant headline is Tata Steel's 7% rise in crude steel production, indicating positive momentum in the steel sector, which could benefit JSW Steel as well.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth and low profit margins indicates a bearish outlook for JSWSTEEL.NS.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

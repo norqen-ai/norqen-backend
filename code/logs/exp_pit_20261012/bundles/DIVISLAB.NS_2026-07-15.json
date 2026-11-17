@@ -1,0 +1,66 @@
+{
+ "ticker": "DIVISLAB.NS",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.20393721834989753,
+  "date": "2026-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "DIVISLAB.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.15963015234706002,
+   "confidence": 0.15963015234706002,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "DIVISLAB.NS",
+   "summary": "Citi's recommendation of Divi's Labs as a top pharma bet, highlighting its peptide pipeline, is the most significant factor driving bullish sentiment.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The high trailing P/E ratio of 74.9 suggests an extreme valuation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

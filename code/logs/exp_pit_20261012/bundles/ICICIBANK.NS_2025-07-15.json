@@ -1,0 +1,66 @@
+{
+ "ticker": "ICICIBANK.NS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.17757280567322659,
+  "date": "2025-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The stock is in a neutral position with RSI at 52 and SMA indicators indicating a potential downtrend.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.05232458040382992,
+   "confidence": 0.05232458040382992,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ICICIBANK.NS",
+   "summary": "ICICI Prudential Life's Q1 results showing a 34% YoY profit increase is the most significant positive indicator for ICICIBANK.NS.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ICICIBANK.NS",
+   "summary": "ICICIBANK.NS shows strong revenue growth and solid profit margins, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating potential bullish momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

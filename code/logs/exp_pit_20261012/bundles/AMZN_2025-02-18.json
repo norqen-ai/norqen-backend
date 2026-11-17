@@ -1,0 +1,66 @@
+{
+ "ticker": "AMZN",
+ "ts": 1739836800.0,
+ "context": {
+  "ann_vol": 0.2720762214832877,
+  "date": "2025-02-18",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AMZN",
+   "summary": "The RSI indicates oversold conditions, and the SMA20 is below the SMA50, suggesting a bearish trend.",
+   "direction": -0.7,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AMZN",
+   "summary": "P(up next day)=0.59 (logistic regression, walk-forward-safe)",
+   "direction": 0.18457686688199892,
+   "confidence": 0.18457686688199892,
+   "reliability": 0.65,
+   "ts": 1739836800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AMZN",
+   "summary": "Amazon's stock is likely to rise following the report of 'record' holiday sales, which positively influenced the S&P 500.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AMZN",
+   "summary": "Despite decent revenue growth and ROE, the high trailing P/E ratio and low profit margin suggest overvaluation and potential profitability concerns.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AMZN",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  }
+ ]
+}
