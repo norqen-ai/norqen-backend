@@ -7,11 +7,11 @@
 | **Venue** | FinFM workshop at AAAI-27 (finfm.finhorizons.org), **research track, short paper** |
 | **Length** | **max 4 pages** of main text; references and appendix are unlimited and come after |
 | **Review** | double-blind → no names, no PICT, no "Norqen", no GitHub links in the PDF |
-| **Hard deadline** | 20 Nov 23:59 AoE = **21 Nov 2026, 5:29 PM IST** |
-| **Our deadline** | **submit by 21 Nov, 12:00 noon IST** |
+| **Hard deadline** | **extended** to Mon 23 Nov 23:59 AoE = **24 Nov 2026, 5:29 PM IST** |
+| **Our deadline** | **submit by 24 Nov, 12:00 noon IST** |
 | **Repo** | `github.com/norqen-ai/norqen-backend`, branch **`be-final-year-project`** |
 | **Paper source** | `paper_finfm/` in that branch (also sent as `paper_finfm_overleaf.zip`) |
-| **Owners** | **Omkar** = 2 open-weight models (Llama) + Setup + Limitations + matched check · **Piyush** = 2 open-weight models (gpt-oss) + Overleaf + Related Work + citations + anonymity + anonymous code repo + OpenReview · **Malhar** = Intro + Results + rules check + 4-page cut |
+| **Owners** | **Omkar** = 2 open-weight models (Llama) + Setup + Limitations + matched check · **Piyush** = 2 open-weight models (his choice) + Overleaf + Related Work + citations + anonymity + anonymous code repo + OpenReview · **Malhar** = Intro + Results + rules check + 4-page cut |
 
 ---
 
@@ -191,7 +191,7 @@ python3 -m venv .venv
 ```
 If step 3 prints tables and a list of numbers, you're set up.
 
-**API keys** (Omkar and Piyush each need their own Groq key, for the open-weight models): create `code/.env` with
+**API keys** (Omkar needs a Groq key; Piyush needs a key for whichever provider serves his models: Groq, OpenRouter or Together): create `code/.env` with
 ```
 GROQ_API_KEY=...
 ```
@@ -203,7 +203,7 @@ GROQ_API_KEY=...
 
 ## 6. Omkar — tasks
 
-**A. Open-weight models: Llama-3.3-70B, then Llama-4-Scout (18–19 Nov) — most valuable extra.** Reviewers will say "only OpenAI models". Omkar runs the two Meta models, Piyush runs the two gpt-oss models (Section 7A), on Groq. All four are already in `src/pit/llm_client.py`, and their published training cutoffs (Llama-3.3: Dec 2023; Llama-4-Scout: Aug 2024; gpt-oss: Jun 2024) are before every decision date. Before starting, check on console.groq.com that each model ID is still listed (`llama-3.3-70b-versatile`, `meta-llama/llama-4-scout-17b-16e-instruct`); if one is gone, say so in the group, don't substitute a model without checking its cutoff.
+**A. Open-weight models: Llama-3.3-70B, then Llama-4-Scout (21–22 Nov) — most valuable extra.** Reviewers will say "only OpenAI models". Omkar runs the two Meta models on Groq; Piyush picks and runs two more from other labs (Section 7A). Both Llama models are already in `src/pit/llm_client.py`, and their published training cutoffs (Llama-3.3: Dec 2023; Llama-4-Scout: Aug 2024) are before every decision date. Before starting, check on console.groq.com that each model ID is still listed (`llama-3.3-70b-versatile`, `meta-llama/llama-4-scout-17b-16e-instruct`); if one is gone, say so in the group, don't substitute a model without checking its cutoff.
 
 The same recipe for every model (set `M`, run, then repeat with the next model):
 ```bash
@@ -228,10 +228,10 @@ git commit -m "FinFM: $M decisions and feedback arms" && git pull --rebase && gi
 - Step 3 writes `decisions_<model>.jsonl` and **overwrites it on every run**, so always run the full command last. **Don't touch the three OpenAI decision files.**
 - If a run crashes or some calls fail, re-run the same command: finished calls come from the cache, failed ones are retried.
 - New models appear as extra rows in Table 2 (confidence). Table 1 and the headline numbers in the abstract stay on the three OpenAI models (`MAIN_MODELS` in `make_finfm_tables.py`), so the abstract never changes by accident. Skip `analyze_components.py` for these models; it isn't needed.
-- **Order of priority:** Llama-3.3-70B first. Start Llama-4-Scout only once Llama-3.3 is pushed. **Whatever isn't finished by 19 Nov night gets dropped**, and Limitations says which models were run.
-- **20 Nov morning (after both of you have pushed):** `git pull`, run `make_finfm_tables.py`, commit `paper_finfm/tables/` and post in the group so the tables get re-uploaded to Overleaf. Only you regenerate tables, so the two of you never conflict.
+- **Order of priority:** Llama-3.3-70B first. Start Llama-4-Scout only once Llama-3.3 is pushed. **Whatever isn't finished by 22 Nov night gets dropped**, and Limitations says which models were run.
+- **23 Nov morning (after both of you have pushed):** `git pull`, run `make_finfm_tables.py`, commit `paper_finfm/tables/` and post in the group so the tables get re-uploaded to Overleaf. Only you regenerate tables, so the two of you never conflict.
 
-**B. Write the Setup section (19 Nov)** in Overleaf, ≈ 0.8 column. Four paragraphs already outlined in `main.tex`:
+**B. Write the Setup section (22 Nov)** in Overleaf, ≈ 0.8 column. Four paragraphs already outlined in `main.tex`:
 - *System*: Section 3.1 above in 4 sentences; the profile table can go to the appendix.
 - *Data and models*: 100 stocks, 19 dates, point-in-time rules (news published before the next open; fundamentals ≥ 90 days after fiscal year end), 3 models + cutoffs (+ Llama if run).
 - *Enforcement arms*: the 4 arms + the control, one sentence each (already drafted; check against `run_finfm_arms.py`).
@@ -239,11 +239,11 @@ git commit -m "FinFM: $M decisions and feedback arms" && git pull --rebase && gi
 - Facts to copy from: `PREREGISTRATION.md`, `code/src/pit/outcomes.py` docstring, the October paper PDF (shared in the group).
 - Put the architecture figure (`06_Assessment_Oct2026/figures/fig_block_diagram.png` or the October Figure 1) in the **appendix**, not the main 4 pages.
 
-**C. Write Limitations (19 Nov)** — bullet list is in the TODO box in `main.tex`: weak signal (no return claims), 19 months, small models / one provider, one evidence model, decisions scored one at a time from an empty portfolio, survivorship (today's large caps), daily-bar fills, pre-registration is a dated file not a public registry.
+**C. Write Limitations (22 Nov)** — bullet list is in the TODO box in `main.tex`: weak signal (no return claims), 19 months, small models / one provider, one evidence model, decisions scored one at a time from an empty portfolio, survivorship (today's large caps), daily-bar fills, pre-registration is a dated file not a public registry.
 
-**D. Check (20 Nov):** every sentence in Setup matches what the code does.
+**D. Check (23 Nov):** every sentence in Setup matches what the code does.
 
-**E. Matched check of the exploratory result (19–20 Nov, only after A is running).** For gpt-5-mini, trades that passed only because confidence was raised won 39% of the time vs 52% for trades above the bar from the start (Section 3.3). The two groups contain different profiles, so this may be a profile effect. Write `code/matched_conf_check.py`:
+**E. Matched check of the exploratory result (22–23 Nov, only after A is running).** For gpt-5-mini, trades that passed only because confidence was raised won 39% of the time vs 52% for trades above the bar from the start (Section 3.3). The two groups contain different profiles, so this may be a profile effect. Write `code/matched_conf_check.py`:
 - "raised" = trades kept in `logs/finfm_2027/revise_<model>_r3_confset.jsonl` (bar shown); "above bar" = trades kept in `revise_<model>_r3.jsonl` whose original confidence was already ≥ the bar.
 - Score both with `src.pit.outcomes.evaluate` (copy how `score_finfm_arms.py` does it).
 - Compare hit rate and mean P&L **within the same profile × region cells**, then average the cell differences weighted by cell size; 95% bootstrap over decision months (copy `boot()` from `make_finfm_tables.py`).
@@ -253,28 +253,42 @@ git commit -m "FinFM: $M decisions and feedback arms" && git pull --rebase && gi
 
 ## 7. Piyush — tasks
 
-**A. Open-weight models: gpt-oss-120b, then gpt-oss-20b (18–19 Nov).** Same recipe as Omkar's Section 6A, with `M=gpt-oss-120b` first and `M=gpt-oss-20b` second (Groq IDs `openai/gpt-oss-120b`, `openai/gpt-oss-20b`; cutoff Jun 2024). Your own Groq key in `code/.env`. These are reasoning models, so they're slower and use more output tokens; start the 120b run on the morning of 18 Nov and do the Overleaf/reference work while it runs. Commit only your model's files (step 6); Omkar regenerates the tables on 20 Nov. Same rule: whatever isn't finished by 19 Nov night is dropped.
+**A. Two open-weight models of your choice (pick on 20 Nov, run 21–22 Nov).** You decide which models best strengthen the experiment. Goal: show the confidence-raising result is not an OpenAI quirk, so prefer labs other than OpenAI and Meta (Omkar covers Meta).
 
-**B. Overleaf (18 Nov morning).**
+*Rules every model must pass (otherwise reviewers will reject the comparison):*
+1. **Published training cutoff before Jan 2025**, stated in the official model card or docs (our first decision date is 15 Jan 2025). No published cutoff → don't use it.
+2. Open weights, and served by an OpenAI-compatible API you can afford for ~7,600 calls plus the feedback runs (Groq, OpenRouter, Together are already wired in `src/pit/llm_client.py` under `PROVIDERS`).
+3. Reliably returns JSON: the 20-case smoke test must show 0 failed calls.
+
+*Candidates to evaluate (check each model card yourself; cutoffs below are from memory):*
+- **gpt-oss-120b** (OpenAI open-weight, cutoff Jun 2024, on Groq, already in the client): strong, cheap, a reasoning model. A good safe choice, but it is still made by OpenAI, so pair it with a non-OpenAI model.
+- **Gemma 3 27B** (Google; card says ~Aug 2024) and **Phi-4** (Microsoft; card says ~Jun 2024): different labs, smaller models. Probably on OpenRouter/Together rather than Groq.
+- Qwen, Mistral, DeepSeek and others: only if you find an official cutoff before Jan 2025.
+
+*How to add a model:* add one line to `MODELS` in `src/pit/llm_client.py`, e.g. `"gemma-3-27b": {"provider": "openrouter", "id": "<provider's model id>", "cutoff": "2024-08"}` (add `"reasoning": True` only for reasoning models that accept `reasoning_effort`). Put that provider's key in `code/.env` (`OPENROUTER_API_KEY=...` or `TOGETHER_API_KEY=...`). The table script picks the new model up automatically. Then follow Omkar's Section 6A recipe with `M=<your model key>`. Commit only your model's result files plus the `llm_client.py` line; Omkar regenerates the tables on 23 Nov. Same rule: whatever isn't finished by 22 Nov night is dropped.
+
+**Post your two picks and their cutoff sources in the group on 20 Nov** before running anything.
+
+**B. Overleaf (21 Nov morning).**
 - New Project → Upload Project → `paper_finfm_overleaf.zip` (or upload the files in `paper_finfm/`).
 - Menu → Settings → **Compiler: pdfLaTeX** (the AAAI style refuses XeLaTeX/LuaLaTeX). Compile once; you should see a 3-page draft with red TODO boxes.
 - Share → add Omkar and Malhar as editors.
 - From now on the paper is edited **only in Overleaf**. When `make_finfm_tables.py` is re-run, re-upload the files in `paper_finfm/tables/` (overwrite).
 
-**C. Verify every reference (18 Nov).** Open `refs.bib`. For each entry: open the paper, check title, authors, year, venue; fix mistakes; fill the entries marked TODO (FINSABER, "Inside the Trading Loop: Markets, Models, and Moves with LLM Agents" by Jia, Mu, Yu and Liu, full author lists for Sharma et al. and Huang et al.). For every sentence in the paper that says what another paper did, check it in that paper's **method/results section**, not the abstract. Keep a small checklist (claim → page you confirmed it on) and share it in the group.
+**C. Verify every reference (21 Nov).** Open `refs.bib`. For each entry: open the paper, check title, authors, year, venue; fix mistakes; fill the entries marked TODO (FINSABER, "Inside the Trading Loop: Markets, Models, and Moves with LLM Agents" by Jia, Mu, Yu and Liu, full author lists for Sharma et al. and Huang et al.). For every sentence in the paper that says what another paper did, check it in that paper's **method/results section**, not the abstract. Keep a small checklist (claim → page you confirmed it on) and share it in the group.
 
-**D. Scoop check (18 Nov) — important.** Read these and tell the group the same day if any of them already shows "LLM agent raises its confidence after rule-engine feedback" or compares block/repair/LLM-reviewer on real outcomes:
+**D. Scoop check (21 Nov) — important.** Read these and tell the group the same day if any of them already shows "LLM agent raises its confidence after rule-engine feedback" or compares block/repair/LLM-reviewer on real outcomes:
 - **TradeArena (arXiv 2605.28850), read first and fully:** it already tests true vs placebo vs hidden risk feedback. Confirm it does *not* give per-trade rejection reasons or look at the agent changing its confidence. If it does, tell the group immediately.
 - "Attribution Is a Propagation Problem in Multi-Agent Trading Systems" (ICAIF'26 AI4F workshop, ai4f.org)
 - "Inside the Trading Loop" (arXiv 2611.11657)
 - FinPanel (ICAIF'26 AI4F workshop)
 - Google Scholar / arXiv searches: `LLM trading agent feedback risk engine`, `LLM confidence inflation feedback threshold`, `guardrail feedback LLM agent finance`, `verifier feedback self-reported confidence`.
 
-**E. Write Related Work (19 Nov)**, ≈ 0.4 page, three short paragraphs (outline in the TODO box in `main.tex`): (1) LLM trading agents and why their returns don't survive careful testing; (2) guardrails and mandates — Section 2 table, ending with the gap sentence; (3) confidence and feedback — calibration papers, sycophancy, self-correction, reward hacking.
+**E. Write Related Work (22 Nov)**, ≈ 0.4 page, three short paragraphs (outline in the TODO box in `main.tex`): (1) LLM trading agents and why their returns don't survive careful testing; (2) guardrails and mandates — Section 2 table, ending with the gap sentence; (3) confidence and feedback — calibration papers, sycophancy, self-correction, reward hacking.
 
-**F. Anonymity pass (20 Nov):** no names, no PICT, no Pune, no "Norqen", no non-anonymous GitHub URL, no acknowledgements, nothing like "our BE project". Overleaf PDF metadata clean. If we cite our own earlier work, write it in third person.
+**F. Anonymity pass (23 Nov):** no names, no PICT, no Pune, no "Norqen", no non-anonymous GitHub URL, no acknowledgements, nothing like "our BE project". Overleaf PDF metadata clean. If we cite our own earlier work, write it in third person.
 
-**G. Anonymous code repository (19–20 Nov).** Reviewers can then look at the code without learning who we are, via Anonymous GitHub (anonymous.4open.science).
+**G. Anonymous code repository (22–23 Nov).** Reviewers can then look at the code without learning who we are, via Anonymous GitHub (anonymous.4open.science).
 1. Make a **new, separate, private** repo in the org with a neutral name (e.g. `mandate-enforcement-llm`). Never anonymise `norqen-backend` itself: it holds the data.
 2. Copy in **code only**: `code/src/`, `code/config/`, `code/requirements.txt`, and the scripts the paper uses (`build_pit_bundles.py`, `run_pit_decisions.py`, `run_pit_riskagent.py`, `analyze_components.py`, `run_finfm_arms.py`, `score_finfm_arms.py`, `make_finfm_tables.py`). **No `.env`, no `data/`, no `logs/`, no LLM cache, no news or prices.** Add a short README: what each script does, the order to run them, and "the data is not included for licensing reasons; `build_pit_bundles.py` shows how it was built".
 3. Search the copy, which must print nothing: `grep -rniE "malhar|omkar|piyush|inamdar|joshi|ochani|varade|pict|pune|norqen|ribhu|navrid|github\.com/" .` Also check `LICENSE` and code comments for names. Commit as a single fresh commit.
@@ -282,15 +296,15 @@ git commit -m "FinFM: $M decisions and feedback arms" && git pull --rebase && gi
 5. Open the anonymous link in a private/incognito window and check nothing identifying is visible.
 6. Share the link in the group. It goes in the paper as one footnote ("Code: <anonymous link>") and in the OpenReview form. If the site can't read a private repo, ask the group before making the code-only repo public.
 
-**H. OpenReview (20 Nov):** draft the submission form: title, abstract (copy from paper), keywords (LLM agents; trading; guardrails; investment mandates; confidence calibration; evaluation), one-line TL;DR, all authors' OpenReview profiles linked, the anonymous code link from G. Supplementary material = a zip of the same code-only folder if the form wants a file.
+**H. OpenReview (23 Nov):** draft the submission form: title, abstract (copy from paper), keywords (LLM agents; trading; guardrails; investment mandates; confidence calibration; evaluation), one-line TL;DR, all authors' OpenReview profiles linked, the anonymous code link from G. Supplementary material = a zip of the same code-only folder if the form wants a file.
 
 ---
 
 ## 8. Malhar — tasks
 
-- [ ] 17–18 Nov: read the FinFM call + AAAI-27 author kit rules (page limit, anonymity, LLM-use policy, supplementary, code links) and post a short summary in the group; set reviewer conflicts in OpenReview.
-- [ ] 19–20 Nov: Intro + Results, final numbers, cut to 4 pages.
-- [ ] 21 Nov morning: final read by all three → **submit by noon IST**.
+- [ ] 20–21 Nov: read the FinFM call + AAAI-27 author kit rules (page limit, anonymity, LLM-use policy, supplementary, code links) and post a short summary in the group; set reviewer conflicts in OpenReview.
+- [ ] 22–23 Nov: Intro + Results, final numbers, cut to 4 pages.
+- [ ] 24 Nov morning: final read by all three → **submit by noon IST**.
 
 ---
 
@@ -311,11 +325,11 @@ git commit -m "FinFM: $M decisions and feedback arms" && git pull --rebase && gi
 
 | Date | Omkar | Piyush | Malhar |
 |---|---|---|---|
-| 17 Nov (tonight) | Setup + OpenReview profile + Groq key | Setup + OpenReview profile + Groq key | OpenReview profile; rules check |
-| 18 Nov | Llama-3.3-70B smoke test → full run → feedback arms | gpt-oss-120b run; Overleaf, verify refs, scoop check | Rules summary; review refs checklist |
-| 19 Nov | Llama-4-Scout run; write Setup + Limitations; matched check | gpt-oss-20b run; Related Work; anonymous code repo | Draft Intro + Results |
-| 20 Nov | Regenerate tables; check Setup vs code | Anonymity pass; OpenReview form | Final numbers; 4-page cut |
-| 21 Nov | Final read | Final read | Final read; **submit by 12:00** |
+| 20 Nov (today) | Setup + OpenReview profile + Groq key | Setup + OpenReview profile + pick 2 models + API key | OpenReview profile; rules check |
+| 21 Nov | Llama-3.3-70B smoke test → full run → feedback arms | Model 1 run; Overleaf, verify refs, scoop check | Rules summary; review refs checklist |
+| 22 Nov | Llama-4-Scout run; write Setup + Limitations; matched check | Model 2 run; Related Work; anonymous code repo | Draft Intro + Results |
+| 23 Nov | Regenerate tables; check Setup vs code | Anonymity pass; OpenReview form | Final numbers; 4-page cut |
+| 24 Nov | Final read | Final read | Final read; **submit by 12:00** |
 
 ---
 

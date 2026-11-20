@@ -44,15 +44,23 @@ MODELS = {
     "llama-4-scout": {"provider": "groq", "id": "meta-llama/llama-4-scout-17b-16e-instruct", "cutoff": "2024-08"},
 }
 
+# OpenAI-compatible providers for open-weight models: name -> (base URL, env var holding the key).
+# To add a model from one of these, add a MODELS entry with that provider (and its published cutoff).
+PROVIDERS = {
+    "groq":       ("https://api.groq.com/openai/v1", "GROQ_API_KEY"),
+    "openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY"),
+    "together":   ("https://api.together.xyz/v1", "TOGETHER_API_KEY"),
+}
+
 _clients: dict = {}
 
 
 def _client(provider: str):
     if provider not in _clients:
         from openai import OpenAI
-        if provider == "groq":
-            _clients[provider] = OpenAI(api_key=os.environ["GROQ_API_KEY"],
-                                        base_url="https://api.groq.com/openai/v1", max_retries=0, timeout=90)
+        if provider in PROVIDERS:
+            url, env = PROVIDERS[provider]
+            _clients[provider] = OpenAI(api_key=os.environ[env], base_url=url, max_retries=0, timeout=90)
         else:
             _clients[provider] = OpenAI(max_retries=0, timeout=120)
     return _clients[provider]
@@ -60,7 +68,7 @@ def _client(provider: str):
 
 def available(model: str) -> bool:
     m = MODELS[model]
-    return bool(os.environ.get("GROQ_API_KEY" if m["provider"] == "groq" else "OPENAI_API_KEY"))
+    return bool(os.environ.get(PROVIDERS[m["provider"]][1] if m["provider"] in PROVIDERS else "OPENAI_API_KEY"))
 
 
 def _key(model, system, human, temperature, tag):

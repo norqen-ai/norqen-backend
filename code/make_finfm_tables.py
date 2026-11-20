@@ -78,7 +78,8 @@ def enforcement(macros: dict) -> str:
 def confidence(macros: dict) -> str:
     out = []
     pooled = {"shown": [0, 0], "hidden": [0, 0]}
-    for m in MODEL_NAMES:
+    found = {f.name[len("revise_"):].split("_r3")[0] for f in ARMS.glob("revise_*_r3_confset.jsonl")}
+    for m in list(MODEL_NAMES) + sorted(found - set(MODEL_NAMES)):   # any newly run model gets a row
         cells = []
         for tag in ("", "_hideconf"):
             f = ARMS / f"revise_{m}_r3{tag}_confset.jsonl"
@@ -106,7 +107,7 @@ def confidence(macros: dict) -> str:
             continue
         (n, r1, k1), c2 = cells[0], cells[1]
         lo, hi = wilson(r1, n)
-        s = f"{MODEL_NAMES[m]} & {n} & {100 * r1 / n:.1f} [{np.floor(lo):.0f}, {np.ceil(hi):.0f}] & "
+        s = f"{MODEL_NAMES.get(m, m)} & {n} & {100 * r1 / n:.1f} [{np.floor(lo):.0f}, {np.ceil(hi):.0f}] & "
         if c2:
             lo2, hi2 = wilson(c2[1], c2[0])
             s += f"{100 * c2[1] / c2[0]:.1f} [{np.floor(lo2):.0f}, {np.ceil(hi2):.0f}] & "
