@@ -1,0 +1,66 @@
+{
+ "ticker": "HON",
+ "ts": 1771286400.0,
+ "context": {
+  "ann_vol": 0.2146835053279653,
+  "date": "2026-02-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HON",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HON",
+   "summary": "P(up next day)=0.37 (logistic regression, walk-forward-safe)",
+   "direction": -0.2628457172534423,
+   "confidence": 0.2628457172534423,
+   "reliability": 0.65,
+   "ts": 1771286400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HON",
+   "summary": "Goldman Sachs raising the target for Honeywell stock following a significant contract win is the most market-moving headline.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HON",
+   "summary": "HON's strong profit margin and high ROE indicate solid financial health and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HON",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

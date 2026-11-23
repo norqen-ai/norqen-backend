@@ -1,0 +1,21 @@
+1900 bundles -> logs/exp_pit_20261012/bundles
+100/1900  21s  fails=0
+200/1900  35s  fails=0
+300/1900  50s  fails=0
+400/1900  65s  fails=0
+500/1900  82s  fails=0
+600/1900  98s  fails=0
+700/1900  113s  fails=0
+800/1900  128s  fails=0
+900/1900  143s  fails=0
+1000/1900  159s  fails=0
+1100/1900  173s  fails=0
+1200/1900  189s  fails=0
+1300/1900  205s  fails=0
+1400/1900  220s  fails=0
+1500/1900  235s  fails=0
+1600/1900  250s  fails=0
+1700/1900  266s  fails=0
+1800/1900  280s  fails=0
+1900/1900  298s  fails=0
+done 1900 in 298s; failures: 0 []

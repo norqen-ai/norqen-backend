@@ -1,0 +1,66 @@
+{
+ "ticker": "BAC",
+ "ts": 1723680000.0,
+ "context": {
+  "ann_vol": 0.24560138383151225,
+  "date": "2024-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.11359783405846446,
+   "confidence": 0.11359783405846446,
+   "reliability": 0.65,
+   "ts": 1723680000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAC",
+   "summary": "The announcement of Bank of America as the Official Bank Sponsor of FIFA World Cup 26\u2122 is likely to boost brand visibility and potential business opportunities.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAC",
+   "summary": "Bank of America's strong profit margin and solid revenue growth indicate a positive medium-term outlook.",
+   "direction": 0.7,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAC",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

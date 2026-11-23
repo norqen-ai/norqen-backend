@@ -1,0 +1,94 @@
+{
+  "mean_size_acted": {
+    "guarded": {
+      "conservative": 2.0,
+      "long_term": 5.0,
+      "intraday": 4.0,
+      "aggressive_growth": 7.701153846153847
+    },
+    "unguarded_explicit": {
+      "conservative": 2.0,
+      "long_term": 5.0,
+      "intraday": 4.0,
+      "aggressive_growth": 8.0
+    },
+    "unguarded_nl": {
+      "conservative": 11.538461538461538,
+      "long_term": 9.642857142857142,
+      "intraday": 8.26923076923077,
+      "aggressive_growth": 10.4
+    }
+  },
+  "baseline_tickers": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "TSLA",
+    "JPM",
+    "V",
+    "WMT"
+  ],
+  "ic": {
+    "momentum": {
+      "mean_IC": -0.02383414075610043,
+      "sig_frac": 0.0
+    },
+    "sma_crossover": {
+      "mean_IC": -0.022812998483416398,
+      "sig_frac": 0.0
+    },
+    "rsi_reversion": {
+      "mean_IC": 0.029603507953512548,
+      "sig_frac": 0.0
+    },
+    "combo": {
+      "mean_IC": -0.02700316377482913,
+      "sig_frac": 0.0
+    }
+  },
+  "calibration": {
+    "n": 4913,
+    "base_acc": 0.506208019539996,
+    "ECE": 0.07123696712979129,
+    "MCE": 0.21157106338067688,
+    "Brier": 0.25824023730764434,
+    "T": 3.0,
+    "ECE_after": 0.024722277641827196,
+    "Brier_after": 0.2510568113183667
+  },
+  "cost_quality": [
+    {
+      "threshold": 0.3,
+      "mean_cost": 2.0090739879013495,
+      "accuracy": 0.5006979990693345,
+      "n": 4298
+    },
+    {
+      "threshold": 0.4,
+      "mean_cost": 2.1495769039323047,
+      "accuracy": 0.5004977600796416,
+      "n": 4018
+    },
+    {
+      "threshold": 0.5,
+      "mean_cost": 2.47727939020815,
+      "accuracy": 0.5010260920551158,
+      "n": 3411
+    },
+    {
+      "threshold": 0.6,
+      "mean_cost": 2.796078431372549,
+      "accuracy": 0.5013574660633484,
+      "n": 3315
+    },
+    {
+      "threshold": 0.65,
+      "mean_cost": 2.8796380090497737,
+      "accuracy": 0.5013574660633484,
+      "n": 3315
+    }
+  ]
+}

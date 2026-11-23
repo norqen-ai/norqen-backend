@@ -1,0 +1,3 @@
+dropped 0 off-schedule rows
+scored 45600 decisions (3 models) -> logs/exp_pit_20261012/analysis_cost_zero
+tables written: ['pnl_agent_by_policy.csv', 'pnl_agent_overall.csv', 'pnl_block_by_clause.csv', 'pnl_block_by_policy.csv', 'pnl_block_by_region.csv', 'pnl_block_overall.csv'] ...

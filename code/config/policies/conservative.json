@@ -1,0 +1,16 @@
+{
+  "policy_name": "conservative",
+  "objective": "protect_capital",
+  "horizon": "weeks_to_months",
+  "max_position_pct": 2.0,
+  "max_daily_loss_pct": 1.0,
+  "max_open_positions": 5,
+  "stop_loss_pct": 3.0,
+  "take_profit_pct": 6.0,
+  "confidence_to_act": 0.75,
+  "tool_priorities": ["fundamental", "macro", "news", "technical"],
+  "forbidden_evidence": ["order_book", "intraday_momentum"],
+  "evidence_budget": 6,
+  "sizing_method": "vol_target",
+  "target_vol": 0.02
+}

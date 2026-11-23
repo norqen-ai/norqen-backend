@@ -1,0 +1,66 @@
+{
+ "ticker": "INFY.NS",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.31043430335241057,
+  "date": "2026-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "INFY.NS",
+   "summary": "The stock is in a downtrend with SMA20 below SMA50 and an RSI indicating neutral conditions.",
+   "direction": -0.7,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "INFY.NS",
+   "summary": "P(up next day)=0.43 (logistic regression, walk-forward-safe)",
+   "direction": -0.1418779592829933,
+   "confidence": 0.1418779592829933,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "INFY.NS",
+   "summary": "The most significant market-moving headline is the report of mutual funds dumping IT stocks, indicating a severe lack of confidence in the sector, which includes Infosys.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "INFY.NS",
+   "summary": "The extremely high trailing P/E ratio of 1441.2 indicates an extreme overvaluation, overshadowing the positive profit margin and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "INFY.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

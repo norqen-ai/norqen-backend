@@ -1,0 +1,66 @@
+{
+ "ticker": "ADANIENT.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.39249808248146933,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADANIENT.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADANIENT.NS",
+   "summary": "P(up next day)=0.45 (logistic regression, walk-forward-safe)",
+   "direction": -0.0940303993761894,
+   "confidence": 0.0940303993761894,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADANIENT.NS",
+   "summary": "The most market-moving headline is the news that Adani Enterprises is in talks with the US Office of Foreign Assets Control over bribery allegations, which raises significant concerns about regulatory scrutiny and potential financial implic",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADANIENT.NS",
+   "summary": "The high trailing P/E ratio of 37.1 combined with low revenue growth of 1.45% suggests overvaluation and limited growth potential.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADANIENT.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

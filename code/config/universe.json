@@ -1,0 +1,10 @@
+{
+  "_comment": "BOUNDED RESEARCH UNIVERSE. The PRODUCT analyses any ticker (see resolver.py); EXPERIMENTS use ONLY this fixed list. A frozen, point-in-time universe is required for a valid benchmark — it prevents survivorship bias and keeps evidence comparable across policies/models. Re-freeze deliberately, never silently.",
+  "frozen_on": "2026-08-06",
+  "US": ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA", "JPM", "V", "WMT",
+         "XOM", "UNH", "JNJ", "PG", "MA", "HD", "KO", "PEP", "BAC", "DIS"],
+  "NSE": ["RELIANCE.NS", "TCS.NS", "INFY.NS", "HDFCBANK.NS", "ICICIBANK.NS",
+          "HINDUNILVR.NS", "ITC.NS", "SBIN.NS", "BHARTIARTL.NS", "KOTAKBANK.NS",
+          "LT.NS", "AXISBANK.NS", "BAJFINANCE.NS", "ASIANPAINT.NS", "MARUTI.NS",
+          "HCLTECH.NS", "SUNPHARMA.NS", "TITAN.NS", "WIPRO.NS", "ULTRACEMCO.NS"]
+}

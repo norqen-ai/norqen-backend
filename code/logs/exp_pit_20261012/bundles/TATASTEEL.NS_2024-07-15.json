@@ -1,0 +1,66 @@
+{
+ "ticker": "TATASTEEL.NS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.33329957266415805,
+  "date": "2024-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The RSI indicates oversold conditions, and the SMA20 is below the SMA50, suggesting a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "P(up next day)=0.65 (logistic regression, walk-forward-safe)",
+   "direction": 0.29718006707562306,
+   "confidence": 0.29718006707562306,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The significant decline in the BSE Sensex, which ended over 400 points down, indicates a bearish sentiment in the market that could negatively impact TATASTEEL.NS.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATASTEEL.NS",
+   "summary": "TATASTEEL.NS is facing negative profit margins and revenue growth, indicating significant financial distress.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

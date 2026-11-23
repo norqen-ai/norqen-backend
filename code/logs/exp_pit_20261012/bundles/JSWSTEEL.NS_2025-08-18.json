@@ -1,0 +1,66 @@
+{
+ "ticker": "JSWSTEEL.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.18757956130729897,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates it is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "P(up next day)=0.38 (logistic regression, walk-forward-safe)",
+   "direction": -0.2369049575529255,
+   "confidence": 0.2369049575529255,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The most market-moving headline is the clearance of the safeguard duty decision, which has positively impacted steelmakers' shares, including JSW Steel.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth and low profit margins indicates a bearish outlook for JSWSTEEL.NS.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

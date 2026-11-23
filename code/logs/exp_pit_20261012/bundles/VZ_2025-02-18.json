@@ -1,0 +1,66 @@
+{
+ "ticker": "VZ",
+ "ts": 1739836800.0,
+ "context": {
+  "ann_vol": 0.17114659425142242,
+  "date": "2025-02-18",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "VZ",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates there is still room for growth without being overbought.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "VZ",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": 0.004851547856516758,
+   "confidence": 0.004851547856516758,
+   "reliability": 0.65,
+   "ts": 1739836800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "VZ",
+   "summary": "Verizon's cut in profit and sales forecast is the most significant factor indicating a bearish outlook for the stock.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "VZ",
+   "summary": "The negative revenue growth indicates potential challenges ahead, despite reasonable profit margins and P/E ratio.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "VZ",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

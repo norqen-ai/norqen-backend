@@ -1,0 +1,64 @@
+{
+  "ticker": "TSLA",
+  "ts": 1791137695.606009,
+  "context": {
+    "ann_vol": 0.49661906722703386
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "TSLA",
+      "summary": "The RSI indicates neutral momentum, and the SMA20 is above the SMA50, suggesting a slight bullish trend.",
+      "direction": 0.2,
+      "confidence": 0.65,
+      "reliability": 0.75,
+      "ts": 1791137691.0987399,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "TSLA",
+      "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+      "direction": 0.10558779119237083,
+      "confidence": 0.10558779119237083,
+      "reliability": 0.65,
+      "ts": 1791137691.3242261,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "TSLA",
+      "summary": "Gary Black's warning about Waymo leaving Tesla behind on autonomy is the most concerning headline, indicating potential competitive disadvantages for Tesla in the EV market.",
+      "direction": -1.0,
+      "confidence": 0.75,
+      "reliability": 0.6,
+      "ts": 1791137693.0226529,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "TSLA",
+      "summary": "The extremely high trailing P/E ratio indicates overvaluation, while low profit margins and ROE suggest weak profitability.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.78,
+      "ts": 1791137694.5507,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "TSLA",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137695.605959,
+      "cost_units": 2.0
+    }
+  ]
+}

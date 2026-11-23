@@ -1,0 +1,64 @@
+{
+  "ticker": "ASIANPAINT.NS",
+  "ts": 1791138314.499918,
+  "context": {
+    "ann_vol": 0.1776730612107728
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "ASIANPAINT.NS",
+      "summary": "The SMA20 is below the SMA50 indicating a bearish trend.",
+      "direction": -1.0,
+      "confidence": 0.75,
+      "reliability": 0.75,
+      "ts": 1791138308.609666,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "ASIANPAINT.NS",
+      "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+      "direction": -0.11729778016595305,
+      "confidence": 0.11729778016595305,
+      "reliability": 0.65,
+      "ts": 1791138308.7954922,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "ASIANPAINT.NS",
+      "summary": "Asian Paints shares jumped 3% after beating Q4 earnings estimates, with brokerages predicting up to 34% upside.",
+      "direction": 1.0,
+      "confidence": 0.8,
+      "reliability": 0.6,
+      "ts": 1791138311.340669,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "ASIANPAINT.NS",
+      "summary": "The high trailing P/E ratio of 48.55 suggests an extreme valuation, which is concerning despite decent revenue growth.",
+      "direction": -1.0,
+      "confidence": 0.75,
+      "reliability": 0.78,
+      "ts": 1791138313.369042,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "ASIANPAINT.NS",
+      "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+      "direction": -0.5,
+      "confidence": 0.6,
+      "reliability": 0.6,
+      "ts": 1791138314.499903,
+      "cost_units": 2.0
+    }
+  ]
+}

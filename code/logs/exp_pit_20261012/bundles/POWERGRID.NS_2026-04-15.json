@@ -1,0 +1,66 @@
+{
+ "ticker": "POWERGRID.NS",
+ "ts": 1776211200.0,
+ "context": {
+  "ann_vol": 0.25539962292918106,
+  "date": "2026-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "POWERGRID.NS",
+   "summary": "The stock is in an uptrend with SMA20 above SMA50, but RSI indicates it is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "POWERGRID.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.06629800791490037,
+   "confidence": 0.06629800791490037,
+   "reliability": 0.65,
+   "ts": 1776211200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "POWERGRID.NS",
+   "summary": "The most significant headline indicates a positive sentiment in the power sector, with analysts suggesting potential rallies for power stocks, including Power Grid, due to rising demand expectations.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "POWERGRID.NS",
+   "summary": "Despite a solid profit margin and ROE, the negative revenue growth raises concerns about future performance.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "POWERGRID.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

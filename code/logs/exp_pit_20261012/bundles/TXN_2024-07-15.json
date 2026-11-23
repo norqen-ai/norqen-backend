@@ -1,0 +1,66 @@
+{
+ "ticker": "TXN",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.21760832620952958,
+  "date": "2024-07-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TXN",
+   "summary": "The stock is in a mild uptrend with an RSI close to overbought, suggesting potential consolidation or slight pullback.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TXN",
+   "summary": "P(up next day)=0.63 (logistic regression, walk-forward-safe)",
+   "direction": 0.26242870785378236,
+   "confidence": 0.26242870785378236,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TXN",
+   "summary": "The headline does not provide specific information about TXN's performance or outlook, making it neutral in terms of market impact.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TXN",
+   "summary": "The negative revenue growth of -12.53% significantly undermines the otherwise strong profit margin and ROE.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TXN",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

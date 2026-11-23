@@ -1,0 +1,135 @@
+
+=== revise_gpt-4.1-mini_r3.jsonl  (n = 800 persona trades)
+                       arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo   hi
+      Raw persona proposal   99.0 100.00     2.12 48.66 -70.06  1.71 -2.06 5.21
+                     Block    0.0   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+       LLM risk mgr (Oct.)    0.0   0.38     0.00  0.24  -0.01 -0.01 -0.03 0.00
+      Deterministic repair    0.0  93.12     0.93 26.96 -51.91  0.06 -1.41 1.54
+Verifier feedback (revise)    0.0  99.62     0.99 27.68 -57.45  0.01 -1.71 1.81
+{'rounds_hist': {1: 800}, 'approved_after_feedback%': np.float64(100.0), 'abstained%': np.float64(0.4), 'resized_to_cap%_of_kept': np.float64(99.1), 'n_revised': 800, 'n_below_bar': 55, 'below_bar_raised_to_>=bar%': np.float64(96.4), 'below_bar_raised_to_exactly_bar%': np.float64(90.9), 'above_bar_conf_changed%': np.float64(2.8)}
+
+=== revise_gpt-4.1-mini_r3_confset.jsonl  (n = 352 persona trades)
+                       arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo   hi
+      Raw persona proposal  94.32 100.00     2.29 46.16 -84.98  1.67 -4.03 7.32
+                     Block   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+       LLM risk mgr (Oct.)   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+      Deterministic repair   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+Verifier feedback (revise)   0.00  93.47     0.91 25.39 -60.41  0.51 -2.64 3.59
+{'rounds_hist': {1: 352}, 'approved_after_feedback%': np.float64(100.0), 'abstained%': np.float64(6.5), 'resized_to_cap%_of_kept': np.float64(91.2), 'n_revised': 352, 'n_below_bar': 352, 'below_bar_raised_to_>=bar%': np.float64(93.8), 'below_bar_raised_to_exactly_bar%': np.float64(92.3), 'above_bar_conf_changed%': nan}
+
+=== revise_gpt-4.1-mini_r3_hideconf_confset.jsonl  (n = 352 persona trades)
+                       arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo   hi
+      Raw persona proposal  94.32 100.00     2.29 46.16 -84.98  1.67 -3.92 7.18
+                     Block   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+       LLM risk mgr (Oct.)   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+      Deterministic repair   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+Verifier feedback (revise)   0.00   0.85     0.01  0.32  -0.02 -0.01 -0.04 0.02
+{'rounds_hist': {1: 24, 2: 328}, 'approved_after_feedback%': np.float64(1.1), 'abstained%': np.float64(99.1), 'resized_to_cap%_of_kept': np.float64(100.0), 'n_revised': 332, 'n_below_bar': 332, 'below_bar_raised_to_>=bar%': np.float64(0.9), 'below_bar_raised_to_exactly_bar%': np.float64(0.9), 'above_bar_conf_changed%': nan}
+
+=== revise_gpt-4o-mini_r3.jsonl  (n = 800 persona trades)
+                       arm  viol%  kept%  exp/cap     SD   CVaR5  mean    lo   hi
+      Raw persona proposal  100.0 100.00     3.43 122.88 -245.89  0.07 -7.72 8.29
+                     Block    0.0   0.00     0.00   0.00    0.00  0.00  0.00 0.00
+       LLM risk mgr (Oct.)    0.0   0.00     0.00   0.00    0.00  0.00  0.00 0.00
+      Deterministic repair    0.0  88.25     0.88  26.95  -48.99  0.18 -2.01 2.11
+Verifier feedback (revise)    0.0  91.88     0.92  27.13  -49.23  0.72 -1.28 2.63
+{'rounds_hist': {1: 755, 2: 37, 3: 8}, 'approved_after_feedback%': np.float64(99.4), 'abstained%': np.float64(8.1), 'resized_to_cap%_of_kept': np.float64(100.0), 'n_revised': 800, 'n_below_bar': 94, 'below_bar_raised_to_>=bar%': np.float64(62.8), 'below_bar_raised_to_exactly_bar%': np.float64(62.8), 'above_bar_conf_changed%': np.float64(15.7)}
+
+=== revise_gpt-4o-mini_r3_confset.jsonl  (n = 569 persona trades)
+                       arm  viol%  kept%  exp/cap     SD   CVaR5   mean     lo     hi
+      Raw persona proposal  99.82  100.0     6.53 125.17 -416.43 -21.47 -31.41 -11.35
+                     Block   0.00    0.0     0.00   0.00    0.00   0.00   0.00   0.00
+       LLM risk mgr (Oct.)   0.00    0.0     0.00   0.00    0.00   0.00   0.00   0.00
+      Deterministic repair   0.00    0.0     0.00   0.00    0.00   0.00   0.00   0.00
+Verifier feedback (revise)   0.00   65.2     0.65  15.59  -31.51   0.16  -1.00   1.30
+{'rounds_hist': {1: 504, 2: 55, 3: 10}, 'approved_after_feedback%': np.float64(98.8), 'abstained%': np.float64(34.8), 'resized_to_cap%_of_kept': np.float64(100.0), 'n_revised': 569, 'n_below_bar': 569, 'below_bar_raised_to_>=bar%': np.float64(65.9), 'below_bar_raised_to_exactly_bar%': np.float64(65.7), 'above_bar_conf_changed%': nan}
+
+=== revise_gpt-4o-mini_r3_hideconf_confset.jsonl  (n = 569 persona trades)
+                       arm  viol%  kept%  exp/cap     SD   CVaR5   mean     lo     hi
+      Raw persona proposal  99.82 100.00     6.53 125.17 -416.43 -21.47 -31.67 -11.79
+                     Block   0.00   0.00     0.00   0.00    0.00   0.00   0.00   0.00
+       LLM risk mgr (Oct.)   0.00   0.00     0.00   0.00    0.00   0.00   0.00   0.00
+      Deterministic repair   0.00   0.00     0.00   0.00    0.00   0.00   0.00   0.00
+Verifier feedback (revise)   0.00   0.53     0.01   0.19   -0.01  -0.00  -0.02   0.01
+{'rounds_hist': {1: 22, 2: 547}, 'approved_after_feedback%': np.float64(3.7), 'abstained%': np.float64(99.5), 'resized_to_cap%_of_kept': np.float64(100.0), 'n_revised': 568, 'n_below_bar': 568, 'below_bar_raised_to_>=bar%': np.float64(0.5), 'below_bar_raised_to_exactly_bar%': np.float64(0.5), 'above_bar_conf_changed%': nan}
+
+=== revise_gpt-5-mini_r3.jsonl  (n = 800 persona trades)
+                       arm  viol%  kept%  exp/cap    SD  CVaR5  mean   lo   hi
+      Raw persona proposal  83.88 100.00     1.31 38.51 -76.71  3.03 0.20 5.75
+                     Block   0.00   0.00     0.00  0.00   0.00  0.00 0.00 0.00
+       LLM risk mgr (Oct.)   0.00   0.00     0.00  0.00   0.00  0.00 0.00 0.00
+      Deterministic repair   0.00  51.75     0.49 26.85 -53.43  2.72 1.13 4.31
+Verifier feedback (revise)   0.00  95.62     0.85 27.88 -53.48  2.21 0.60 3.89
+{'rounds_hist': {1: 751, 2: 24, 3: 25}, 'approved_after_feedback%': np.float64(99.2), 'abstained%': np.float64(4.4), 'resized_to_cap%_of_kept': np.float64(62.6), 'n_revised': 800, 'n_below_bar': 386, 'below_bar_raised_to_>=bar%': np.float64(99.2), 'below_bar_raised_to_exactly_bar%': np.float64(8.5), 'above_bar_conf_changed%': np.float64(77.8)}
+
+=== revise_gpt-5-mini_r3_confset.jsonl  (n = 2413 persona trades)
+                       arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo   hi
+      Raw persona proposal  69.21 100.00     1.32 36.49 -79.60  0.08 -2.28 2.14
+                     Block   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+       LLM risk mgr (Oct.)   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+      Deterministic repair   0.00   0.04     0.00  0.13   0.00  0.00  0.00 0.01
+Verifier feedback (revise)   0.00  93.83     0.79 24.59 -49.61  0.07 -1.28 1.33
+{'rounds_hist': {1: 2381, 2: 19, 3: 13}, 'approved_after_feedback%': np.float64(99.9), 'abstained%': np.float64(6.2), 'resized_to_cap%_of_kept': np.float64(50.3), 'n_revised': 2413, 'n_below_bar': 2412, 'below_bar_raised_to_>=bar%': np.float64(99.5), 'below_bar_raised_to_exactly_bar%': np.float64(8.9), 'above_bar_conf_changed%': np.float64(100.0)}
+
+=== revise_gpt-5-mini_r3_hideconf_confset.jsonl  (n = 2413 persona trades)
+                       arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo   hi
+      Raw persona proposal  69.21 100.00     1.32 36.49 -79.60  0.08 -2.19 2.13
+                     Block   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+       LLM risk mgr (Oct.)   0.00   0.00     0.00  0.00   0.00  0.00  0.00 0.00
+      Deterministic repair   0.00   0.04     0.00  0.13   0.00  0.00  0.00 0.01
+Verifier feedback (revise)   0.00  10.03     0.09  9.95 -16.33  0.17 -0.26 0.62
+{'rounds_hist': {1: 1013, 2: 1395, 3: 5}, 'approved_after_feedback%': np.float64(11.2), 'abstained%': np.float64(90.0), 'resized_to_cap%_of_kept': np.float64(62.4), 'n_revised': 1670, 'n_below_bar': 1669, 'below_bar_raised_to_>=bar%': np.float64(14.6), 'below_bar_raised_to_exactly_bar%': np.float64(12.0), 'above_bar_conf_changed%': np.float64(100.0)}
+
+=== riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig.jsonl  (n = 800 persona trades)
+                 arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo    hi
+Raw persona proposal   95.0 100.00     2.10 48.66 -69.18  2.56 -0.24  5.58
+               Block    0.0   4.62     0.05  8.77  -1.05 -0.56 -1.15 -0.08
+ LLM risk mgr (Oct.)    0.0   0.38     0.00  0.24  -0.01 -0.01 -0.03  0.00
+Deterministic repair    0.0  94.38     0.94 27.87 -54.30  0.94 -0.89  2.82
+ LLM risk mgr (orig)    0.0   0.12     0.00  0.03  -0.00 -0.00 -0.00  0.00
+{}
+
+=== riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first.jsonl  (n = 800 persona trades)
+                        arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo    hi
+       Raw persona proposal   95.0 100.00     2.10 48.66 -69.18  2.56 -0.22  5.48
+                      Block    0.0   4.62     0.05  8.77  -1.05 -0.56 -1.13 -0.05
+        LLM risk mgr (Oct.)    0.0   0.38     0.00  0.24  -0.01 -0.01 -0.03  0.00
+       Deterministic repair    0.0  94.38     0.94 27.87 -54.30  0.94 -0.97  2.74
+LLM risk mgr (repair_first)    0.0  52.75     0.53 17.05 -46.45 -0.37 -1.53  0.72
+{}
+
+=== riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig.jsonl  (n = 800 persona trades)
+                 arm  viol%  kept%  exp/cap    SD   CVaR5  mean    lo   hi
+Raw persona proposal  99.38 100.00     3.24 93.17 -208.31 -2.24 -7.63 2.85
+               Block   0.00   0.62     0.01  2.07   -0.08 -0.02 -0.12 0.09
+ LLM risk mgr (Oct.)   0.00   0.00     0.00  0.00    0.00  0.00  0.00 0.00
+Deterministic repair   0.00  88.50     0.88 25.29  -47.85  0.28 -0.89 1.43
+ LLM risk mgr (orig)   0.00   0.00     0.00  0.00    0.00  0.00  0.00 0.00
+{}
+
+=== riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first.jsonl  (n = 800 persona trades)
+                        arm  viol%  kept%  exp/cap    SD   CVaR5  mean    lo   hi
+       Raw persona proposal  99.38 100.00     3.24 93.17 -208.31 -2.24 -8.10 2.93
+                      Block   0.00   0.62     0.01  2.07   -0.08 -0.02 -0.12 0.09
+        LLM risk mgr (Oct.)   0.00   0.00     0.00  0.00    0.00  0.00  0.00 0.00
+       Deterministic repair   0.00  88.50     0.88 25.29  -47.85  0.28 -0.85 1.48
+LLM risk mgr (repair_first)   0.00  52.62     0.53 19.77  -39.82  1.30  0.44 2.09
+{}
+
+=== riskmgr_gpt-5-mini_by_gpt-4o-mini_orig.jsonl  (n = 800 persona trades)
+                 arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo   hi
+Raw persona proposal  77.62 100.00     1.28 35.77 -91.29 -0.12 -3.30 2.78
+               Block   0.00  12.88     0.12  5.71 -11.59 -0.19 -0.56 0.22
+ LLM risk mgr (Oct.)   0.00   5.12     0.05  2.49  -0.20 -0.09 -0.26 0.06
+Deterministic repair   0.00  57.25     0.54 22.51 -55.47 -0.02 -1.39 1.18
+ LLM risk mgr (orig)   0.00   5.50     0.05  2.52  -0.22 -0.10 -0.24 0.03
+{}
+
+=== riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first.jsonl  (n = 800 persona trades)
+                        arm  viol%  kept%  exp/cap    SD  CVaR5  mean    lo   hi
+       Raw persona proposal  77.62 100.00     1.28 35.77 -91.29 -0.12 -3.35 2.75
+                      Block   0.00  12.88     0.12  5.71 -11.59 -0.19 -0.56 0.23
+        LLM risk mgr (Oct.)   0.00   5.12     0.05  2.49  -0.20 -0.09 -0.25 0.06
+       Deterministic repair   0.00  57.25     0.54 22.51 -55.47 -0.02 -1.29 1.18
+LLM risk mgr (repair_first)   0.00  23.00     0.22 12.92 -22.07  0.70 -0.08 1.48
+{}

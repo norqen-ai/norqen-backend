@@ -1,0 +1,66 @@
+{
+ "ticker": "TATACONSUM.NS",
+ "ts": 1776211200.0,
+ "context": {
+  "ann_vol": 0.24443088129596321,
+  "date": "2026-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The RSI indicates a neutral position, and the SMA20 is below the SMA50, suggesting potential bearish pressure.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATACONSUM.NS",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.08718814696305499,
+   "confidence": 0.08718814696305499,
+   "reliability": 0.65,
+   "ts": 1776211200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The headline 'Why Is Tata Consumer Products Share Price Falling? Key Reasons & Share Price Target 2026' indicates significant concerns about Tata Consumer Products' performance, suggesting a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The high trailing P/E ratio of 83.1 suggests extreme valuation concerns despite positive revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

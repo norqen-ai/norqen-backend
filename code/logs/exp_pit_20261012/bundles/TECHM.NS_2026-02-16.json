@@ -1,0 +1,66 @@
+{
+ "ticker": "TECHM.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.25997456608122127,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "The RSI indicates oversold conditions, and both SMAs suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "P(up next day)=0.59 (logistic regression, walk-forward-safe)",
+   "direction": 0.18629569604694307,
+   "confidence": 0.18629569604694307,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TECHM.NS",
+   "summary": "The most significant market-moving headline indicates a widespread selloff in IT stocks, with Infosys and Wipro experiencing substantial declines due to fears of a tech rout, suggesting bearish sentiment for Tech Mahindra as well.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TECHM.NS",
+   "summary": "The high trailing P/E ratio suggests overvaluation, while modest revenue growth and profit margins indicate potential challenges ahead.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TECHM.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

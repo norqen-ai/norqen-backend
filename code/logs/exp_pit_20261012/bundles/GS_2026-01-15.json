@@ -1,0 +1,66 @@
+{
+ "ticker": "GS",
+ "ts": 1768435200.0,
+ "context": {
+  "ann_vol": 0.27147943760512866,
+  "date": "2026-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "The stock is in an uptrend with SMA20 above SMA50, but RSI indicates it is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GS",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": -0.006512017528789604,
+   "confidence": 0.006512017528789604,
+   "reliability": 0.65,
+   "ts": 1768435200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GS",
+   "summary": "Goldman's profit beats on record stock trading, sees robust M&A activity in 2026 is the most market-moving headline, indicating strong performance and positive outlook.",
+   "direction": 1.0,
+   "confidence": 0.9,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GS",
+   "summary": "The strong profit margin and revenue growth suggest a positive outlook, but the trailing P/E indicates a potentially high valuation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

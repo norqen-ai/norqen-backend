@@ -1,0 +1,66 @@
+{
+ "ticker": "DRREDDY.NS",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.30782476278586823,
+  "date": "2026-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "DRREDDY.NS",
+   "summary": "The stock is in a neutral position with a slight upward trend indicated by the SMA20 being above the SMA50 and a moderate RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "DRREDDY.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.16895033243379887,
+   "confidence": 0.16895033243379887,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "DRREDDY.NS",
+   "summary": "Dr Reddy's Laboratories shares are under pressure following an 86% YoY decline in Q4 profit, leading to bearish sentiment from analysts.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "DRREDDY.NS",
+   "summary": "The strong revenue growth of 16.61% combined with a healthy profit margin of 17.37% indicates solid fundamentals, supporting a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "DRREDDY.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

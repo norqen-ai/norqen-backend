@@ -1,0 +1,66 @@
+{
+ "ticker": "TATASTEEL.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.27661724951771927,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The SMA indicators suggest an uptrend, but the RSI indicates there is still room for growth before reaching overbought conditions.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATASTEEL.NS",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.0285940063140806,
+   "confidence": 0.0285940063140806,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATASTEEL.NS",
+   "summary": "Tata Steel has seen a significant decline in retail holdings, indicating potential bearish sentiment among investors.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth and low profit margins indicates a bearish outlook for TATASTEEL.NS.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATASTEEL.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

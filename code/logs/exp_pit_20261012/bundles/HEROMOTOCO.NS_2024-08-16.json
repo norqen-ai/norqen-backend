@@ -1,0 +1,66 @@
+{
+ "ticker": "HEROMOTOCO.NS",
+ "ts": 1723766400.0,
+ "context": {
+  "ann_vol": 0.2497433140740319,
+  "date": "2024-08-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The stock is in a downtrend with both SMA indicators indicating bearish momentum and an RSI indicating oversold conditions.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.1619871077294276,
+   "confidence": 0.1619871077294276,
+   "reliability": 0.65,
+   "ts": 1723766400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "Hero MotoCorp reported a 36% profit jump in Q1, driven by strong demand for its Xtreme 125 model and rural market performance.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The company shows solid revenue growth and a decent profit margin, but the P/E ratio suggests it may be overvalued.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

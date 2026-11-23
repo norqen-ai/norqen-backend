@@ -1,0 +1,66 @@
+{
+ "ticker": "SHRIRAMFIN.NS",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.33609236913657925,
+  "date": "2024-09-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "The stock is in an uptrend with SMA20 above SMA50, but RSI is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "P(up next day)=0.40 (logistic regression, walk-forward-safe)",
+   "direction": -0.19148781344960375,
+   "confidence": 0.19148781344960375,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "Shriram Finance's stock outlook is positively influenced by its recognition as a top pick by analysts, indicating strong market confidence.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "The strong profit margin of 38.6% and solid revenue growth of 12.71% indicate a healthy business with durable margins.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SHRIRAMFIN.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}
