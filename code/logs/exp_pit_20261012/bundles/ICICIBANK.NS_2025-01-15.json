@@ -1,0 +1,66 @@
+{
+ "ticker": "ICICIBANK.NS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.18518023217616084,
+  "date": "2025-01-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA analysis shows a downtrend.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.15578118887320436,
+   "confidence": 0.15578118887320436,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ICICIBANK.NS",
+   "summary": "Equity selloff wipes off Rs 60,604 crore in market cap for 10 most-valued firms, indicating bearish sentiment in the market.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ICICIBANK.NS",
+   "summary": "ICICIBANK.NS shows strong profitability and growth with a solid profit margin and ROE.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "JSWSTEEL.NS",
+ "ts": 1773619200.0,
+ "context": {
+  "ann_vol": 0.27770858932541304,
+  "date": "2026-03-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a downtrend, and the RSI is below 30, suggesting oversold conditions.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.023318011616292766,
+   "confidence": 0.023318011616292766,
+   "reliability": 0.65,
+   "ts": 1773619200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The most market-moving headline is the report of JSW Steel's unit planning a $1 billion short-term debt issue, indicating a significant financial maneuver that could impact investor sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth and low profit margins indicates a bearish outlook for JSWSTEEL.NS.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "JSWSTEEL.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

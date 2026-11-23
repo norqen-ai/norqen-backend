@@ -1,0 +1,66 @@
+{
+ "ticker": "ULTRACEMCO.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.1551732824029123,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The RSI is approaching overbought territory, but the SMA indicators suggest a continued uptrend.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "P(up next day)=0.35 (logistic regression, walk-forward-safe)",
+   "direction": -0.30785793601998035,
+   "confidence": 0.30785793601998035,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The most significant headline indicates that brokerages are recommending UltraTech Cement as a top conviction stock, suggesting strong potential for returns.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The high trailing P/E ratio of 62.0 suggests an extreme valuation, which, combined with modest profit margins and growth, indicates a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+1901 bundles; 7604 code decisions in 44s
+[gpt-4.1-mini] 500/15208  29s  ~14 min left  fails=0
+[gpt-4.1-mini] 1000/15208  53s  ~12 min left  fails=0
+[gpt-4.1-mini] 1500/15208  75s  ~11 min left  fails=0
+[gpt-4.1-mini] 2000/15208  99s  ~11 min left  fails=0
+[gpt-4.1-mini] 2500/15208  124s  ~10 min left  fails=0
+[gpt-4.1-mini] 3000/15208  146s  ~10 min left  fails=0
+[gpt-4.1-mini] 3500/15208  167s  ~9 min left  fails=0
+[gpt-4.1-mini] 4000/15208  188s  ~9 min left  fails=0
+[gpt-4.1-mini] 4500/15208  209s  ~8 min left  fails=0
+[gpt-4.1-mini] 5000/15208  231s  ~8 min left  fails=0
+[gpt-4.1-mini] 5500/15208  257s  ~8 min left  fails=0
+[gpt-4.1-mini] 6000/15208  281s  ~7 min left  fails=0
+[gpt-4.1-mini] 6500/15208  303s  ~7 min left  fails=0
+[gpt-4.1-mini] 7000/15208  326s  ~6 min left  fails=0
+[gpt-4.1-mini] 7500/15208  348s  ~6 min left  fails=0
+[gpt-4.1-mini] 8000/15208  369s  ~6 min left  fails=0
+[gpt-4.1-mini] 8500/15208  391s  ~5 min left  fails=0
+[gpt-4.1-mini] 9000/15208  413s  ~5 min left  fails=0
+[gpt-4.1-mini] 9500/15208  437s  ~4 min left  fails=0
+Traceback (most recent call last):
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/run_pit_decisions.py", line 140, in <module>
+    if __name__ == "__main__":
+        ^^^^^^
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/run_pit_decisions.py", line 126, in main
+    for f in as_completed(futs):
+              ^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/run_pit_decisions.py", line 114, in work
+    b, cd = bundles[bid], codes[(bid, pn)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/run_pit_decisions.py", line 58, in llm_proposal
+    r = structured(model, system, human, DecisionProposal, temperature=0.0, tag=f"pit:{style}{rerun}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/src/pit/llm_client.py", line 102, in structured
+    kw["reasoning_effort"] = "low"
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 193, in parse
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<53 lines>...
+        stream=False,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1375, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/malhar.inamdar/Desktop/BE_Final_Year_Project/code/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1148, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}

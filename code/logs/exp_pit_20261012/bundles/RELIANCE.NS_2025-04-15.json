@@ -1,0 +1,66 @@
+{
+ "ticker": "RELIANCE.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.22923487973411916,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI suggests the stock is neither overbought nor oversold.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "P(up next day)=0.63 (logistic regression, walk-forward-safe)",
+   "direction": 0.2685113653622335,
+   "confidence": 0.2685113653622335,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "RELIANCE.NS",
+   "summary": "Jio Financial Services' share price surge indicates strong investor interest and positive sentiment around Reliance's financial ventures.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "RELIANCE.NS",
+   "summary": "The profit margin and revenue growth are modest, indicating some stability, but the P/E ratio suggests the stock may be overvalued.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "RELIANCE.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

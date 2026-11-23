@@ -1,0 +1,66 @@
+{
+ "ticker": "INDUSINDBK.NS",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.6260588873904084,
+  "date": "2025-03-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "The RSI indicates an oversold condition, but the significant drop in price and the SMA indicators suggest a strong bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.040131798047117195,
+   "confidence": 0.040131798047117195,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "The single most market-moving headline is the RBI's reassurance of IndusInd Bank's financial stability and sufficient capital, which has led to a 5% rise in share price.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "INDUSINDBK.NS has a low P/E ratio combined with strong profit margins and solid revenue growth, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "INDUSINDBK.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

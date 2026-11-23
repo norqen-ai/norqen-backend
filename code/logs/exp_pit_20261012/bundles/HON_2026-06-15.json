@@ -1,0 +1,66 @@
+{
+ "ticker": "HON",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.3135170006729763,
+  "date": "2026-06-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HON",
+   "summary": "The SMA indicators suggest a slight bullish trend, but the RSI indicates neutral momentum.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HON",
+   "summary": "P(up next day)=0.35 (logistic regression, walk-forward-safe)",
+   "direction": -0.3036166346714405,
+   "confidence": 0.3036166346714405,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HON",
+   "summary": "The approval of the spin-off of Honeywell Aerospace is likely to drive positive sentiment and stock performance.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HON",
+   "summary": "HON's strong profit margin and high ROE indicate solid financial health and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HON",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

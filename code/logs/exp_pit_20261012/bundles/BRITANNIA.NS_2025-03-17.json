@@ -1,0 +1,66 @@
+{
+ "ticker": "BRITANNIA.NS",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.18108636651311974,
+  "date": "2025-03-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The stock is in a downtrend with both SMA indicators below and an RSI indicating oversold conditions.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.03027968542052739,
+   "confidence": 0.03027968542052739,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The most significant headline is the appointment of new leadership at TAFE, which may indicate a shift in focus away from Britannia's core operations, potentially impacting investor confidence.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The high trailing P/E ratio of 51.1 suggests an extreme valuation, which is concerning given the moderate revenue growth and profit margin.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

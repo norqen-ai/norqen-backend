@@ -1,0 +1,66 @@
+{
+ "ticker": "NKE",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.5352862026922472,
+  "date": "2025-04-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 is below the SMA50, suggesting a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "P(up next day)=0.61 (logistic regression, walk-forward-safe)",
+   "direction": 0.21645768794134201,
+   "confidence": 0.21645768794134201,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NKE",
+   "summary": "Nike's continued success in the teen market and expansion efforts in China indicate strong brand positioning and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NKE",
+   "summary": "Nike's strong ROE and reasonable P/E suggest potential for growth, but low revenue growth may limit upside.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NKE",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

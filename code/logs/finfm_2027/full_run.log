@@ -1,0 +1,97 @@
+[revise_gpt-4o-mini_r3_confset] 569 proposals -> logs/finfm_2027/revise_gpt-4o-mini_r3_confset.jsonl
+[revise_gpt-4o-mini_r3_confset] 200/569 17s fails=0
+[revise_gpt-4o-mini_r3_confset] 400/569 32s fails=0
+[revise_gpt-4o-mini_r3_confset] done 569 (0 failed) in 47s
+[revise_gpt-4.1-mini_r3_confset] 352 proposals -> logs/finfm_2027/revise_gpt-4.1-mini_r3_confset.jsonl
+[revise_gpt-4.1-mini_r3_confset] 200/352 11s fails=0
+[revise_gpt-4.1-mini_r3_confset] done 352 (0 failed) in 18s
+[revise_gpt-5-mini_r3_confset] 2413 proposals -> logs/finfm_2027/revise_gpt-5-mini_r3_confset.jsonl
+[revise_gpt-5-mini_r3_confset] 200/2413 33s fails=0
+[revise_gpt-5-mini_r3_confset] 400/2413 63s fails=0
+[revise_gpt-5-mini_r3_confset] 600/2413 94s fails=0
+[revise_gpt-5-mini_r3_confset] 800/2413 124s fails=0
+[revise_gpt-5-mini_r3_confset] 1000/2413 151s fails=0
+[revise_gpt-5-mini_r3_confset] 1200/2413 184s fails=0
+[revise_gpt-5-mini_r3_confset] 1400/2413 212s fails=0
+[revise_gpt-5-mini_r3_confset] 1600/2413 240s fails=0
+[revise_gpt-5-mini_r3_confset] 1800/2413 270s fails=0
+[revise_gpt-5-mini_r3_confset] 2000/2413 300s fails=0
+[revise_gpt-5-mini_r3_confset] 2200/2413 331s fails=0
+[revise_gpt-5-mini_r3_confset] 2400/2413 360s fails=0
+[revise_gpt-5-mini_r3_confset] done 2413 (0 failed) in 363s
+[revise_gpt-4o-mini_r3_hideconf_confset] 569 proposals -> logs/finfm_2027/revise_gpt-4o-mini_r3_hideconf_confset.jsonl
+[revise_gpt-4o-mini_r3_hideconf_confset] 200/569 16s fails=0
+[revise_gpt-4o-mini_r3_hideconf_confset] 400/569 29s fails=0
+[revise_gpt-4o-mini_r3_hideconf_confset] done 569 (0 failed) in 42s
+[revise_gpt-4.1-mini_r3_hideconf_confset] 352 proposals -> logs/finfm_2027/revise_gpt-4.1-mini_r3_hideconf_confset.jsonl
+[revise_gpt-4.1-mini_r3_hideconf_confset] 200/352 11s fails=0
+[revise_gpt-4.1-mini_r3_hideconf_confset] done 352 (0 failed) in 18s
+[revise_gpt-5-mini_r3_hideconf_confset] 2413 proposals -> logs/finfm_2027/revise_gpt-5-mini_r3_hideconf_confset.jsonl
+[revise_gpt-5-mini_r3_hideconf_confset] 200/2413 23s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 400/2413 43s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 600/2413 63s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 800/2413 80s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 1000/2413 101s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 1200/2413 121s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 1400/2413 138s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 1600/2413 158s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 1800/2413 177s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 2000/2413 197s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 2200/2413 216s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] 2400/2413 236s fails=0
+[revise_gpt-5-mini_r3_hideconf_confset] done 2413 (0 failed) in 242s
+[revise_gpt-4o-mini_r3] 800 proposals -> logs/finfm_2027/revise_gpt-4o-mini_r3.jsonl
+[revise_gpt-4o-mini_r3] 200/800 13s fails=0
+[revise_gpt-4o-mini_r3] 400/800 24s fails=0
+[revise_gpt-4o-mini_r3] 600/800 37s fails=0
+[revise_gpt-4o-mini_r3] 800/800 51s fails=0
+[revise_gpt-4o-mini_r3] done 800 (0 failed) in 51s
+[revise_gpt-4.1-mini_r3] 800 proposals -> logs/finfm_2027/revise_gpt-4.1-mini_r3.jsonl
+[revise_gpt-4.1-mini_r3] 200/800 11s fails=0
+[revise_gpt-4.1-mini_r3] 400/800 21s fails=0
+[revise_gpt-4.1-mini_r3] 600/800 31s fails=0
+[revise_gpt-4.1-mini_r3] 800/800 40s fails=0
+[revise_gpt-4.1-mini_r3] done 800 (0 failed) in 40s
+[revise_gpt-5-mini_r3] 800 proposals -> logs/finfm_2027/revise_gpt-5-mini_r3.jsonl
+[revise_gpt-5-mini_r3] 200/800 25s fails=0
+[revise_gpt-5-mini_r3] 400/800 36s fails=0
+[revise_gpt-5-mini_r3] 600/800 47s fails=0
+[revise_gpt-5-mini_r3] 800/800 73s fails=0
+[revise_gpt-5-mini_r3] done 800 (0 failed) in 73s
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first] 800 proposals -> logs/finfm_2027/riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first.jsonl
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first] 200/800 15s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first] 400/800 26s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first] 600/800 36s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first] 800/800 49s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_repair_first] done 800 (0 failed) in 49s
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first] 800 proposals -> logs/finfm_2027/riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first.jsonl
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first] 200/800 14s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first] 400/800 26s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first] 600/800 37s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first] 800/800 49s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_repair_first] done 800 (0 failed) in 49s
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first] 800 proposals -> logs/finfm_2027/riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first.jsonl
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first] 200/800 14s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first] 400/800 27s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first] 600/800 40s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first] 800/800 53s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_repair_first] done 800 (0 failed) in 53s
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig] 800 proposals -> logs/finfm_2027/riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig.jsonl
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig] 200/800 14s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig] 400/800 27s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig] 600/800 39s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig] 800/800 53s fails=0
+[riskmgr_gpt-4o-mini_by_gpt-4o-mini_orig] done 800 (0 failed) in 53s
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig] 800 proposals -> logs/finfm_2027/riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig.jsonl
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig] 200/800 14s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig] 400/800 27s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig] 600/800 39s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig] 800/800 53s fails=0
+[riskmgr_gpt-4.1-mini_by_gpt-4o-mini_orig] done 800 (0 failed) in 53s
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_orig] 800 proposals -> logs/finfm_2027/riskmgr_gpt-5-mini_by_gpt-4o-mini_orig.jsonl
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_orig] 200/800 14s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_orig] 400/800 27s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_orig] 600/800 41s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_orig] 800/800 54s fails=0
+[riskmgr_gpt-5-mini_by_gpt-4o-mini_orig] done 800 (0 failed) in 54s
+DONE

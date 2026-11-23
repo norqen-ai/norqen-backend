@@ -1,0 +1,66 @@
+{
+ "ticker": "AAPL",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.20706282345600316,
+  "date": "2025-12-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AAPL",
+   "summary": "The indicators suggest a neutral outlook with no clear trend direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AAPL",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.07521737039046172,
+   "confidence": 0.07521737039046172,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AAPL",
+   "summary": "The most market-moving headline is the speculation that Apple is 'Set To Hike Prices In 2026' amid rising RAM costs, which could indicate potential revenue growth.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AAPL",
+   "summary": "The high trailing P/E ratio of 45.0 suggests overvaluation despite decent profit margins and ROE.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AAPL",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a moderate bullish sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

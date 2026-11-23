@@ -1,0 +1,66 @@
+{
+ "ticker": "SBILIFE.NS",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.2244842991718898,
+  "date": "2026-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "P(up next day)=0.40 (logistic regression, walk-forward-safe)",
+   "direction": -0.2042186059720581,
+   "confidence": 0.2042186059720581,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SBILIFE.NS",
+   "summary": "Kotak Equities' decision to add SBI Life Insurance to its model portfolio suggests strong upside potential for the stock.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SBILIFE.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth indicates an overvalued stock with weak performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SBILIFE.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

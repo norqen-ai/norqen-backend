@@ -1,0 +1,66 @@
+{
+ "ticker": "MARUTI.NS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.2344093364630269,
+  "date": "2024-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MARUTI.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is approaching overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MARUTI.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.1556435728320429,
+   "confidence": 0.1556435728320429,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MARUTI.NS",
+   "summary": "Maruti Suzuki shares surged 5% due to the Uttar Pradesh government's waiver of registration fees for hybrid vehicles, indicating strong market support for the stock.",
+   "direction": 1.0,
+   "confidence": 0.9,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MARUTI.NS",
+   "summary": "Maruti's solid revenue growth and reasonable profit margin suggest a positive outlook, despite a relatively high P/E ratio.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MARUTI.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

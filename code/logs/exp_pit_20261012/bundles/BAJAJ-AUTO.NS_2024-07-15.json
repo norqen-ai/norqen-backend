@@ -1,0 +1,66 @@
+{
+ "ticker": "BAJAJ-AUTO.NS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.22272720003512084,
+  "date": "2024-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The stock is in a neutral trend with RSI indicating no overbought or oversold conditions.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.11116127905274853,
+   "confidence": 0.11116127905274853,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The launch of the new CNG bike, Freedom 125, is expected to positively impact Bajaj Auto's market position and sales, indicating bullish sentiment for the stock.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "Bajaj Auto shows strong revenue growth and profit margins, but the high P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAJAJ-AUTO.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

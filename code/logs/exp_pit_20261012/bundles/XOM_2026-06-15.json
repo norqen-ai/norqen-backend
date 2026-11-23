@@ -1,0 +1,66 @@
+{
+ "ticker": "XOM",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.3187145705781542,
+  "date": "2026-06-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "XOM",
+   "summary": "The RSI indicates oversold conditions and the SMA20 is below the SMA50, suggesting a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "XOM",
+   "summary": "P(up next day)=0.45 (logistic regression, walk-forward-safe)",
+   "direction": -0.10000239701294322,
+   "confidence": 0.10000239701294322,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "XOM",
+   "summary": "Exxon Mobil stock is sliding primarily due to declining oil prices linked to an Iran deal, which is impacting investor sentiment negatively.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "XOM",
+   "summary": "The negative revenue growth indicates potential challenges ahead for XOM, overshadowing its otherwise decent profit margin and ROE.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "XOM",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

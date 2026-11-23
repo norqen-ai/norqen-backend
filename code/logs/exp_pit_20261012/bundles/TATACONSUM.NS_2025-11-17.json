@@ -1,0 +1,66 @@
+{
+ "ticker": "TATACONSUM.NS",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.20539581561848697,
+  "date": "2025-11-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The stock is in a neutral position with a moderate uptrend indicated by SMA values and a stable RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TATACONSUM.NS",
+   "summary": "P(up next day)=0.39 (logistic regression, walk-forward-safe)",
+   "direction": -0.21666784300259545,
+   "confidence": 0.21666784300259545,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The headline about a 50,600% rally in five years positions TATACONSUM.NS as a multibagger stock, likely attracting investor interest and driving bullish sentiment.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The high trailing P/E ratio of 89.5 suggests extreme valuation concerns despite positive revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TATACONSUM.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

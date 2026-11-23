@@ -1,0 +1,66 @@
+{
+ "ticker": "SUNPHARMA.NS",
+ "ts": 1776211200.0,
+ "context": {
+  "ann_vol": 0.22795670751593766,
+  "date": "2026-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a downtrend, and the RSI is below 30 suggesting further bearish momentum.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.11836009413706838,
+   "confidence": 0.11836009413706838,
+   "reliability": 0.65,
+   "ts": 1776211200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The most market-moving headline is the report of Organon stock skyrocketing 28% following a $12 billion buyout offer from Sun Pharma, indicating strong acquisition interest.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "Despite a high trailing P/E ratio, the solid profit margin and revenue growth indicate a stable outlook.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

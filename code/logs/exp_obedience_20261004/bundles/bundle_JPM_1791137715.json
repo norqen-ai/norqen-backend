@@ -1,0 +1,64 @@
+{
+  "ticker": "JPM",
+  "ts": 1791137715.7517939,
+  "context": {
+    "ann_vol": 0.1873592045803649
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "JPM",
+      "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.75,
+      "ts": 1791137710.9396522,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "JPM",
+      "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+      "direction": 0.07667143507158625,
+      "confidence": 0.07667143507158625,
+      "reliability": 0.65,
+      "ts": 1791137711.1461701,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "JPM",
+      "summary": "JPMorgan's decision to reserve for losses that have not yet materialized raises concerns about potential future financial instability.",
+      "direction": -1.0,
+      "confidence": 0.75,
+      "reliability": 0.6,
+      "ts": 1791137712.9030888,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "JPM",
+      "summary": "JPM's strong profit margin and solid return on equity indicate robust financial health and growth potential.",
+      "direction": 1.0,
+      "confidence": 0.85,
+      "reliability": 0.78,
+      "ts": 1791137714.509218,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "JPM",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137715.7517812,
+      "cost_units": 2.0
+    }
+  ]
+}

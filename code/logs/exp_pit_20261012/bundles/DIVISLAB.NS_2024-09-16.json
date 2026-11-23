@@ -1,0 +1,66 @@
+{
+ "ticker": "DIVISLAB.NS",
+ "ts": 1726444800.0,
+ "context": {
+  "ann_vol": 0.26478273255681595,
+  "date": "2024-09-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The RSI indicates an overbought condition, suggesting a potential price correction.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "DIVISLAB.NS",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09712430121724602,
+   "confidence": 0.09712430121724602,
+   "reliability": 0.65,
+   "ts": 1726444800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The headline suggests a focus on Century Textiles rather than Divi's Laboratories, indicating potential negative sentiment for Divi's stock in the near term.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The extremely high trailing P/E ratio of 90.1 suggests overvaluation, outweighing the positive profit margin and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "DIVISLAB.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1726444800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

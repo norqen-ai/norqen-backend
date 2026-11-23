@@ -1,0 +1,87 @@
+# Literature survey table (30 papers, verified 2026-10-05)
+
+Paper: *A Policy-Conditioned Multi-Agent LLM Framework for Auditable, Evidence-Driven Trading Decision Support* (PICT B.E. project).
+
+Every row was checked against its arXiv abstract page / full-text PDF, plus Crossref, the NeurIPS proceedings, PMLR or the Wiley page for published versions. Key results are quoted from the paper text. The CSV twin is `C_survey_table.csv`; BibTeX keys are in `C_references.bib`.
+
+Flag columns: **Ret** = evaluates returns · **Risk** = risk metrics (Sharpe/Sortino, drawdown, volatility, beta) · **Mand** = mandate/policy/constraint adherence · **Cal** = confidence calibration · **Cost** = transaction cost, fees or compute/latency · **LA** = controls look-ahead leakage · **IN** = uses the Indian market.
+
+| # | Paper | Authors | Year | Venue | ID | Category | Approach | Data / market | Key result | Ret | Risk | Mand | Cal | Cost | LA | IN |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | **TradingAgents** [tradingagents](https://arxiv.org/abs/2412.20138) | Xiao et al. | 2024 | arXiv preprint | arXiv:2412.20138 | Trading agents | Trading-firm roles: analysts, bull/bear debate, trader, risk-management team | US tech stocks, Jan-Mar 2024 | At least 23.21% cumulative, 24.90% annual return (three stocks) | Y | Y | N | N | N | N | N |
+| 2 | **FinCon** [fincon](https://papers.nips.cc/paper_files/paper/2024/hash/f7ae4fe91d96f50abc2211f09b6a7e49-Abstract-Conference.html) | Yu et al. | 2024 | NeurIPS 2024 (Advances in Neural Information Processing Systems 37) | arXiv:2407.06567 | Trading agents | Manager-analyst LLM hierarchy with conceptual verbal reinforcement and risk control | US stocks, Oct 2022-Jun 2023 | COIN: cumulative return over 57%, Sharpe ratio 0.825 | Y | Y | N | N | N | N | N |
+| 3 | **FinMem** [finmem](https://arxiv.org/abs/2311.13743) | Yu et al. | 2024 | Proceedings of the AAAI Symposium Series 3(1) (short version; full version on arXiv) | arXiv:2311.13743; doi:10.1609/aaaiss.v3i1.31290 | Trading agents | LLM agent with profiling, layered memory and decision-making modules | 5 US stocks, Oct 2022-Apr 2023 | TSLA cumulative return 61.78% vs buy-and-hold -18.63% | Y | Y | N | N | N | N | N |
+| 4 | **FinAgent** [finagent](https://doi.org/10.1145/3637528.3671801) | Zhang et al. | 2024 | KDD 2024 (30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining) | arXiv:2402.18485; doi:10.1145/3637528.3671801 | Trading agents | Multimodal tool-augmented agent (news, prices, K-line charts), dual-level reflection | 6 datasets: US stocks + crypto | 92.27% return on one dataset; over 36% average profit improvement | Y | Y | N | N | Y | N | N |
+| 5 | **FinRobot** [finrobot](https://arxiv.org/abs/2405.14767) | Yang et al. | 2024 | arXiv preprint | arXiv:2405.14767 | Trading agents | Four-layer open-source platform of financial LLM agents with Financial CoT | N/A | N/A (platform/method) | N | N | N | N | N | N | N |
+| 6 | **MarketSenseAI** [marketsenseai](https://doi.org/10.1007/s00521-024-10613-4) | Fatouros et al. | 2025 | Neural Computing and Applications 37(30) (online Dec 2024) | arXiv:2401.03737; doi:10.1007/s00521-024-10613-4 | Trading agents | GPT-4 chain-of-thought stock selection from news, fundamentals, macro data | S&P 100 stocks, 15 months | Excess alpha 10% to 30%; cumulative return up to 72% | Y | Y | N | N | Y | N | N |
+| 7 | **LLMTradingSurvey** [llmtradingsurvey](https://doi.org/10.1145/3802463.3802475) | Ding et al. | 2026 | Proceedings of the 9th International Conference on Computers in Management and Business (ICCMB 2026), ACM | arXiv:2408.06361; doi:10.1145/3802463.3802475 | Trading agents | Survey of LLM trading-agent architectures, data inputs, backtest performance | N/A | N/A (survey) | N | N | N | N | N | N | N |
+| 8 | **FinGPT** [fingpt](https://arxiv.org/abs/2306.06031) | Yang et al. | 2023 | FinLLM Symposium at IJCAI 2023 (per arXiv comment) | arXiv:2306.06031 | Financial LLMs & RL | Open-source data-centric FinLLM: automatic data curation plus LoRA fine-tuning | Internet-scale financial text | N/A (method) | N | N | N | N | N | N | N |
+| 9 | **BloombergGPT** [bloomberggpt](https://arxiv.org/abs/2303.17564) | Wu et al. | 2023 | arXiv preprint | arXiv:2303.17564 | Financial LLMs & RL | 50B-parameter LLM on 363B financial + 345B general tokens | Bloomberg financial corpus | Public financial tasks average 62.51 vs GPT-NeoX 51.90 | N | N | N | N | N | N | N |
+| 10 | **FinRL** [finrl](https://arxiv.org/abs/2011.09607) | Liu et al. | 2020 | Deep Reinforcement Learning Workshop, NeurIPS 2020 | arXiv:2011.09607 | Financial LLMs & RL | Open-source DRL library (DQN, DDPG, PPO, SAC, A2C, TD3) for trading | US, China, HK equity indices | N/A (library) | Y | Y | N | N | Y | N | N |
+| 11 | **CLQT** [clqt](https://arxiv.org/abs/2606.29771) | Qu & Chen | 2026 | arXiv preprint | arXiv:2606.29771 | Evaluation & benchmarks | Closed-loop point-in-time benchmark, cost models, audit chain, five-axis scorecard | S&P-100 universe, Jun 2025-Jun 2026 | Stating-vs-doing gap +0.30 (backtest), +0.23 (live) | Y | Y | Y | N | Y | Y | N |
+| 12 | **AlphaIllusion** [alphaillusion](https://arxiv.org/abs/2605.16895) | Ye et al. | 2026 | arXiv preprint (position paper) | arXiv:2605.16895 | Evaluation & benchmarks | Position paper: P1-P6 minimum-evidence protocols plus friction-aware reproduction | 5 US tickers, 1-year reproduction | Net frictions cut TradingAgents portfolio Sharpe 0.43 to 0.22 | Y | Y | N | N | Y | Y | N |
+| 13 | **OpenPM** [openpm](https://arxiv.org/abs/2608.09988) | Cai et al. | 2026 | arXiv preprint | arXiv:2608.09988 | Evaluation & benchmarks | Point-in-time PM evaluation; NL mandates compiled to typed, enforced constraints | S&P 500, 5-min bars, Mar-May 2026 | gpt-5 edge over same-pool equal-weight shrinks +2.9 to +2.1 pp | Y | Y | Y | N | Y | Y | N |
+| 14 | **PortBench** [portbench](https://arxiv.org/abs/2605.27887) | Zhao et al. | 2026 | arXiv preprint | arXiv:2605.27887 | Evaluation & benchmarks | Static QA plus five-stage allocation pipeline; correlation score and CEPS | 183 instruments, 6 asset classes, 2015-2025 | Only 32.5% of 120 evaluations beat equal weighting on Sharpe | Y | Y | Y | N | Y | N | N |
+| 15 | **InvestLogicBench** [investlogicbench](https://arxiv.org/abs/2608.06108) | Jiang et al. | 2026 | arXiv preprint | arXiv:2608.06108 | Evaluation & benchmarks | Process benchmark of Profile-Event-Reasoning-Decision-Outcome traces from real investors | 151 real investors, multi-market, 2025 | Event grounding only 0.8-2.8/5 vs logical plausibility near 4/5 | Y | Y | Y | N | N | Y | N |
+| 16 | **StockBench** [stockbench](https://arxiv.org/abs/2510.02209) | Chen et al. | 2025 | arXiv preprint | arXiv:2510.02209 | Evaluation & benchmarks | Contamination-free multi-month daily stock-trading benchmark for LLM agents | Top-20 DJIA stocks, Mar-Jun 2025 | Buy-and-hold 0.4% return; top-ranked agent (Kimi-K2) 1.9% | Y | Y | N | N | N | Y | N |
+| 17 | **AgentMarketArena** [agentmarketarena](https://arxiv.org/abs/2510.11695) | Qian et al. | 2025 | arXiv preprint | arXiv:2510.11695 | Evaluation & benchmarks | Lifelong live benchmark: four agent frameworks across five LLM backbones | TSLA, BMRN, BTC, ETH; Aug-Sep 2025 | InvestorAgent Sharpe 6.47 on TSLA; DeepFundAgent 2.45 on BTC | Y | Y | N | N | N | Y | N |
+| 18 | **Gao2025Lookahead** [gao2025lookahead](https://arxiv.org/abs/2512.23847) | Gao et al. | 2025 | arXiv preprint | arXiv:2512.23847 | Evaluation & benchmarks | Lookahead Propensity (LAP) recall statistic; LAP-forecast interaction regression test | Stock news; earnings-call transcripts | LAP near zero post-cutoff; in-sample signal step: +0.21% next-day return | N | N | N | N | N | Y | N |
+| 19 | **Glasserman2024LookAhead** [glasserman2024lookahead](https://doi.org/10.3905/jfds.2023.1.143) | Glasserman & Lin | 2024 | The Journal of Financial Data Science 6(1) | arXiv:2309.17322; doi:10.3905/jfds.2023.1.143 | Evaluation & benchmarks | Anonymize firm identifiers in headlines to separate look-ahead from distraction | US equity news headlines (CRSP) | Anonymized headlines beat originals in-sample by 5.89 bp/day | Y | Y | N | N | N | Y | N |
+| 20 | **FinPersona** [finpersona](https://arxiv.org/abs/2606.31522) | Safder et al. | 2026 | arXiv preprint | arXiv:2606.31522 | Mandate & governance | Synthetic-market benchmark for Mandate Salience Decay; 18 LLMs, 3 profiles | Synthetic market (price vs hidden value) | Crash: static vs re-grounded behaviour gap grows 4.4x | N | Y | Y | N | N | N | N |
+| 21 | **PersonaCollapse** [personacollapse](https://arxiv.org/abs/2607.08326) | Kumar et al. | 2026 | arXiv preprint (working draft) | arXiv:2607.08326 | Mandate & governance | Situation-conditioned persona selection; Inverse-Process Distillation repair | N/A (1,281 advice posts) | Three frontier models collapse over 90% of responses into one persona | N | N | N | N | N | N | N |
+| 22 | **PolicyAsSkill** [policyasskill](https://arxiv.org/abs/2609.27087) | Mohsenzadegan et al. | 2026 | arXiv preprint | arXiv:2609.27087 | Mandate & governance | Versioned executable policy skills: evidence validation, review routing, audit | N/A (600 governance tasks) | PaS+Audit 53.8% exact accuracy; audit completeness 1.000 | N | N | Y | N | Y | N | N |
+| 23 | **BiasMix** [biasmix](https://arxiv.org/abs/2608.28646) | Kukreja et al. | 2026 | ICLR 2026 Financial AI (FinAI) Workshop (per arXiv comment) | arXiv:2608.28646 | Mandate & governance | JSON schema, cap validation, convex QCQP projection to feasible portfolio | 16 US-listed ETFs, synthetic scenarios | First-pass cap violations 47.6-85.7%; 0% after projection | N | Y | Y | N | Y | N | N |
+| 24 | **ReguSim** [regusim](https://arxiv.org/abs/2608.19974) | Luo et al. | 2026 | arXiv preprint | arXiv:2608.19974 | Mandate & governance | Compliance sim separating reasoning, attempted action, enforcement, monitor evidence | Simulated market environment | Rules visible, yet 24.2% (DeepSeek) / 14.8% (Gemini) orders rejected | N | N | Y | N | N | N | N |
+| 25 | **ActionAudit** [actionaudit](https://arxiv.org/abs/2606.27570) | Barbieri et al. | 2026 | arXiv preprint | arXiv:2606.27570 | Mandate & governance | Score advice on validity, stability, agreement vs replayable deterministic baseline | 120-scenario bank + adversarial set | Top-agreement control (0.94) admissible in only 0.58 of runs | Y | Y | Y | N | Y | Y | N |
+| 26 | **Guo2017Calibration** [guo2017calibration](https://proceedings.mlr.press/v70/guo17a.html) | Guo et al. | 2017 | ICML 2017 (PMLR 70) | arXiv:1706.04599 | Calibration & agents | Diagnose network miscalibration; compare post-hoc methods incl. temperature scaling | N/A (vision and NLP datasets) | Temperature scaling: CIFAR-100 ResNet-110 ECE 16.53% to 1.26% | N | N | N | Y | N | N | N |
+| 27 | **Xiong2024Confidence** [xiong2024confidence](https://arxiv.org/abs/2306.13063) | Xiong et al. | 2024 | ICLR 2024 (per arXiv comment) | arXiv:2306.13063 | Calibration & agents | Black-box verbalized, sampling and aggregation confidence elicitation benchmark | N/A (5 dataset types, 5 LLMs) | Verbalized confidence overconfident; white/black-box AUROC gap 0.522 to 0.605 | N | N | N | Y | N | N | N |
+| 28 | **ReAct** [react](https://arxiv.org/abs/2210.03629) | Yao et al. | 2023 | ICLR 2023 (per arXiv comment) | arXiv:2210.03629 | Calibration & agents | Interleave reasoning traces with tool actions in LLM prompting | N/A (HotpotQA, FEVER, ALFWorld, WebShop) | +34% (ALFWorld) and +10% (WebShop) absolute success rate | N | N | N | N | N | N | N |
+| 29 | **Bailey2014Deflated** [bailey2014deflated](https://doi.org/10.3905/jpm.2014.40.5.094) | Bailey & López de Prado | 2014 | The Journal of Portfolio Management 40(5) | doi:10.3905/jpm.2014.40.5.094 | Quant foundations | Deflate Sharpe ratio for multiple testing, non-normality, short samples | N/A | N/A (method) | N | Y | N | N | N | N | N |
+| 30 | **LopezDePrado2018** [lopezdeprado2018](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) | López de Prado | 2018 | Book, John Wiley & Sons | ISBN 978-1-119-48208-6 | Quant foundations | Financial ML methods: labeling, purged k-fold CV with embargo, backtest statistics | N/A | N/A (book) | N | Y | N | N | N | Y | N |
+
+## Flag counts (papers marked Y, out of 30)
+
+| Flag | Count |
+|---|---|
+| evaluates_returns | 15 |
+| evaluates_risk_metrics | 19 |
+| evaluates_mandate_or_policy_adherence | 9 |
+| evaluates_confidence_calibration | 2 |
+| evaluates_cost_or_efficiency | 10 |
+| controls_lookahead_leakage | 10 |
+| uses_indian_market | 0 |
+
+Papers per category: Trading agents 7, Financial LLMs & RL 3, Evaluation & benchmarks 9, Mandate & governance 6, Calibration & agents 3, Quant foundations 2.
+
+
+Combinations that matter for positioning: papers with **Mand + Cost + LA** together = 3 (CLQT, OpenPM, ActionAudit). Papers with **Mand + Cal** together = 0. Papers using the **Indian market** = 0. Only Guo 2017 and Xiong 2024 measure confidence calibration, and neither is about trading.
+
+## Coding rule and judgment calls
+
+**Rule:** a flag is Y only when the paper itself measures or enforces the property in its reported results. For the two quant-foundations references, Y means the work prescribes a method for it. If a paper only mentions or argues for something, it gets N.
+
+- **PortBench, LA = N.** It offers a real-time mode to reduce contamination, but its headline numbers (32.5% of 120 evaluations) come from historical windows between 2015 and 2025.
+- **FinPersona, LA = N.** The synthetic market avoids leakage by construction, but the paper does not present this as a leakage control.
+- **AlphaIllusion, Cal = N.** It argues that calibration evidence is required, but it does not measure calibration. Its LA = Y comes from the post-cutoff reproduction window, and Cost = Y because it charges commission, token cost, spread and market impact.
+- **CLQT, Cal = N.** "Calibration" in CLQT refers to the LLM judge and the cost tiers. Agents emit conviction scores, but their calibration is never measured.
+- **Glasserman & Lin, Risk = Y.** Section 3.6 compares the market betas of the strategies. The strategies ignore transaction costs, so Cost = N.
+- **BiasMix:** Risk = Y because of the annualised-volatility cap. Cost = Y because of the expense-ratio (fee) cap.
+- **FinAgent, Cost = Y.** The trading environment's reward includes commission fees.
+- **PolicyAsSkill, Cost = Y.** It reports end-to-end latency (9.75 s for PaS Full).
+- **ActionAudit:** Ret and Risk = Y because the baseline is compared against allocators on return and Sharpe. LA = Y because look-ahead is removed from the allocator baselines and all decisions replay from frozen inputs.
+- **InvestLogicBench, LA = Y.** It uses point-in-time event binding. Mand = Y because it scores whether decisions are consistent with the investor's profile.
+- **StockBench, Cost = N.** The paper says it does not model trading costs or slippage.
+- **López de Prado 2018:** Risk and LA come from the verified Wiley table of contents: Ch. 7 covers purged k-fold CV with embargo, and Ch. 14 covers backtest statistics.
+
+## Verification notes (read before citing)
+
+- **StockBench.** The v2 abstract says "most models struggle to outperform the simple buy-and-hold baseline". However, Table 2 and the results text in the same PDF say most models beat the passive baseline (0.4% return). Quote the table numbers and avoid the abstract's sentence.
+- **FinCon.** The figure "over 57% cumulative return, Sharpe 0.825" comes from the paper's prose about COIN. The PDF table did not extract cleanly, so check Table 2 visually before putting a per-ticker number in the body.
+- **MarketSenseAI.** The published title (NCA) differs from the arXiv title ("Can Large Language Models Beat Wall Street? Unveiling the Potential of AI in Stock Selection"). The numbers come from the arXiv v2 abstract. The year is the issue year, 2025; the paper went online on 8 Dec 2024.
+- **FinMem.** The cited version is the 3-page AAAI Symposium Series paper. The TSLA numbers come from the full arXiv version. There is also a journal version (IEEE Trans. Big Data 11(6), 2025, doi:10.1109/TBDATA.2025.3593370, 8 authors), which is not cited here.
+- **Glasserman & Lin.** JFDS 6(1):25-42. Print issue January 2024, online December 2023.
+- **Venues marked "per arXiv comment"** (TradingAgents workshop oral, FinGPT, BiasMix, Xiong ICLR 2024, ReAct ICLR 2023) are stated by the authors on arXiv. DBLP and Semantic Scholar were rate-limited today, so these were not cross-checked there. FinCon (NeurIPS proceedings page), FinAgent, the survey, MarketSenseAI, Glasserman, Bailey (all Crossref), Guo (PMLR page) and López de Prado (Wiley page) were checked against the publisher.
+- **Titles and authors are kept verbatim from arXiv.** InvestLogicBench's title really says "Personalzied". FinPersona lists two mononym authors ("Xue", "Liu"). AlphaIllusion's metadata lists "Yinghui, Xu".
+- **Two-author papers** are written "A & B" rather than "et al.".
+- **Dropped to keep exactly 30:** QuantAgent (arXiv:2402.03755, never peer-reviewed). arXiv:2509.09995, the HFT "QuantAgent" paper, is now titled **QuantHarness** on arXiv, so do not cite it as QuantAgent.
+- **2026 arXiv papers** were checked as existing and read in their current versions: CLQT v3, FinPersona v2, PortBench v5, InvestLogicBench v2, all others v1.

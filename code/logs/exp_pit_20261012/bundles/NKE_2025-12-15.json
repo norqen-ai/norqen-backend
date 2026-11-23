@@ -1,0 +1,66 @@
+{
+ "ticker": "NKE",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.3216653457134865,
+  "date": "2025-12-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.01471340215250383,
+   "confidence": 0.01471340215250383,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NKE",
+   "summary": "Nike is highlighted in a positive light as one of the '50 Companies to Watch in 2026', suggesting strong future potential.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NKE",
+   "summary": "NKE's negative revenue growth and high P/E ratio indicate potential overvaluation and declining performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NKE",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a moderate bullish sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

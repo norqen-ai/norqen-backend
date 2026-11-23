@@ -1,0 +1,66 @@
+{
+ "ticker": "ULTRACEMCO.NS",
+ "ts": 1721001600.0,
+ "context": {
+  "ann_vol": 0.27856895529066894,
+  "date": "2024-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the near term.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "P(up next day)=0.43 (logistic regression, walk-forward-safe)",
+   "direction": -0.14447798230782138,
+   "confidence": 0.14447798230782138,
+   "reliability": 0.65,
+   "ts": 1721001600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "UltraTech's acquisition of an additional 25% in UAE-based RAKWCT, turning it into a subsidiary, signals strong growth potential and strategic expansion.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The high trailing P/E ratio of 47.2 suggests an extreme valuation, which outweighs the positive growth and margins.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ULTRACEMCO.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1721001600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

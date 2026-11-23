@@ -1,0 +1,66 @@
+{
+ "ticker": "LT.NS",
+ "ts": 1731888000.0,
+ "context": {
+  "ann_vol": 0.23770882675082664,
+  "date": "2024-11-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "LT.NS",
+   "summary": "The RSI is approaching overbought territory while the SMA20 is below the SMA50, indicating potential bearish pressure.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "LT.NS",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.06608667935603263,
+   "confidence": 0.06608667935603263,
+   "reliability": 0.65,
+   "ts": 1731888000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "LT.NS",
+   "summary": "L&T's significant order win of over Rs 15,000 crore for thermal power plants is the most market-moving headline, indicating strong business growth prospects.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "LT.NS",
+   "summary": "The strong revenue growth of 20.62% suggests positive momentum, but the high P/E ratio indicates potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "LT.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1731888000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

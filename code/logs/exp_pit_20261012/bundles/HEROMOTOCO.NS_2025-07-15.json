@@ -1,0 +1,66 @@
+{
+ "ticker": "HEROMOTOCO.NS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.27165608191667223,
+  "date": "2025-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The stock is in a mild uptrend with an RSI indicating it is not overbought, suggesting potential for further gains.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "P(up next day)=0.55 (logistic regression, walk-forward-safe)",
+   "direction": 0.09830038732940127,
+   "confidence": 0.09830038732940127,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "Hero MotoCorp's share price surged 4% due to strong FY25 results and positive outlook on EV growth and global expansion.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "HEROMOTOCO.NS shows strong profitability with a solid profit margin and impressive ROE, indicating healthy growth potential.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating potential bullish momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

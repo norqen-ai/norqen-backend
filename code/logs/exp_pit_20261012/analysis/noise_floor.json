@@ -1,0 +1,31 @@
+{
+ "pairs": 15200,
+ "nl": {
+  "n": 7600,
+  "same_action": 0.9682894736842105,
+  "same_size_if_both_trade": 0.9257677445596909,
+  "same_verdict": 0.9685526315789473,
+  "raw_run1": -2.778,
+  "raw_run2": -1.471,
+  "block_run1": -0.018,
+  "block_run2": -0.014,
+  "repair_run1": -0.321,
+  "repair_run2": -0.366,
+  "judge_run1": -0.453,
+  "judge_run2": -0.476
+ },
+ "explicit": {
+  "n": 7600,
+  "same_action": 0.968421052631579,
+  "same_size_if_both_trade": 0.9995150339476236,
+  "same_verdict": 1.0,
+  "raw_run1": -0.096,
+  "raw_run2": -0.133,
+  "block_run1": -0.096,
+  "block_run2": -0.133,
+  "repair_run1": -0.096,
+  "repair_run2": -0.133,
+  "judge_run1": -0.008,
+  "judge_run2": -0.038
+ }
+}

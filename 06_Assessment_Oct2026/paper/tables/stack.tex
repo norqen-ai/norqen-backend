@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering\footnotesize
+\caption{Implementation stack.}
+\label{tab:stack}
+\begin{tabularx}{\linewidth}{l Y}
+\toprule
+Component & Implementation \\
+\midrule
+Orchestration & Python 3.13, LangGraph state machine, LangChain \\
+Language model & OpenAI gpt-4o-mini, temperature 0, structured (typed) outputs \\
+Market data & Yahoo Finance (prices, company data), Finnhub (news, fundamentals), Google News RSS \\
+Universe & 20 US + 20 NSE large-cap stocks, list frozen 6 Aug 2026 \\
+Numeric models & scikit-learn logistic regression; indicators (SMA, EMA, RSI, volatility) \\
+Risk and audit & Deterministic Python rules (no AI); JSONL decision log; frozen evidence bundles \\
+Evaluation & Leakage-safe daily back-tester with costs; IC, Sharpe, drawdown, VaR; ECE, Brier \\
+Quality & 9 automated tests; pre-registered metric definitions; code on GitHub \\
+\bottomrule
+\end{tabularx}
+\end{table}

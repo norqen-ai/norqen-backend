@@ -1,0 +1,66 @@
+{
+ "ticker": "WIPRO.NS",
+ "ts": 1768521600.0,
+ "context": {
+  "ann_vol": 0.17966411266744262,
+  "date": "2026-01-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, while the RSI is neutral.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.18454528589554786,
+   "confidence": 0.18454528589554786,
+   "reliability": 0.65,
+   "ts": 1768521600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "WIPRO.NS",
+   "summary": "Wipro's Q3 FY26 net profit fell 7% year-on-year, indicating potential weakness in financial performance.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "WIPRO.NS",
+   "summary": "WIPRO.NS is experiencing negative revenue growth, which undermines its otherwise decent profit margin and ROE.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "WIPRO.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

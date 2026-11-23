@@ -1,0 +1,66 @@
+{
+ "ticker": "GRASIM.NS",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.2244955874505487,
+  "date": "2024-12-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.024192583804327206,
+   "confidence": 0.024192583804327206,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GRASIM.NS",
+   "summary": "The most market-moving headline is the Aditya Birla group stock in focus after the company plans to raise \u20b92000 Cr through non-convertible debentures, indicating potential growth and investment.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GRASIM.NS",
+   "summary": "The high trailing P/E ratio of 31.3 combined with low profit margins and moderate ROE suggests overvaluation and limited profitability.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GRASIM.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

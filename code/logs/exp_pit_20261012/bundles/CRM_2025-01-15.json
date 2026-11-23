@@ -1,0 +1,66 @@
+{
+ "ticker": "CRM",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.3521993079348036,
+  "date": "2025-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CRM",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CRM",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": -0.008044365234071371,
+   "confidence": 0.008044365234071371,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CRM",
+   "summary": "Salesforce's launch of a new POS system and Retail Cloud indicates strong innovation and growth potential, making it a favorable investment opportunity.",
+   "direction": 1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CRM",
+   "summary": "The high trailing P/E ratio of 75.5 suggests an extreme valuation, which, combined with modest profit margins and ROE, indicates a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CRM",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

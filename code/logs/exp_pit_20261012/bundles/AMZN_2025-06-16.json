@@ -1,0 +1,66 @@
+{
+ "ticker": "AMZN",
+ "ts": 1750032000.0,
+ "context": {
+  "ann_vol": 0.46542968360564535,
+  "date": "2025-06-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AMZN",
+   "summary": "The RSI is approaching overbought territory while the SMAs indicate a bullish trend.",
+   "direction": 0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AMZN",
+   "summary": "P(up next day)=0.45 (logistic regression, walk-forward-safe)",
+   "direction": -0.10752291185040563,
+   "confidence": 0.10752291185040563,
+   "reliability": 0.65,
+   "ts": 1750032000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AMZN",
+   "summary": "Amazon's reorganization of its health-care business indicates a strategic move to tap into a lucrative market, which could positively impact its stock performance.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AMZN",
+   "summary": "Amazon's solid revenue growth and strong ROE suggest potential for continued performance, despite a relatively high P/E ratio.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AMZN",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

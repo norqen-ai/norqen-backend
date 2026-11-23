@@ -1,0 +1,66 @@
+{
+ "ticker": "APOLLOHOSP.NS",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.22071928025582715,
+  "date": "2025-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "P(up next day)=0.39 (logistic regression, walk-forward-safe)",
+   "direction": -0.22858972026787394,
+   "confidence": 0.22858972026787394,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The headlines do not provide a clear market-moving signal for Apollo Hospitals, with mixed sentiments in the healthcare sector and no specific news directly impacting the stock.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The high trailing P/E ratio of 77.6 suggests an extreme valuation, which, combined with a low profit margin, indicates potential overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "APOLLOHOSP.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

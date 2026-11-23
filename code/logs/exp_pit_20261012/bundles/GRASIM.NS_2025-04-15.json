@@ -1,0 +1,66 @@
+{
+ "ticker": "GRASIM.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.23789879124691712,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "The RSI is at 70, indicating overbought conditions, which may lead to a pullback.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.11424874919074568,
+   "confidence": 0.11424874919074568,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GRASIM.NS",
+   "summary": "Global markets are experiencing a significant downturn, with Dow futures dropping 1.5% and Nasdaq futures down 2.3%, indicating a bearish sentiment that could impact GRASIM.NS negatively.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GRASIM.NS",
+   "summary": "The high trailing P/E ratio combined with low profit margins suggests potential overvaluation and limited profitability.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GRASIM.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

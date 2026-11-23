@@ -1,0 +1,66 @@
+{
+ "ticker": "BAC",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.25844431724563804,
+  "date": "2025-03-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "The SMA indicators suggest a downtrend, and the RSI indicates a neutral position.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BAC",
+   "summary": "P(up next day)=0.63 (logistic regression, walk-forward-safe)",
+   "direction": 0.25829087408151685,
+   "confidence": 0.25829087408151685,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BAC",
+   "summary": "The commentary on US retail under scrutiny suggests potential economic challenges that could negatively impact stocks, including BAC.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BAC",
+   "summary": "BAC's strong profit margin and solid revenue growth indicate a positive medium-term outlook.",
+   "direction": 0.7,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BAC",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

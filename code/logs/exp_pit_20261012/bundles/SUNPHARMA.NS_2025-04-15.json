@@ -1,0 +1,66 @@
+{
+ "ticker": "SUNPHARMA.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.26024494316856317,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential downtrend, and the RSI is neutral, suggesting limited upward momentum.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.047690392411861016,
+   "confidence": 0.047690392411861016,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "Sun Pharma's stock is positively influenced by the US Appeals Court's decision allowing the launch of its alopecia drug, leading to a 2.15% increase in share price.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "Despite decent profit margins and revenue growth, the high trailing P/E ratio suggests overvaluation.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

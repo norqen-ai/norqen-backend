@@ -1,0 +1,66 @@
+{
+ "ticker": "ADBE",
+ "ts": 1755216000.0,
+ "context": {
+  "ann_vol": 0.2624026606420062,
+  "date": "2025-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADBE",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, despite a recent positive return.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADBE",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.045220065587656455,
+   "confidence": 0.045220065587656455,
+   "reliability": 0.65,
+   "ts": 1755216000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADBE",
+   "summary": "Figma's $20 Billion IPO highlights Adobe's competitive advantage in the design software market, suggesting potential for growth.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADBE",
+   "summary": "Adobe's strong profit margin and high return on equity indicate solid financial health, supporting a bullish outlook.",
+   "direction": 0.7,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADBE",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1755216000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

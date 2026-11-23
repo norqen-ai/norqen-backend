@@ -1,0 +1,66 @@
+{
+ "ticker": "SBILIFE.NS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.2129831374278541,
+  "date": "2025-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "The SMA20 is slightly above the SMA50 indicating a potential uptrend, but the RSI suggests a neutral position.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "P(up next day)=0.40 (logistic regression, walk-forward-safe)",
+   "direction": -0.20561729788269034,
+   "confidence": 0.20561729788269034,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SBILIFE.NS",
+   "summary": "HDFC Life's growth outpacing the industry suggests positive momentum for the insurance sector, which could benefit SBILIFE.NS.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SBILIFE.NS",
+   "summary": "The high trailing P/E ratio combined with negative revenue growth indicates significant overvaluation and potential weakness in performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SBILIFE.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating potential bullish momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

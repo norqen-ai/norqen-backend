@@ -1,0 +1,66 @@
+{
+ "ticker": "MA",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.24103879425398042,
+  "date": "2026-06-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MA",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MA",
+   "summary": "P(up next day)=0.59 (logistic regression, walk-forward-safe)",
+   "direction": 0.17905642516211095,
+   "confidence": 0.17905642516211095,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MA",
+   "summary": "Mastercard's unveiling of an AI Agent Payment Network backed by over 30 industry partners suggests strong innovation and potential growth, which could positively influence investor sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MA",
+   "summary": "Despite a high trailing P/E ratio, strong profit margins and revenue growth indicate positive medium-term potential.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MA",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

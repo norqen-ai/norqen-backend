@@ -1,0 +1,66 @@
+{
+ "ticker": "NKE",
+ "ts": 1739836800.0,
+ "context": {
+  "ann_vol": 0.2950924238151323,
+  "date": "2025-02-18",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NKE",
+   "summary": "P(up next day)=0.59 (logistic regression, walk-forward-safe)",
+   "direction": 0.17356045815330545,
+   "confidence": 0.17356045815330545,
+   "reliability": 0.65,
+   "ts": 1739836800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NKE",
+   "summary": "Nike's partnership with Kim Kardashian's SKIMS has led to significant market gains, boosting investor confidence and driving the stock higher.",
+   "direction": 1.0,
+   "confidence": 0.9,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NKE",
+   "summary": "Nike's strong ROE and reasonable P/E suggest potential for growth, but low revenue growth may limit upside.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NKE",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1739836800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

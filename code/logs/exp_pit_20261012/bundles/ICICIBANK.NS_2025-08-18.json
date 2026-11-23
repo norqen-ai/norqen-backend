@@ -1,0 +1,66 @@
+{
+ "ticker": "ICICIBANK.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.12280413487031727,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 being below SMA50 suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ICICIBANK.NS",
+   "summary": "P(up next day)=0.60 (logistic regression, walk-forward-safe)",
+   "direction": 0.20275290324039386,
+   "confidence": 0.20275290324039386,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ICICIBANK.NS",
+   "summary": "ICICI Bank's decision to lower the minimum balance requirement to \u20b915,000 is likely to improve customer sentiment and attract more deposits, positively impacting the stock.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ICICIBANK.NS",
+   "summary": "ICICIBANK.NS shows strong revenue growth and a solid profit margin, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ICICIBANK.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

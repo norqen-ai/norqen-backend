@@ -1,0 +1,66 @@
+{
+ "ticker": "MSFT",
+ "ts": 1776211200.0,
+ "context": {
+  "ann_vol": 0.3481497034300884,
+  "date": "2026-04-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MSFT",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MSFT",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.024035346212383013,
+   "confidence": 0.024035346212383013,
+   "reliability": 0.65,
+   "ts": 1776211200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MSFT",
+   "summary": "Microsoft stock is experiencing a significant surge, with reports of a historic multi-day rally and positive analyst updates driving investor sentiment.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MSFT",
+   "summary": "Microsoft's strong profit margin and revenue growth indicate solid fundamentals, despite a relatively high P/E ratio.",
+   "direction": 0.8,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MSFT",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

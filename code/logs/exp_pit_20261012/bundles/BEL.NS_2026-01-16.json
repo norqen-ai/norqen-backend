@@ -1,0 +1,66 @@
+{
+ "ticker": "BEL.NS",
+ "ts": 1768521600.0,
+ "context": {
+  "ann_vol": 0.22555706631609185,
+  "date": "2026-01-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BEL.NS",
+   "summary": "The RSI is approaching overbought territory while the SMA indicators suggest a slight uptrend, indicating potential for a mild bullish movement.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BEL.NS",
+   "summary": "P(up next day)=0.38 (logistic regression, walk-forward-safe)",
+   "direction": -0.24268870284687716,
+   "confidence": 0.24268870284687716,
+   "reliability": 0.65,
+   "ts": 1768521600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BEL.NS",
+   "summary": "The most market-moving headline indicates a decline in BEL shares due to easing geopolitical concerns, which negatively impacts defence stocks overall.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BEL.NS",
+   "summary": "The high trailing P/E ratio of 56.0 suggests an extreme valuation, which outweighs the positive profit margin and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BEL.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768521600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

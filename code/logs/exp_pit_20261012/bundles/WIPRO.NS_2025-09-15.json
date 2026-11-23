@@ -1,0 +1,66 @@
+{
+ "ticker": "WIPRO.NS",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.20149491734032296,
+  "date": "2025-09-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI suggests the stock is neither overbought nor oversold.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "WIPRO.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03857476257125969,
+   "confidence": 0.03857476257125969,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "WIPRO.NS",
+   "summary": "Citi's maintenance of a SELL rating on Wipro, citing three reasons, is the most market-moving headline indicating bearish sentiment for the stock.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "WIPRO.NS",
+   "summary": "The negative revenue growth indicates potential challenges ahead for WIPRO.NS.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "WIPRO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

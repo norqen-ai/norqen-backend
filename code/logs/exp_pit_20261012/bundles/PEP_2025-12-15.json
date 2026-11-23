@@ -1,0 +1,66 @@
+{
+ "ticker": "PEP",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.1961738326096356,
+  "date": "2025-12-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the recent uptrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "PEP",
+   "summary": "P(up next day)=0.45 (logistic regression, walk-forward-safe)",
+   "direction": -0.09893154454321362,
+   "confidence": 0.09893154454321362,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "PEP",
+   "summary": "JPMorgan's recommendation to buy PepsiCo due to innovation driving earnings is the most market-moving headline.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "PEP",
+   "summary": "Despite modest revenue growth, PEP's strong profit margin and high ROE suggest solid fundamentals.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "PEP",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a moderate bullish sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

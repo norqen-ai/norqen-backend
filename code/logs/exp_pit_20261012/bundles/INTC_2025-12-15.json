@@ -1,0 +1,66 @@
+{
+ "ticker": "INTC",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.7324228204076624,
+  "date": "2025-12-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "INTC",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, despite the RSI being neutral.",
+   "direction": -0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "INTC",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.08730146101347003,
+   "confidence": 0.08730146101347003,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "INTC",
+   "summary": "Intel's Q1 2025 earnings call highlights surpassing expectations, indicating strong performance and positive investor sentiment.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "INTC",
+   "summary": "Intel's negative profit margin and revenue growth indicate significant financial struggles.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "INTC",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a moderate bullish sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

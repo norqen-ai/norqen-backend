@@ -1,0 +1,23 @@
+\begin{table}[!t]
+\centering\footnotesize
+\caption{Numeric baselines on 10 stocks, three years of daily data (leakage-safe back-test, costs included).}
+\label{tab:baseline}
+\begin{tabularx}{\linewidth}{Y c c}
+\toprule
+Signal & Mean IC & Names with $|t|>2$ \\
+\midrule
+20-day momentum & -0.024 & 0\% \\
+SMA 20/50 crossover & -0.023 & 0\% \\
+RSI mean reversion & +0.030 & 0\% \\
+Combined (SMA + momentum) & -0.027 & 0\% \\
+\midrule
+\multicolumn{3}{l}{Stated-confidence calibration ($n=4913$ calls, acc.~50.6\%)} \\
+\quad ECE / Brier, raw & \multicolumn{2}{c}{0.071 / 0.258} \\
+\quad ECE / Brier, temperature-scaled ($T=3.0$) & \multicolumn{2}{c}{0.025 / 0.251} \\
+\midrule
+\multicolumn{3}{l}{Evidence cost (threshold 0.30$\rightarrow$0.65)} \\
+\quad Mean sources used & \multicolumn{2}{c}{2.01 $\rightarrow$ 2.88} \\
+\quad Directional accuracy & \multicolumn{2}{c}{50.1\% $\rightarrow$ 50.1\%} \\
+\bottomrule
+\end{tabularx}
+\end{table}

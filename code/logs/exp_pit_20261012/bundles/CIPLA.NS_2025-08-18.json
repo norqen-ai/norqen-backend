@@ -1,0 +1,66 @@
+{
+ "ticker": "CIPLA.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.1627512385806516,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "CIPLA.NS",
+   "summary": "The stock is in a neutral position with RSI at 48 and SMA indicators suggesting a potential for upward movement.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "CIPLA.NS",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": -0.007734946548307309,
+   "confidence": 0.007734946548307309,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "CIPLA.NS",
+   "summary": "Nomura highlights Cipla as a leader in the specialty pharmaceuticals sector, indicating strong growth potential.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "CIPLA.NS",
+   "summary": "Cipla's solid profit margin and reasonable revenue growth suggest a stable outlook, but the trailing P/E indicates potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "CIPLA.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

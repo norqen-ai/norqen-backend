@@ -1,0 +1,66 @@
+{
+ "ticker": "BRITANNIA.NS",
+ "ts": 1723766400.0,
+ "context": {
+  "ann_vol": 0.17419125644633457,
+  "date": "2024-08-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, but the RSI is neutral.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.052409588129208595,
+   "confidence": 0.052409588129208595,
+   "reliability": 0.65,
+   "ts": 1723766400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The headlines do not provide any significant market-moving news specifically related to Britannia, indicating a neutral outlook for the stock.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The high trailing P/E ratio of 62.6 suggests overvaluation despite decent profit margins and ROE.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

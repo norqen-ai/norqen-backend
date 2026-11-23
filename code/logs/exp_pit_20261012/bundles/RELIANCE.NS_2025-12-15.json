@@ -1,0 +1,66 @@
+{
+ "ticker": "RELIANCE.NS",
+ "ts": 1765756800.0,
+ "context": {
+  "ann_vol": 0.14573380589003876,
+  "date": "2025-12-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, while the RSI suggests the stock is neither overbought nor oversold.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.15431724725508766,
+   "confidence": 0.15431724725508766,
+   "reliability": 0.65,
+   "ts": 1765756800.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "RELIANCE.NS",
+   "summary": "Reliance Industries' market cap increased by \u20b920,434 crore while other top firms lost value, indicating strong investor confidence.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "RELIANCE.NS",
+   "summary": "The high trailing P/E ratio of 30.1 suggests overvaluation, while the profit margin and ROE indicate moderate profitability.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "RELIANCE.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1765756800.0,
+   "cost_units": 2.0
+  }
+ ]
+}

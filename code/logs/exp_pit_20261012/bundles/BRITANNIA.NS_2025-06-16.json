@@ -1,0 +1,66 @@
+{
+ "ticker": "BRITANNIA.NS",
+ "ts": 1750032000.0,
+ "context": {
+  "ann_vol": 0.19376451091405278,
+  "date": "2025-06-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is negative.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.11203932612988732,
+   "confidence": 0.11203932612988732,
+   "reliability": 0.65,
+   "ts": 1750032000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The headline regarding HUL and Nestle lagging due to weak FMCG volumes suggests a challenging environment for Britannia as well, indicating potential bearish sentiment for the stock.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The high trailing P/E ratio of 60.8 suggests an extreme valuation, which outweighs the positive profit margin and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

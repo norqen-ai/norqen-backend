@@ -1,0 +1,66 @@
+{
+ "ticker": "AMD",
+ "ts": 1723680000.0,
+ "context": {
+  "ann_vol": 0.4888917571726494,
+  "date": "2024-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AMD",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, but the RSI is neutral and the recent return is positive.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AMD",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": -0.009159642570272686,
+   "confidence": 0.009159642570272686,
+   "reliability": 0.65,
+   "ts": 1723680000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AMD",
+   "summary": "AMD's completion of the acquisition of Silo AI is a significant move to enhance its AI capabilities, which is likely to boost investor confidence and stock performance.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AMD",
+   "summary": "AMD's extremely high P/E ratio combined with negative revenue growth indicates significant overvaluation and potential for further declines.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AMD",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

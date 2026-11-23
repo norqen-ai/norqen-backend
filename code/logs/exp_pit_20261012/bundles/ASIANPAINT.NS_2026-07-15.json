@@ -1,0 +1,66 @@
+{
+ "ticker": "ASIANPAINT.NS",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.2101334256768269,
+  "date": "2026-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The indicators suggest a neutral trend with no clear direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.0661467127910591,
+   "confidence": 0.0661467127910591,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "Asian Paints has raised prices by 12% to offset rising raw material costs due to the West Asia conflict, indicating potential pressure on demand and margins.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The high trailing P/E ratio of 59.2 suggests overvaluation despite decent profit margins and revenue growth.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

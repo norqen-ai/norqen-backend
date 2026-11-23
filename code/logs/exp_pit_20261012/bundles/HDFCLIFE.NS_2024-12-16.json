@@ -1,0 +1,66 @@
+{
+ "ticker": "HDFCLIFE.NS",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.227853044035903,
+  "date": "2024-12-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA indicators suggest a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "P(up next day)=0.39 (logistic regression, walk-forward-safe)",
+   "direction": -0.21614927119805194,
+   "confidence": 0.21614927119805194,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The headline regarding Sebi's nod to retail algo trading suggests increased competition for HDFCLIFE.NS, which may negatively impact its stock performance in the near term.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The extremely high trailing P/E ratio of 86.3 suggests overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

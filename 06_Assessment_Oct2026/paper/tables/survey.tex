@@ -1,0 +1,54 @@
+\begin{table*}[!p]
+\centering\scriptsize
+\caption{Literature survey: approach, data and reported result of each surveyed paper.}
+\label{tab:survey}
+\begin{tabularx}{\textwidth}{r p{2.5cm} c Y p{2.6cm} Y}
+\toprule
+\# & Paper & Year & Approach & Data / market & Key reported result \\
+\midrule
+1 & TradingAgents~\cite{tradingagents} & 2024 & Trading-firm roles: analysts, bull/bear debate, trader, risk-management team & US tech stocks, Jan-Mar 2024 & At least 23.21\% cumulative, 24.90\% annual return (three stocks) \\
+2 & FinCon~\cite{fincon} & 2024 & Manager-analyst LLM hierarchy with conceptual verbal reinforcement and risk control & US stocks, Oct 2022-Jun 2023 & COIN: cumulative return over 57\%, Sharpe ratio 0.825 \\
+3 & FinMem~\cite{finmem} & 2024 & LLM agent with profiling, layered memory and decision-making modules & 5 US stocks, Oct 2022-Apr 2023 & TSLA cumulative return 61.78\% vs buy-and-hold -18.63\% \\
+4 & FinAgent~\cite{finagent} & 2024 & Multimodal tool-augmented agent (news, prices, K-line charts), dual-level reflection & 6 datasets: US stocks + crypto & 92.27\% return on one dataset; over 36\% average profit improvement \\
+5 & FinRobot~\cite{finrobot} & 2024 & Four-layer open-source platform of financial LLM agents with Financial CoT & N/A & N/A (platform/method) \\
+6 & MarketSenseAI~\cite{marketsenseai} & 2025 & GPT-4 chain-of-thought stock selection from news, fundamentals, macro data & S\&P 100 stocks, 15 months & Excess alpha 10\% to 30\%; cumulative return up to 72\% \\
+7 & Ding et al. (survey)~\cite{llmtradingsurvey} & 2026 & Survey of LLM trading-agent architectures, data inputs, backtest performance & N/A & N/A (survey) \\
+8 & FinGPT~\cite{fingpt} & 2023 & Open-source data-centric FinLLM: automatic data curation plus LoRA fine-tuning & Internet-scale financial text & N/A (method) \\
+9 & BloombergGPT~\cite{bloomberggpt} & 2023 & 50B-parameter LLM on 363B financial + 345B general tokens & Bloomberg financial corpus & Public financial tasks average 62.51 vs GPT-NeoX 51.90 \\
+10 & FinRL~\cite{finrl} & 2020 & Open-source DRL library (DQN, DDPG, PPO, SAC, A2C, TD3) for trading & US, China, HK equity indices & N/A (library) \\
+11 & CLQT~\cite{clqt} & 2026 & Closed-loop point-in-time benchmark, cost models, audit chain, five-axis scorecard & S\&P-100 universe, Jun 2025-Jun 2026 & Stating-vs-doing gap +0.30 (backtest), +0.23 (live) \\
+12 & Alpha Illusion~\cite{alphaillusion} & 2026 & Position paper: P1-P6 minimum-evidence protocols plus friction-aware reproduction & 5 US tickers, 1-year reproduction & Net frictions cut TradingAgents portfolio Sharpe 0.43 to 0.22 \\
+13 & OpenPM~\cite{openpm} & 2026 & Point-in-time PM evaluation; NL mandates compiled to typed, enforced constraints & S\&P 500, 5-min bars, Mar-May 2026 & gpt-5 edge over same-pool equal-weight shrinks +2.9 to +2.1 pp \\
+14 & PortBench~\cite{portbench} & 2026 & Static QA plus five-stage allocation pipeline; correlation score and CEPS & 183 instruments, 6 asset classes, 2015-2025 & Only 32.5\% of 120 evaluations beat equal weighting on Sharpe \\
+15 & InvestLogic\-Bench~\cite{investlogicbench} & 2026 & Process benchmark of Profile-Event-Reasoning-Decision-Outcome traces from real investors & 151 real investors, multi-market, 2025 & Event grounding only 0.8-2.8/5 vs logical plausibility near 4/5 \\
+16 & StockBench~\cite{stockbench} & 2025 & Contamination-free multi-month daily stock-trading benchmark for LLM agents & Top-20 DJIA stocks, Mar-Jun 2025 & Buy-and-hold 0.4\% return; top-ranked agent (Kimi-K2) 1.9\% \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+\begin{table*}[!p]
+\centering\scriptsize
+\caption{Literature survey (continued): approach, data and reported result of each surveyed paper.}
+\label{tab:survey2}
+\begin{tabularx}{\textwidth}{r p{2.5cm} c Y p{2.6cm} Y}
+\toprule
+\# & Paper & Year & Approach & Data / market & Key reported result \\
+\midrule
+17 & Agent Market Arena~\cite{agentmarketarena} & 2025 & Lifelong live benchmark: four agent frameworks across five LLM backbones & TSLA, BMRN, BTC, ETH; Aug-Sep 2025 & InvestorAgent Sharpe 6.47 on TSLA; DeepFundAgent 2.45 on BTC \\
+18 & Gao et al.~\cite{gao2025lookahead} & 2025 & Lookahead Propensity (LAP) recall statistic; LAP-forecast interaction regression test & Stock news; earnings-call transcripts & LAP near zero post-cutoff; in-sample signal step: +0.21\% next-day return \\
+19 & Glasserman \& Lin~\cite{glasserman2024lookahead} & 2024 & Anonymize firm identifiers in headlines to separate look-ahead from distraction & US equity news headlines (CRSP) & Anonymized headlines beat originals in-sample by 5.89 bp/day \\
+20 & KTD-Fin~\cite{ktdfin} & 2026 & Memory-controlled CSI300 benchmark; scores per-order confidence (ECE) of LLM agents & China CSI300, 2024-2026 & Order-confidence ECE 0.246-0.425 across 10 LLMs \\
+21 & FinPersona~\cite{finpersona} & 2026 & Synthetic-market benchmark for Mandate Salience Decay; 18 LLMs, 3 profiles & Synthetic market (price vs hidden value) & Crash: static vs re-grounded behaviour gap grows 4.4x \\
+22 & Persona collapse~\cite{personacollapse} & 2026 & Situation-conditioned persona selection; Inverse-Process Distillation repair & N/A (1,281 advice posts) & Three frontier models collapse over 90\% of responses into one persona \\
+23 & Policy-as-Skill~\cite{policyasskill} & 2026 & Versioned executable policy skills: evidence validation, review routing, audit & N/A (600 governance tasks) & PaS+Audit 53.8\% exact accuracy; audit completeness 1.000 \\
+24 & BiasMix~\cite{biasmix} & 2026 & JSON schema, cap validation, convex QCQP projection to feasible portfolio & 16 US-listed ETFs, synthetic scenarios & First-pass cap violations 47.6-85.7\%; 0\% after projection \\
+25 & ReguSim~\cite{regusim} & 2026 & Compliance sim separating reasoning, attempted action, enforcement, monitor evidence & Simulated market environment & Rules visible, yet 24.2\% (DeepSeek) / 14.8\% (Gemini) orders rejected \\
+26 & Action audit~\cite{actionaudit} & 2026 & Score advice on validity, stability, agreement vs replayable deterministic baseline & 120-scenario bank + adversarial set & Top-agreement control (0.94) admissible in only 0.58 of runs \\
+27 & Guo et al.~\cite{guo2017calibration} & 2017 & Diagnose network miscalibration; compare post-hoc methods incl. temperature scaling & N/A (vision and NLP datasets) & Temperature scaling: CIFAR-100 ResNet-110 ECE 16.53\% to 1.26\% \\
+28 & Xiong et al.~\cite{xiong2024confidence} & 2024 & Black-box verbalized, sampling and aggregation confidence elicitation benchmark & N/A (5 dataset types, 5 LLMs) & Verbalized confidence overconfident; white/black-box AUROC gap 0.522 to 0.605 \\
+29 & Ordinal Gates~\cite{ordinalgates} & 2026 & Separates confidence used for ranking/gating from confidence used for sizing & Nasdaq-100 news, 2021-2025 & Fixed confidence gates: 0/18 significant gains \\
+30 & ReAct~\cite{react} & 2023 & Interleave reasoning traces with tool actions in LLM prompting & N/A (HotpotQA, FEVER, ALFWorld, WebShop) & +34\% (ALFWorld) and +10\% (WebShop) absolute success rate \\
+31 & Bailey \& López de Prado~\cite{bailey2014deflated} & 2014 & Deflate Sharpe ratio for multiple testing, non-normality, short samples & N/A & N/A (method) \\
+32 & López de Prado~\cite{lopezdeprado2018} & 2018 & Financial ML methods: labeling, purged k-fold CV with embargo, backtest statistics & N/A & N/A (book) \\
+\bottomrule
+\end{tabularx}
+\end{table*}

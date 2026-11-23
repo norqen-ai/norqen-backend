@@ -1,0 +1,66 @@
+{
+ "ticker": "BRITANNIA.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.1767762496050037,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is not in overbought territory.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BRITANNIA.NS",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.0617873845251008,
+   "confidence": 0.0617873845251008,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BRITANNIA.NS",
+   "summary": "Britannia Industries is adopting a 'startup mentality' to enhance competitiveness against regional rivals, indicating a proactive approach to market challenges.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The high trailing P/E ratio of 66.4 suggests overvaluation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BRITANNIA.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

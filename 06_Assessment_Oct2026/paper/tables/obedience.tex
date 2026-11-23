@@ -1,0 +1,14 @@
+\begin{table*}[!t]
+\centering\footnotesize
+\caption{Rule-following on identical evidence: 40 stocks (20 US, 20 NSE) $\times$ 4 investor profiles per decision mode. A violation is a position above the cap, a missing or looser stop-loss, or a trade below the confidence threshold. CI = 95\% bootstrap interval.}
+\label{tab:obedience}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.0cm} Z Z >{\centering\arraybackslash}p{2.9cm} Z Z Z Z}
+\toprule
+Decision mode & $N$ & Traded (\%) & Any violation (\%) [95\% CI] & Violation among trades (\%) ($n$) & US (\%) & NSE (\%) & Vetoed (\%) \\
+\midrule
+Guarded (code decides) & 160 & 48 & 0.0 [0.0, 0.0] & 0.0 (76) & 0.0 & 0.0 & 0.0 \\
+LLM + numeric rules & 160 & 31 & 0.0 [0.0, 0.0] & 0.0 (50) & 0.0 & 0.0 & 0.0 \\
+LLM + text profile only & 160 & 66 & 64.4 [56.9, 71.9] & 98.1 (105) & 70.0 & 58.8 & 64.4 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

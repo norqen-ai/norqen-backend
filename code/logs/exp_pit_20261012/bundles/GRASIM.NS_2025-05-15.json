@@ -1,0 +1,66 @@
+{
+ "ticker": "GRASIM.NS",
+ "ts": 1747267200.0,
+ "context": {
+  "ann_vol": 0.2503516726300414,
+  "date": "2025-05-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "The SMA indicators suggest a bullish trend, but the RSI indicates there is still room for growth without being overbought.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GRASIM.NS",
+   "summary": "P(up next day)=0.34 (logistic regression, walk-forward-safe)",
+   "direction": -0.32202640135266736,
+   "confidence": 0.32202640135266736,
+   "reliability": 0.65,
+   "ts": 1747267200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GRASIM.NS",
+   "summary": "Birla's big paints bet hits Asian Paints' market share in just one year, indicating potential competitive pressure on Grasim's business.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GRASIM.NS",
+   "summary": "The high trailing P/E ratio of 33.0 suggests overvaluation, while the low profit margin of 4.34% raises concerns about profitability.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GRASIM.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

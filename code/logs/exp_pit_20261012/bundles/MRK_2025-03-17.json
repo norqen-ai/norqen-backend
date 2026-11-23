@@ -1,0 +1,66 @@
+{
+ "ticker": "MRK",
+ "ts": 1742169600.0,
+ "context": {
+  "ann_vol": 0.27283765801020826,
+  "date": "2025-03-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MRK",
+   "summary": "The RSI is approaching overbought territory while the SMA20 is above the SMA50, indicating a potential continuation of the uptrend but with caution due to the RSI level.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MRK",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.1293237782109855,
+   "confidence": 0.1293237782109855,
+   "reliability": 0.65,
+   "ts": 1742169600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MRK",
+   "summary": "The headlines do not provide a clear direction for MRK, as they focus on dividend stocks and another company's performance.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MRK",
+   "summary": "The extremely high trailing P/E ratio of 644.9 combined with low profit margins and minimal revenue growth indicates significant overvaluation and weak financial performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MRK",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1742169600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "MSFT",
+ "ts": 1728950400.0,
+ "context": {
+  "ann_vol": 0.19722821097343216,
+  "date": "2024-10-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MSFT",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 below SMA50 suggests a bearish trend.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MSFT",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.16927145686682943,
+   "confidence": 0.16927145686682943,
+   "reliability": 0.65,
+   "ts": 1728950400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MSFT",
+   "summary": "The headline 'MSFT Stock Moves From Darling To Dud' suggests a significant negative shift in market sentiment towards Microsoft stock.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MSFT",
+   "summary": "Microsoft's strong profit margin and revenue growth indicate solid fundamentals, though the high P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MSFT",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

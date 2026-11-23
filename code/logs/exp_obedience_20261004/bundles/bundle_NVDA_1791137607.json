@@ -1,0 +1,64 @@
+{
+  "ticker": "NVDA",
+  "ts": 1791137607.885601,
+  "context": {
+    "ann_vol": 0.3846405551435388
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "NVDA",
+      "summary": "The RSI indicates overbought conditions, suggesting a potential pullback in the next few days.",
+      "direction": -1.0,
+      "confidence": 0.7,
+      "reliability": 0.75,
+      "ts": 1791137602.909736,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "NVDA",
+      "summary": "P(up next day)=0.40 (logistic regression, walk-forward-safe)",
+      "direction": -0.2075127851322719,
+      "confidence": 0.2075127851322719,
+      "reliability": 0.65,
+      "ts": 1791137603.272578,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "NVDA",
+      "summary": "Amazon's intention to move $8 billion in Nvidia chips off its books suggests potential challenges in demand for Nvidia's products, indicating bearish sentiment for the stock.",
+      "direction": -1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137605.0737438,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "NVDA",
+      "summary": "NVIDIA's strong profit margin and impressive revenue growth indicate robust fundamentals, supporting a bullish outlook.",
+      "direction": 1.0,
+      "confidence": 0.85,
+      "reliability": 0.78,
+      "ts": 1791137606.572036,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "NVDA",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137607.8855438,
+      "cost_units": 2.0
+    }
+  ]
+}

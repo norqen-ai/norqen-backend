@@ -1,0 +1,64 @@
+{
+  "ticker": "PEP",
+  "ts": 1791137935.931506,
+  "context": {
+    "ann_vol": 0.1921970435126395
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "PEP",
+      "summary": "The RSI indicates oversold conditions, and both SMAs suggest a downtrend.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.75,
+      "ts": 1791137931.2684748,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "PEP",
+      "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+      "direction": -0.02778143046251591,
+      "confidence": 0.02778143046251591,
+      "reliability": 0.65,
+      "ts": 1791137931.479276,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "PEP",
+      "summary": "The headline '3 Numbers That Explain Why I'm Buying PepsiCo With My Next $5,000' suggests strong investor interest and confidence in PepsiCo's stock.",
+      "direction": 1.0,
+      "confidence": 0.8,
+      "reliability": 0.6,
+      "ts": 1791137933.20365,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "PEP",
+      "summary": "PepsiCo's strong profit margin and high return on equity indicate solid financial health and growth potential.",
+      "direction": 1.0,
+      "confidence": 0.85,
+      "reliability": 0.78,
+      "ts": 1791137934.849131,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "PEP",
+      "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137935.931433,
+      "cost_units": 2.0
+    }
+  ]
+}

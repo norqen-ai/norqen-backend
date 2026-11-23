@@ -1,0 +1,66 @@
+{
+ "ticker": "TECHM.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.20317899164749997,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "P(up next day)=0.38 (logistic regression, walk-forward-safe)",
+   "direction": -0.24427996678840846,
+   "confidence": 0.24427996678840846,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TECHM.NS",
+   "summary": "The most significant headline regarding investment in clean energy by Nikhil Kamath may indicate a positive sentiment towards related sectors, but lacks direct relevance to TECHM.NS's immediate performance.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TECHM.NS",
+   "summary": "Despite a reasonable profit margin and ROE, the trailing P/E suggests overvaluation relative to modest revenue growth.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TECHM.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

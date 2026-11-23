@@ -1,0 +1,66 @@
+{
+ "ticker": "SUNPHARMA.NS",
+ "ts": 1760486400.0,
+ "context": {
+  "ann_vol": 0.18812398550771936,
+  "date": "2025-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The stock is in a neutral position with a slight upward trend indicated by SMA values and a moderate RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "P(up next day)=0.54 (logistic regression, walk-forward-safe)",
+   "direction": 0.08240647030433501,
+   "confidence": 0.08240647030433501,
+   "reliability": 0.65,
+   "ts": 1760486400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The most significant headline is the overall positive sentiment in the market as pharma stocks gain amid Q2 earnings focus, which could benefit Sun Pharma.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "Despite a high trailing P/E ratio, the solid profit margin and revenue growth indicate a stable outlook.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SUNPHARMA.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1760486400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+  "ticker": "JNJ",
+  "ts": 1791137825.243959,
+  "context": {
+    "ann_vol": 0.2116271151169227
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "JNJ",
+      "summary": "The RSI indicates oversold conditions, but the SMA20 is below the SMA50, suggesting a bearish trend.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.75,
+      "ts": 1791137820.661349,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "JNJ",
+      "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+      "direction": -0.06655960983865261,
+      "confidence": 0.06655960983865261,
+      "reliability": 0.65,
+      "ts": 1791137820.892867,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "JNJ",
+      "summary": "Johnson & Johnson (JNJ) reports sustained Phase 3 skin clearance for ICOTYDE, indicating strong product performance and potential for future revenue growth.",
+      "direction": 1.0,
+      "confidence": 0.8,
+      "reliability": 0.6,
+      "ts": 1791137822.6688042,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "JNJ",
+      "summary": "Johnson & Johnson's solid profit margin and revenue growth indicate a stable outlook, but the high P/E ratio suggests potential overvaluation.",
+      "direction": 0.5,
+      "confidence": 0.7,
+      "reliability": 0.78,
+      "ts": 1791137824.2262132,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "JNJ",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137825.2438688,
+      "cost_units": 2.0
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "ABT",
+ "ts": 1723680000.0,
+ "context": {
+  "ann_vol": 0.2209279445533366,
+  "date": "2024-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ABT",
+   "summary": "The RSI is approaching overbought territory while the SMAs indicate a bullish trend.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ABT",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.06723512040437596,
+   "confidence": 0.06723512040437596,
+   "reliability": 0.65,
+   "ts": 1723680000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ABT",
+   "summary": "The competitive landscape in the continuous glucose monitoring (CGM) market, highlighted by DexCom's analysis, suggests potential challenges for Abbott's diabetes-related products.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ABT",
+   "summary": "The negative revenue growth of -8.12% significantly undermines the overall financial health despite decent profit margins and ROE.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ABT",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

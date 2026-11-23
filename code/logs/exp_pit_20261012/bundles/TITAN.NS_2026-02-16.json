@@ -1,0 +1,66 @@
+{
+ "ticker": "TITAN.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.18472965667940752,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TITAN.NS",
+   "summary": "The SMA indicators suggest a slight uptrend, but the RSI indicates potential for a pullback.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TITAN.NS",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.17329242801273737,
+   "confidence": 0.17329242801273737,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TITAN.NS",
+   "summary": "Titan shares rise 3% to new 52-week high as Q3 results impress, indicating strong market confidence.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TITAN.NS",
+   "summary": "The extremely high trailing P/E ratio of 110.8 suggests overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TITAN.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

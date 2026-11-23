@@ -1,0 +1,66 @@
+{
+ "ticker": "NVDA",
+ "ts": 1773619200.0,
+ "context": {
+  "ann_vol": 0.35236177321213014,
+  "date": "2026-03-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NVDA",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NVDA",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": 0.0018554014788729756,
+   "confidence": 0.0018554014788729756,
+   "reliability": 0.65,
+   "ts": 1773619200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NVDA",
+   "summary": "Nvidia's stock is experiencing volatility but positive sentiment is building ahead of the GTC event, particularly with encouraging news from CEO Jensen Huang suggesting a potential buying opportunity.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NVDA",
+   "summary": "Despite a high trailing P/E ratio, NVIDIA's strong profit margin and exceptional revenue growth indicate solid fundamentals.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NVDA",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1773619200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

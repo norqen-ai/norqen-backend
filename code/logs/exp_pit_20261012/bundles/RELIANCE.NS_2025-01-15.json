@@ -1,0 +1,66 @@
+{
+ "ticker": "RELIANCE.NS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.2011677916447397,
+  "date": "2025-01-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, but the RSI is neutral.",
+   "direction": 0.0,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "RELIANCE.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.03962116716456077,
+   "confidence": 0.03962116716456077,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "RELIANCE.NS",
+   "summary": "Reliance Industrial Infrastructure reported a 24% drop in net profit, indicating potential challenges ahead for the company.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "RELIANCE.NS",
+   "summary": "The profit margin and revenue growth are modest, indicating some stability, but the P/E ratio suggests the stock may be overvalued.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "RELIANCE.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

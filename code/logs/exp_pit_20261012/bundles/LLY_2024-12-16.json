@@ -1,0 +1,66 @@
+{
+ "ticker": "LLY",
+ "ts": 1734307200.0,
+ "context": {
+  "ann_vol": 0.3020771650393392,
+  "date": "2024-12-16",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "LLY",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, despite the RSI being in a neutral range.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "LLY",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": 0.004796802816507961,
+   "confidence": 0.004796802816507961,
+   "reliability": 0.65,
+   "ts": 1734307200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "LLY",
+   "summary": "Eli Lilly stock is expected to benefit from a potential growth catalyst in early 2025, indicating bullish sentiment for the near term.",
+   "direction": 1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "LLY",
+   "summary": "The extremely high trailing P/E ratio of 132.7 suggests overvaluation despite strong revenue growth and profit margins.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "LLY",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1734307200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "GOOGL",
+ "ts": 1781481600.0,
+ "context": {
+  "ann_vol": 0.363382941900835,
+  "date": "2026-06-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "GOOGL",
+   "summary": "The RSI indicates a neutral to bearish condition, while the SMA20 being above SMA50 suggests a potential uptrend, but the current RSI level and recent price action imply caution.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "GOOGL",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.06874735257091102,
+   "confidence": 0.06874735257091102,
+   "reliability": 0.65,
+   "ts": 1781481600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "GOOGL",
+   "summary": "Alphabet (GOOGL) has shown strong performance with a 109% year gain and continues to attract investor interest, suggesting bullish momentum.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "GOOGL",
+   "summary": "Despite a high trailing P/E ratio, GOOGL's strong profit margin and revenue growth indicate solid fundamentals.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "GOOGL",
+   "summary": "The market is in an up-trend, suggesting a favorable environment for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1781481600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

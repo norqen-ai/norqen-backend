@@ -1,0 +1,64 @@
+{
+  "ticker": "AXISBANK.NS",
+  "ts": 1791138269.678538,
+  "context": {
+    "ann_vol": 0.23508758145165345
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "AXISBANK.NS",
+      "summary": "The SMA indicators suggest a downtrend, but the recent positive return indicates potential for short-term recovery.",
+      "direction": -0.5,
+      "confidence": 0.6,
+      "reliability": 0.75,
+      "ts": 1791138263.525116,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "AXISBANK.NS",
+      "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+      "direction": 0.004345738033326274,
+      "confidence": 0.004345738033326274,
+      "reliability": 0.65,
+      "ts": 1791138263.708628,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "AXISBANK.NS",
+      "summary": "Axis Bank shares fell over 5% after Q1 earnings failed to meet market expectations, leading analysts to cut estimates.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.6,
+      "ts": 1791138266.507275,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "AXISBANK.NS",
+      "summary": "AXISBANK.NS shows strong profit margins and solid revenue growth, indicating a bullish outlook.",
+      "direction": 1.0,
+      "confidence": 0.85,
+      "reliability": 0.78,
+      "ts": 1791138268.6560729,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "AXISBANK.NS",
+      "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+      "direction": -0.7,
+      "confidence": 0.65,
+      "reliability": 0.6,
+      "ts": 1791138269.678522,
+      "cost_units": 2.0
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "ticker": "HINDUNILVR.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.19178392406212352,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HINDUNILVR.NS",
+   "summary": "The RSI is approaching overbought territory while the SMAs indicate an uptrend.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HINDUNILVR.NS",
+   "summary": "P(up next day)=0.36 (logistic regression, walk-forward-safe)",
+   "direction": -0.2744763348661966,
+   "confidence": 0.2744763348661966,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HINDUNILVR.NS",
+   "summary": "The announcement of GST 2.0 fueling a rally in FMCG stocks is the most significant factor indicating bullish sentiment for Hindustan Unilever.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HINDUNILVR.NS",
+   "summary": "The negative revenue growth and high trailing P/E ratio indicate potential overvaluation and weakening performance.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HINDUNILVR.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

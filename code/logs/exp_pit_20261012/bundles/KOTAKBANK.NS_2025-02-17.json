@@ -1,0 +1,66 @@
+{
+ "ticker": "KOTAKBANK.NS",
+ "ts": 1739750400.0,
+ "context": {
+  "ann_vol": 0.26955711392151765,
+  "date": "2025-02-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral and the recent return is slightly negative.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.11840798420214116,
+   "confidence": 0.11840798420214116,
+   "reliability": 0.65,
+   "ts": 1739750400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "Kotak Bank shares rose over 2% to hit a 52-week high after the RBI lifted restrictions, indicating strong market confidence in the stock's future performance.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "KOTAKBANK.NS shows strong revenue growth and solid profit margins, indicating a bullish outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "KOTAKBANK.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

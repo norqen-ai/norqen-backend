@@ -1,0 +1,66 @@
+{
+ "ticker": "COST",
+ "ts": 1723680000.0,
+ "context": {
+  "ann_vol": 0.19730863388598388,
+  "date": "2024-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the recent uptrend.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "COST",
+   "summary": "P(up next day)=0.60 (logistic regression, walk-forward-safe)",
+   "direction": 0.19214133987920556,
+   "confidence": 0.19214133987920556,
+   "reliability": 0.65,
+   "ts": 1723680000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "COST",
+   "summary": "The headlines primarily focus on product promotions and shopping tips, lacking significant market-moving news for Costco's stock.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "COST",
+   "summary": "The high trailing P/E ratio of 61.3 suggests an extreme valuation, which, combined with a low profit margin of 2.6%, indicates potential overvaluation and limited profitability.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "COST",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

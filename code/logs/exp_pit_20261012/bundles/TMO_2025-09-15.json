@@ -1,0 +1,66 @@
+{
+ "ticker": "TMO",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.34274129921377533,
+  "date": "2025-09-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TMO",
+   "summary": "The SMA20 is below the SMA50 indicating a bearish trend.",
+   "direction": -0.8,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TMO",
+   "summary": "P(up next day)=0.58 (logistic regression, walk-forward-safe)",
+   "direction": 0.1643814812628832,
+   "confidence": 0.1643814812628832,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TMO",
+   "summary": "The headlines indicate a lack of direct positive news for TMO, with a focus on broader industry trends rather than specific company advancements, suggesting a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TMO",
+   "summary": "The low revenue growth and high P/E ratio suggest potential overvaluation despite decent profit margins and ROE.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TMO",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

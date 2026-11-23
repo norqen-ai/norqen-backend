@@ -1,0 +1,66 @@
+{
+ "ticker": "NESTLEIND.NS",
+ "ts": 1784073600.0,
+ "context": {
+  "ann_vol": 0.23269967992590138,
+  "date": "2026-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The RSI indicates a neutral position, and the SMAs suggest a slight uptrend, but recent returns are negative.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "NESTLEIND.NS",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.08277197761133182,
+   "confidence": 0.08277197761133182,
+   "reliability": 0.65,
+   "ts": 1784073600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "NESTLEIND.NS",
+   "summary": "Nestle India has declared a special dividend of \u20b92 per share, which is likely to boost investor sentiment and stock price.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The absence of key financial metrics such as P/E, profit margin, revenue growth, and ROE indicates significant uncertainty and potential underlying issues.",
+   "direction": -1.0,
+   "confidence": 0.9,
+   "reliability": 0.78,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "NESTLEIND.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1784073600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

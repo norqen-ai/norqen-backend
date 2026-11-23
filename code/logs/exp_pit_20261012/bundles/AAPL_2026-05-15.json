@@ -1,0 +1,66 @@
+{
+ "ticker": "AAPL",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.22466403185661796,
+  "date": "2026-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AAPL",
+   "summary": "The RSI indicates that AAPL is overbought at 88, suggesting a potential price correction.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AAPL",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.11135903849730566,
+   "confidence": 0.11135903849730566,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AAPL",
+   "summary": "Apple shares climbed to a record high as investors look past AI concerns, indicating strong investor confidence and momentum in the stock.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AAPL",
+   "summary": "Despite strong profit margins and revenue growth, the high trailing P/E ratio suggests overvaluation.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AAPL",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

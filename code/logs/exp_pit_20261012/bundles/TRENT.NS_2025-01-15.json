@@ -1,0 +1,66 @@
+{
+ "ticker": "TRENT.NS",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.3233442925167166,
+  "date": "2025-01-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 is below SMA50, suggesting a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.04539840417578478,
+   "confidence": 0.04539840417578478,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TRENT.NS",
+   "summary": "Elara Capital's recommendation to 'buy' Trent with a target price of \u20b98,500 is the most market-moving headline, indicating strong bullish sentiment.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TRENT.NS",
+   "summary": "The extremely high trailing P/E ratio of 228.7 suggests an overvaluation despite decent profit margins and strong revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TRENT.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

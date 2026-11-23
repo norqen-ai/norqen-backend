@@ -1,0 +1,66 @@
+{
+ "ticker": "TRENT.NS",
+ "ts": 1771200000.0,
+ "context": {
+  "ann_vol": 0.7298269056936577,
+  "date": "2026-02-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the recent uptrend.",
+   "direction": -0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TRENT.NS",
+   "summary": "P(up next day)=0.53 (logistic regression, walk-forward-safe)",
+   "direction": 0.05820665472052289,
+   "confidence": 0.05820665472052289,
+   "reliability": 0.65,
+   "ts": 1771200000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TRENT.NS",
+   "summary": "Trent's strategic focus on tier-3 and tier-4 cities for expansion could drive future growth, indicating a positive outlook for the stock.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TRENT.NS",
+   "summary": "The extremely high trailing P/E ratio of 97.1 suggests overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TRENT.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1771200000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

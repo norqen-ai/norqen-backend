@@ -1,0 +1,66 @@
+{
+ "ticker": "V",
+ "ts": 1778803200.0,
+ "context": {
+  "ann_vol": 0.2564946492991393,
+  "date": "2026-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "The RSI is approaching overbought territory while the SMAs indicate a bullish trend.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "V",
+   "summary": "P(up next day)=0.56 (logistic regression, walk-forward-safe)",
+   "direction": 0.1232187157170177,
+   "confidence": 0.1232187157170177,
+   "reliability": 0.65,
+   "ts": 1778803200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "V",
+   "summary": "Berkshire Hathaway's significant divestment from Visa and Mastercard, coupled with the sale of Amazon shares, indicates a bearish sentiment towards these stocks.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "V",
+   "summary": "V's strong profit margin and high ROE indicate solid fundamentals, but the elevated P/E ratio suggests potential overvaluation.",
+   "direction": 0.5,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "V",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1778803200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

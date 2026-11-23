@@ -1,0 +1,64 @@
+{
+  "ticker": "AMZN",
+  "ts": 1791137651.342824,
+  "context": {
+    "ann_vol": 0.41138681417042267
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "AMZN",
+      "summary": "The indicators suggest a neutral outlook with no clear trend direction.",
+      "direction": 0.0,
+      "confidence": 0.5,
+      "reliability": 0.75,
+      "ts": 1791137646.684174,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "AMZN",
+      "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+      "direction": -0.06181202266421815,
+      "confidence": 0.06181202266421815,
+      "reliability": 0.65,
+      "ts": 1791137646.808522,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "AMZN",
+      "summary": "Jim Cramer suggests he may leave Amazon for a rival, indicating potential investor dissatisfaction and negative sentiment towards Amazon's stock.",
+      "direction": -1.0,
+      "confidence": 0.75,
+      "reliability": 0.6,
+      "ts": 1791137648.443989,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "AMZN",
+      "summary": "Amazon's strong profit margin and revenue growth, combined with a reasonable P/E ratio, indicate a positive medium-term outlook.",
+      "direction": 1.0,
+      "confidence": 0.85,
+      "reliability": 0.78,
+      "ts": 1791137650.0996091,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "AMZN",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137651.342807,
+      "cost_units": 2.0
+    }
+  ]
+}

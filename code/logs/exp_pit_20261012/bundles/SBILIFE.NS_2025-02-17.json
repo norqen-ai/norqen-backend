@@ -1,0 +1,66 @@
+{
+ "ticker": "SBILIFE.NS",
+ "ts": 1739750400.0,
+ "context": {
+  "ann_vol": 0.22943125928796188,
+  "date": "2025-02-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "The stock is in a neutral position with RSI indicating no overbought or oversold conditions.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "SBILIFE.NS",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.08865028206405534,
+   "confidence": 0.08865028206405534,
+   "reliability": 0.65,
+   "ts": 1739750400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "SBILIFE.NS",
+   "summary": "The government's directive for private insurers to increase the free look period to one year may negatively impact profitability and operational dynamics for life insurers like SBILIFE.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "SBILIFE.NS",
+   "summary": "The high trailing P/E ratio of 77.8 combined with a very low profit margin of 1.45% suggests overvaluation and weak profitability, leading to a bearish outlook.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.78,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "SBILIFE.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

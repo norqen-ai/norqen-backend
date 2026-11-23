@@ -1,0 +1,66 @@
+{
+ "ticker": "ABT",
+ "ts": 1736899200.0,
+ "context": {
+  "ann_vol": 0.1674337640103347,
+  "date": "2025-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ABT",
+   "summary": "The SMA20 is below the SMA50 indicating a downtrend, and the RSI suggests the stock is approaching oversold conditions.",
+   "direction": -0.7,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ABT",
+   "summary": "P(up next day)=0.44 (logistic regression, walk-forward-safe)",
+   "direction": -0.1122008591877206,
+   "confidence": 0.1122008591877206,
+   "reliability": 0.65,
+   "ts": 1736899200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ABT",
+   "summary": "The headline about the U.S. government taking a closer look at baby formula supplies and shortages could negatively impact ABT's stock due to potential regulatory scrutiny and supply chain concerns.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ABT",
+   "summary": "The negative revenue growth of -8.12% significantly undermines the overall financial health despite a decent profit margin and ROE.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ABT",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1736899200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

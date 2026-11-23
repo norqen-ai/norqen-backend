@@ -1,0 +1,66 @@
+{
+ "ticker": "BEL.NS",
+ "ts": 1757894400.0,
+ "context": {
+  "ann_vol": 0.2351274531732451,
+  "date": "2025-09-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "BEL.NS",
+   "summary": "The RSI is at 70 indicating overbought conditions, which may lead to a pullback.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "BEL.NS",
+   "summary": "P(up next day)=0.32 (logistic regression, walk-forward-safe)",
+   "direction": -0.3646768149570181,
+   "confidence": 0.3646768149570181,
+   "reliability": 0.65,
+   "ts": 1757894400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "BEL.NS",
+   "summary": "The most market-moving headline is the suggestion from Dharmesh Shah of ICICI Sec to buy BEL shares, indicating positive sentiment towards the stock.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "BEL.NS",
+   "summary": "The high trailing P/E ratio of 54.4 suggests an extreme valuation despite decent profit margins and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "BEL.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1757894400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

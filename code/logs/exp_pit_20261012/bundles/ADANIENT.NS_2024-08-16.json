@@ -1,0 +1,66 @@
+{
+ "ticker": "ADANIENT.NS",
+ "ts": 1723766400.0,
+ "context": {
+  "ann_vol": 0.5297072788227761,
+  "date": "2024-08-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ADANIENT.NS",
+   "summary": "The indicators suggest a neutral outlook with no clear trend direction.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.75,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ADANIENT.NS",
+   "summary": "P(up next day)=0.52 (logistic regression, walk-forward-safe)",
+   "direction": 0.031856277654066956,
+   "confidence": 0.031856277654066956,
+   "reliability": 0.65,
+   "ts": 1723766400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ADANIENT.NS",
+   "summary": "$2.4 billion wiped off Adani shares after Hindenburg allegations against regulator is the most market-moving headline, indicating significant investor concern and potential for further declines.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ADANIENT.NS",
+   "summary": "The significant revenue decline and high P/E ratio indicate a bearish outlook for ADANIENT.NS.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ADANIENT.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1723766400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

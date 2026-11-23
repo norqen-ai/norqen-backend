@@ -1,0 +1,66 @@
+{
+ "ticker": "TECHM.NS",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.20110565214724907,
+  "date": "2025-11-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI suggests a neutral condition.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "P(up next day)=0.38 (logistic regression, walk-forward-safe)",
+   "direction": -0.24817693097012494,
+   "confidence": 0.24817693097012494,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TECHM.NS",
+   "summary": "Tech Mahindra's recent deal with AT&T to enhance global LTE and 5G network testing is a significant positive development for the stock.",
+   "direction": 1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TECHM.NS",
+   "summary": "Despite a reasonable profit margin and ROE, the trailing P/E suggests overvaluation relative to modest revenue growth.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TECHM.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "policy_name": "intraday",
+  "objective": "capture_intraday_moves",
+  "horizon": "minutes_to_hours",
+  "max_position_pct": 4.0,
+  "max_daily_loss_pct": 2.0,
+  "max_open_positions": 4,
+  "stop_loss_pct": 1.5,
+  "take_profit_pct": 3.0,
+  "confidence_to_act": 0.65,
+  "tool_priorities": ["technical", "intraday_momentum", "order_book", "news"],
+  "forbidden_evidence": ["annual_fundamentals"],
+  "evidence_budget": 8,
+  "sizing_method": "vol_target",
+  "target_vol": 0.05
+}

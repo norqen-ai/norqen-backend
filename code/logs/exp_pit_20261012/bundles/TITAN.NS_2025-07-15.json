@@ -1,0 +1,66 @@
+{
+ "ticker": "TITAN.NS",
+ "ts": 1752537600.0,
+ "context": {
+  "ann_vol": 0.21247044544391064,
+  "date": "2025-07-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TITAN.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 being below SMA50 suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TITAN.NS",
+   "summary": "P(up next day)=0.50 (logistic regression, walk-forward-safe)",
+   "direction": 0.0069833926684959025,
+   "confidence": 0.0069833926684959025,
+   "reliability": 0.65,
+   "ts": 1752537600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TITAN.NS",
+   "summary": "Titan shares have fallen over 5% due to disappointing jewellery growth in Q1, leading to brokerages expressing disappointment and a significant market valuation drop.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TITAN.NS",
+   "summary": "The extremely high trailing P/E ratio of 90.5 suggests overvaluation, outweighing the positive revenue growth and ROE.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TITAN.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating potential bullish momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1752537600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

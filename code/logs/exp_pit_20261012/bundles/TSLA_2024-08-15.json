@@ -1,0 +1,66 @@
+{
+ "ticker": "TSLA",
+ "ts": 1723680000.0,
+ "context": {
+  "ann_vol": 0.623842316261493,
+  "date": "2024-08-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TSLA",
+   "summary": "The SMA20 is above the SMA50 indicating a potential uptrend, but the RSI is neutral, suggesting limited momentum.",
+   "direction": 0.2,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TSLA",
+   "summary": "P(up next day)=0.42 (logistic regression, walk-forward-safe)",
+   "direction": -0.15718411259577536,
+   "confidence": 0.15718411259577536,
+   "reliability": 0.65,
+   "ts": 1723680000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TSLA",
+   "summary": "Tesla is facing negative sentiment due to stock declines and reports of unsold Cybertrucks piling up, indicating potential operational challenges ahead.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TSLA",
+   "summary": "Despite a high trailing P/E ratio, Tesla's strong profit margin and revenue growth indicate potential for continued performance.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TSLA",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1723680000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

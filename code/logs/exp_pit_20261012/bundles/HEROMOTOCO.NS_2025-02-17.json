@@ -1,0 +1,66 @@
+{
+ "ticker": "HEROMOTOCO.NS",
+ "ts": 1739750400.0,
+ "context": {
+  "ann_vol": 0.21312278227692613,
+  "date": "2025-02-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The stock is in a downtrend with SMA20 below SMA50 and an RSI indicating neutral momentum.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03808736563347681,
+   "confidence": 0.03808736563347681,
+   "reliability": 0.65,
+   "ts": 1739750400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The headline about 907 BSE-listed shares hitting 52-week lows indicates a bearish trend in the market, which could negatively impact HEROMOTOCO.NS.",
+   "direction": -1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "HEROMOTOCO.NS shows strong revenue growth and a solid return on equity, indicating a positive medium-term outlook.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HEROMOTOCO.NS",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1739750400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

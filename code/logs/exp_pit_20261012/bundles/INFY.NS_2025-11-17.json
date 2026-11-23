@@ -1,0 +1,66 @@
+{
+ "ticker": "INFY.NS",
+ "ts": 1763337600.0,
+ "context": {
+  "ann_vol": 0.24761447697502179,
+  "date": "2025-11-17",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "INFY.NS",
+   "summary": "The RSI is neutral and both SMAs indicate a slight uptrend, suggesting a mild bullish sentiment.",
+   "direction": 0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "INFY.NS",
+   "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+   "direction": 0.018157492973667866,
+   "confidence": 0.018157492973667866,
+   "reliability": 0.65,
+   "ts": 1763337600.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "INFY.NS",
+   "summary": "The most significant headline is the announcement of Infosys's \u20b918,000-crore buyback, which typically signals confidence in the company's financial health and can support share prices.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "INFY.NS",
+   "summary": "The extremely high trailing P/E ratio of 1941.7 indicates an extreme overvaluation, overshadowing the decent profit margin and revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "INFY.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1763337600.0,
+   "cost_units": 2.0
+  }
+ ]
+}

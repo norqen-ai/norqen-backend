@@ -1,0 +1,66 @@
+{
+ "ticker": "VZ",
+ "ts": 1768435200.0,
+ "context": {
+  "ann_vol": 0.19364533739510928,
+  "date": "2026-01-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "VZ",
+   "summary": "The SMA20 is below the SMA50 indicating a potential downtrend, but the RSI is neutral.",
+   "direction": -0.2,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "VZ",
+   "summary": "P(up next day)=0.47 (logistic regression, walk-forward-safe)",
+   "direction": -0.054690247984531704,
+   "confidence": 0.054690247984531704,
+   "reliability": 0.65,
+   "ts": 1768435200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "VZ",
+   "summary": "The most significant headline is the upcoming acquisition of Frontier Communications, which could enhance Verizon's market position and growth potential.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "VZ",
+   "summary": "Despite low revenue growth, Verizon's strong profit margin and ROE suggest stable fundamentals.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "VZ",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1768435200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

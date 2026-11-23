@@ -1,0 +1,23 @@
+# secrets — never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+# python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+# local junk
+.DS_Store
+~$*
+*.zip
+# regenerated run output (the 4 Oct experiment folder is kept)
+code/logs/bundles/
+code/logs/decisions_*.jsonl
+code/logs/demo_*
+
+# SQLite side files created while the cache is open
+*.sqlite-shm
+*.sqlite-wal

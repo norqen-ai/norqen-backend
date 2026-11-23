@@ -1,0 +1,66 @@
+{
+ "ticker": "ASIANPAINT.NS",
+ "ts": 1750032000.0,
+ "context": {
+  "ann_vol": 0.17743887977027212,
+  "date": "2025-06-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The RSI indicates oversold conditions, but the SMA20 being below SMA50 suggests a bearish trend.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.75,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "P(up next day)=0.62 (logistic regression, walk-forward-safe)",
+   "direction": 0.24423957415656905,
+   "confidence": 0.24423957415656905,
+   "reliability": 0.65,
+   "ts": 1750032000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The most market-moving headline is the significant stake sale by Reliance Industries, which indicates a potential loss of confidence in Asian Paints' stock performance.",
+   "direction": -1.0,
+   "confidence": 0.8,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "Despite a high trailing P/E ratio, ASIANPAINT.NS shows strong profit margins and ROE, indicating potential for growth.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "ASIANPAINT.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

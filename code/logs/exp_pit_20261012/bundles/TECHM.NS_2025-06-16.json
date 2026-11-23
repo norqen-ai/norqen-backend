@@ -1,0 +1,66 @@
+{
+ "ticker": "TECHM.NS",
+ "ts": 1750032000.0,
+ "context": {
+  "ann_vol": 0.2919970364255709,
+  "date": "2025-06-16",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "The RSI indicates overbought conditions, suggesting a potential pullback despite the uptrend.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TECHM.NS",
+   "summary": "P(up next day)=0.37 (logistic regression, walk-forward-safe)",
+   "direction": -0.26373868920369103,
+   "confidence": 0.26373868920369103,
+   "reliability": 0.65,
+   "ts": 1750032000.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TECHM.NS",
+   "summary": "The headlines do not provide significant market-moving news for TECHM.NS, with no clear bullish or bearish indicators present.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TECHM.NS",
+   "summary": "The negative revenue growth and high trailing P/E ratio indicate an overvaluation and potential decline in performance.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TECHM.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50.",
+   "direction": 1.0,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1750032000.0,
+   "cost_units": 2.0
+  }
+ ]
+}

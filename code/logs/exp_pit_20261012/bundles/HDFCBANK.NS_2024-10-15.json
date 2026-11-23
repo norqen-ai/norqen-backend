@@ -1,0 +1,66 @@
+{
+ "ticker": "HDFCBANK.NS",
+ "ts": 1728950400.0,
+ "context": {
+  "ann_vol": 0.1883900548631083,
+  "date": "2024-10-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HDFCBANK.NS",
+   "summary": "The RSI indicates a neutral to bearish condition, while the SMA20 being above SMA50 suggests a potential uptrend, leading to a mixed outlook.",
+   "direction": -0.5,
+   "confidence": 0.65,
+   "reliability": 0.75,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HDFCBANK.NS",
+   "summary": "P(up next day)=0.45 (logistic regression, walk-forward-safe)",
+   "direction": -0.10681454920046629,
+   "confidence": 0.10681454920046629,
+   "reliability": 0.65,
+   "ts": 1728950400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HDFCBANK.NS",
+   "summary": "HDFC Bank shares gain following SEBI's approval of a significant IPO, indicating positive market sentiment for the bank's stock.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HDFCBANK.NS",
+   "summary": "HDFCBANK.NS shows strong revenue growth and a solid profit margin, indicating positive medium-term prospects.",
+   "direction": 0.8,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HDFCBANK.NS",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1728950400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

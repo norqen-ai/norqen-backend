@@ -1,0 +1,66 @@
+{
+ "ticker": "MCD",
+ "ts": 1771286400.0,
+ "context": {
+  "ann_vol": 0.163778910574512,
+  "date": "2026-02-17",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "MCD",
+   "summary": "The RSI is approaching overbought territory, but the SMAs indicate a bullish trend.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "MCD",
+   "summary": "P(up next day)=0.48 (logistic regression, walk-forward-safe)",
+   "direction": -0.03932708106225091,
+   "confidence": 0.03932708106225091,
+   "reliability": 0.65,
+   "ts": 1771286400.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "MCD",
+   "summary": "McDonald's sales surge most in two years on $5 meal push indicates strong consumer demand and growth potential.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "MCD",
+   "summary": "The negative return on equity (ROE) indicates underlying issues despite decent profit margins.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "MCD",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1771286400.0,
+   "cost_units": 2.0
+  }
+ ]
+}

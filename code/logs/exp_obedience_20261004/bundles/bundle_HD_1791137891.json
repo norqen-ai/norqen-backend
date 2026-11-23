@@ -1,0 +1,64 @@
+{
+  "ticker": "HD",
+  "ts": 1791137891.709494,
+  "context": {
+    "ann_vol": 0.23914676864827913
+  },
+  "evidence": [
+    {
+      "tool": "technical",
+      "kind": "technical",
+      "ticker": "HD",
+      "summary": "The RSI indicates oversold conditions, but the SMA analysis shows a clear downtrend.",
+      "direction": -1.0,
+      "confidence": 0.85,
+      "reliability": 0.75,
+      "ts": 1791137886.670768,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "price_predictor",
+      "kind": "technical",
+      "ticker": "HD",
+      "summary": "P(up next day)=0.51 (logistic regression, walk-forward-safe)",
+      "direction": 0.022443321064642197,
+      "confidence": 0.022443321064642197,
+      "reliability": 0.65,
+      "ts": 1791137886.988929,
+      "cost_units": 1.0
+    },
+    {
+      "tool": "news",
+      "kind": "news",
+      "ticker": "HD",
+      "summary": "High interest rates are foreclosing on the American dream of home remodeling, which could negatively impact home improvement retailers like Home Depot.",
+      "direction": -1.0,
+      "confidence": 0.75,
+      "reliability": 0.6,
+      "ts": 1791137888.764241,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "fundamental",
+      "kind": "fundamental",
+      "ticker": "HD",
+      "summary": "The moderate P/E ratio and positive revenue growth indicate stable performance, but the low profit margin suggests limited pricing power.",
+      "direction": 0.5,
+      "confidence": 0.7,
+      "reliability": 0.78,
+      "ts": 1791137890.448769,
+      "cost_units": 2.0
+    },
+    {
+      "tool": "macro",
+      "kind": "macro",
+      "ticker": "HD",
+      "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, indicating positive momentum.",
+      "direction": 1.0,
+      "confidence": 0.7,
+      "reliability": 0.6,
+      "ts": 1791137891.70947,
+      "cost_units": 2.0
+    }
+  ]
+}

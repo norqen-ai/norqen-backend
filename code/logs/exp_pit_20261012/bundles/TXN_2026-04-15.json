@@ -1,0 +1,66 @@
+{
+ "ticker": "TXN",
+ "ts": 1776211200.0,
+ "context": {
+  "ann_vol": 0.35265527556513193,
+  "date": "2026-04-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "TXN",
+   "summary": "The RSI is at 70 indicating overbought conditions, while SMA20 is above SMA50 suggesting a potential reversal.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.75,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "TXN",
+   "summary": "P(up next day)=0.46 (logistic regression, walk-forward-safe)",
+   "direction": -0.07981688910457463,
+   "confidence": 0.07981688910457463,
+   "reliability": 0.65,
+   "ts": 1776211200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "TXN",
+   "summary": "The most market-moving headline is the mention of Texas Instruments entering a critical phase with a $250 price target, suggesting potential upward momentum.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "TXN",
+   "summary": "Despite a high trailing P/E ratio, TXN's strong profit margin and revenue growth indicate solid fundamentals.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.78,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "TXN",
+   "summary": "The market is in a down-trend as indicated by the SMA20 being below the SMA50, suggesting potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1776211200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

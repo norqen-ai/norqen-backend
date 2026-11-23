@@ -1,0 +1,66 @@
+{
+ "ticker": "COALINDIA.NS",
+ "ts": 1755475200.0,
+ "context": {
+  "ann_vol": 0.1309919104260116,
+  "date": "2025-08-18",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "COALINDIA.NS",
+   "summary": "The RSI is approaching overbought territory while SMA20 is above SMA50, indicating a potential continuation of the uptrend but with caution due to the high RSI.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "COALINDIA.NS",
+   "summary": "P(up next day)=0.41 (logistic regression, walk-forward-safe)",
+   "direction": -0.18384540977392072,
+   "confidence": 0.18384540977392072,
+   "reliability": 0.65,
+   "ts": 1755475200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "COALINDIA.NS",
+   "summary": "Coal India is experiencing a positive market sentiment as its share price gains amid a broader market rally, despite concerns over weak demand in Q1FY26.",
+   "direction": 0.2,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "COALINDIA.NS",
+   "summary": "Coal India has strong revenue growth and high profit margins, indicating solid fundamentals.",
+   "direction": 1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "COALINDIA.NS",
+   "summary": "The market is in a down-trend as the 20-day SMA is below the 50-day SMA, indicating potential headwinds for individual stocks.",
+   "direction": -0.5,
+   "confidence": 0.6,
+   "reliability": 0.6,
+   "ts": 1755475200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

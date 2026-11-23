@@ -1,0 +1,66 @@
+{
+ "ticker": "HDFCLIFE.NS",
+ "ts": 1744675200.0,
+ "context": {
+  "ann_vol": 0.27244995208084855,
+  "date": "2025-04-15",
+  "region": "IN"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The stock is in an uptrend with SMA20 above SMA50 and RSI indicating strength, suggesting a moderate bullish outlook.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.75,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "P(up next day)=0.49 (logistic regression, walk-forward-safe)",
+   "direction": -0.025510985702825173,
+   "confidence": 0.025510985702825173,
+   "reliability": 0.65,
+   "ts": 1744675200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The most significant headline indicates that HDFC Life is likely to announce a dividend next week after Q4FY25 results, which could positively influence investor sentiment.",
+   "direction": 0.5,
+   "confidence": 0.7,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The extremely high trailing P/E ratio of 95.8 suggests overvaluation, which is concerning despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.78,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "HDFCLIFE.NS",
+   "summary": "The market is in an up-trend as the 20-day SMA is above the 50-day SMA, suggesting a positive momentum.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1744675200.0,
+   "cost_units": 2.0
+  }
+ ]
+}

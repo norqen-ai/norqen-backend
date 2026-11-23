@@ -1,0 +1,66 @@
+{
+ "ticker": "AVGO",
+ "ts": 1747267200.0,
+ "context": {
+  "ann_vol": 0.7000371735462169,
+  "date": "2025-05-15",
+  "region": "US"
+ },
+ "evidence": [
+  {
+   "tool": "technical",
+   "kind": "technical",
+   "ticker": "AVGO",
+   "summary": "The RSI is significantly overbought at 90, indicating a high likelihood of a price correction.",
+   "direction": -1.0,
+   "confidence": 0.85,
+   "reliability": 0.75,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "price_predictor",
+   "kind": "technical",
+   "ticker": "AVGO",
+   "summary": "P(up next day)=0.29 (logistic regression, walk-forward-safe)",
+   "direction": -0.422110136945399,
+   "confidence": 0.422110136945399,
+   "reliability": 0.65,
+   "ts": 1747267200.0,
+   "cost_units": 1.0
+  },
+  {
+   "tool": "news",
+   "kind": "news",
+   "ticker": "AVGO",
+   "summary": "The most significant headline indicates that Broadcom and Marvell are expected to benefit from AI deals, suggesting potential positive sentiment but uncertainty remains due to mixed signals from the market.",
+   "direction": 0.0,
+   "confidence": 0.5,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "fundamental",
+   "kind": "fundamental",
+   "ticker": "AVGO",
+   "summary": "The extremely high trailing P/E ratio of 187.0 suggests overvaluation despite decent revenue growth.",
+   "direction": -1.0,
+   "confidence": 0.75,
+   "reliability": 0.78,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  },
+  {
+   "tool": "macro",
+   "kind": "macro",
+   "ticker": "AVGO",
+   "summary": "The market is in an up-trend as indicated by the SMA20 being above the SMA50, suggesting a positive tailwind for individual stocks.",
+   "direction": 0.7,
+   "confidence": 0.65,
+   "reliability": 0.6,
+   "ts": 1747267200.0,
+   "cost_units": 2.0
+  }
+ ]
+}
