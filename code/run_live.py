@@ -4,7 +4,7 @@
   python3 run_live.py --ticker AAPL --compare      # the money-shot + RQ1 instrument
 
 Runs with NO API key (deterministic tools on real yfinance data). Put your
-OPENAI_API_KEY in .env to activate the LLM specialist agents.
+OPENAI_API_KEY or GEMINI_API_KEY (+ LLM_PROVIDER) in .env to activate the LLM specialist agents.
 
 --compare is the research money-shot: it gathers ONE real evidence bundle, freezes
 it, then replays ALL FOUR policies on that identical evidence. Same facts, different
@@ -21,7 +21,7 @@ from src.tools.registry import build_registry
 from src.agents.planner_graph import PolicyPlannerGraph
 from src.risk.engine import RiskEngine
 from src.audit.log import DecisionLogger, EvidenceBundle
-from src.agents.llm import llm_available
+from src.agents.llm import llm_available, llm_provider
 from src.core.sizing import realized_ann_vol
 from src.data.providers import MARKET
 
@@ -66,7 +66,7 @@ def main():
                     help="freeze ONE real evidence bundle, replay all 4 policies on it")
     args = ap.parse_args()
 
-    mode = "LLM agents (OpenAI)" if llm_available() else "deterministic fallback (no API key)"
+    mode = f"LLM agents ({llm_provider()})" if llm_available() else "deterministic fallback (no API key)"
     print(f"=== LIVE decision on real market data for {args.ticker} — mode: {mode} ===")
     tools = build_registry()
     logger = DecisionLogger()

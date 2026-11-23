@@ -9,7 +9,7 @@ LangGraph planner → quant risk-based sizing → deterministic risk veto → au
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env      # then add your OPENAI_API_KEY (+ optional FINNHUB_API_KEY, FRED)
+cp .env.example .env      # then set LLM_PROVIDER=openai|gemini and the matching key (+ optional FINNHUB_API_KEY, FRED)
 ```
 
 Without a key, everything still runs on real data using deterministic fallbacks; the key

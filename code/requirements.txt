@@ -16,7 +16,8 @@ langgraph>=1.0
 langchain>=1.0
 langchain-openai>=1.0
 openai>=1.40
-python-dotenv>=1.0       # loads OPENAI_API_KEY from .env (never commit .env)
+langchain-google-genai>=2.0   # Gemini (LLM_PROVIDER=gemini)
+python-dotenv>=1.0       # loads API keys from .env (never commit .env)
 
 # --- Later (not needed to run run_live.py) ---
 # netcal, mapie, scipy   # calibration + stats (RQ2)
