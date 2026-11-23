@@ -18,6 +18,10 @@ The key is read from the environment / .env and is NEVER printed or logged.
 from __future__ import annotations
 
 import os
+import re
+import sys
+import threading
+import time
 from functools import lru_cache
 
 try:
@@ -87,6 +91,52 @@ def _chat(provider: str, model: str, temperature: float):
     return ChatOpenAI(model=model, temperature=temperature, api_key=key, timeout=30, max_retries=1)
 
 
+def _warn(where: str, e: Exception) -> None:
+    """One-line stderr note when an LLM call falls back. Redacts any configured key."""
+    msg = f"{type(e).__name__}: {e}".replace("\n", " ")
+    for prov in PROVIDERS:
+        k = _api_key(prov)
+        if k:
+            msg = msg.replace(k, "***")
+    print(f"[llm:{llm_provider()}] {where} fell back to deterministic: {msg[:240]}", file=sys.stderr)
+
+
+_pace_lock = threading.Lock()
+_last_call = 0.0
+
+
+def _max_rpm() -> float:
+    """Requests/minute cap. LLM_MAX_RPM overrides; Gemini free tier allows ~5, so default 4."""
+    v = os.environ.get("LLM_MAX_RPM", "").strip()
+    if v:
+        return float(v)
+    return 4.0 if llm_provider() == "gemini" else 0.0     # 0 = unlimited
+
+
+def _invoke(chat, messages):
+    """chat.invoke with client-side pacing and one wait-and-retry on a rate-limit (429)."""
+    global _last_call
+    for attempt in (1, 2):
+        rpm = _max_rpm()
+        if rpm > 0:
+            with _pace_lock:
+                wait = _last_call + 60.0 / rpm - time.monotonic()
+                if wait > 0:
+                    time.sleep(wait)
+                _last_call = time.monotonic()
+        try:
+            return chat.invoke(messages)
+        except Exception as e:
+            text = str(e)
+            if attempt == 1 and ("429" in text or "RESOURCE_EXHAUSTED" in text):
+                m = re.search(r"retry in ([0-9.]+)s", text)
+                delay = min(float(m.group(1)) + 1.0 if m else 30.0, 75.0)
+                print(f"[llm:{llm_provider()}] rate limited; waiting {delay:.0f}s then retrying", file=sys.stderr)
+                time.sleep(delay)
+                continue
+            raise
+
+
 def _model(model: str | None) -> tuple[str, str]:
     provider = llm_provider()
     return provider, model or default_model()
@@ -111,7 +161,7 @@ def propose_decision(system: str, human: str, model: str | None = None,
         return None
     try:
         chat = _chat(*_model(model), temperature).with_structured_output(DecisionProposal)
-        r = chat.invoke([("system", system), ("human", human)])
+        r = _invoke(chat, [("system", system), ("human", human)])
         action = str(r.action).upper().strip()
         if action not in ("BUY", "SELL", "HOLD", "WAIT"):
             action = "WAIT"
@@ -119,7 +169,8 @@ def propose_decision(system: str, human: str, model: str | None = None,
             action=action, position_size_pct=float(r.position_size_pct),
             stop_loss_pct=float(r.stop_loss_pct), take_profit_pct=float(r.take_profit_pct),
             confidence=max(0.0, min(1.0, float(r.confidence))), rationale=str(r.rationale)[:400])
-    except Exception:
+    except Exception as e:
+        _warn("propose_decision", e)
         return None
 
 
@@ -130,9 +181,10 @@ def judge(system: str, human: str, model: str | None = None, temperature: float 
         return None
     try:
         chat = _chat(*_model(model), temperature).with_structured_output(Judgement)
-        r = chat.invoke([("system", system), ("human", human)])
+        r = _invoke(chat, [("system", system), ("human", human)])
         d = max(-1.0, min(1.0, float(r.direction)))
         c = max(0.0, min(1.0, float(r.confidence)))
         return Judgement(direction=d, confidence=c, summary=str(r.summary)[:240])
-    except Exception:
+    except Exception as e:
+        _warn("judge", e)
         return None
