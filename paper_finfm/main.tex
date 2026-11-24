@@ -77,14 +77,14 @@ As a control for (iv), \emph{feedback without the confidence clause} gives the m
 
 \paragraph{Rejection buys compliance by abstention.} Blocking keeps \KeptBlock\% of proposed trades and the standard-prompt LLM risk manager keeps \KeptAgent\%, despite being allowed to resize. A repair-first reviewer prompt retains \RiskMgrKeptRepairFirstFourO\%, \RiskMgrKeptRepairFirstFourOne\% and \RiskMgrKeptRepairFirstFive\% for proposals from gpt-4o-mini, gpt-4.1-mini and gpt-5-mini, respectively. Thus abstention is sensitive to the reviewer prompt, not an inevitable property of LLM review. Deterministic repair keeps \KeptRepair\% and lowers decision-level dispersion and tail losses (Table~\ref{tab:enforcement}). Its compliance is guaranteed by construction, and reduced exposure itself reduces risk: this is evidence for compliant participation, not improved forecasting or superior returns.
 
-\begin{table}[t]
+\begin{table*}[t]
 \centering
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \input{tables/confidence}
 \caption{Feedback on proposals vetoed for low confidence \emph{and} for size or stop. ``Bar shown'': the feedback lists every violated clause. ``Bar hidden'': the same feedback without the confidence clause, which the engine still enforces. No new evidence is given in either arm. Brackets: 95\% Wilson intervals.}
 \label{tab:confidence}
-\end{table}
+\end{table*}
 
 \paragraph{Feedback: fix what is checked, inflate what is not.} With all rejection reasons shown, models raise stated confidence to the bar in \ConfRaisedShown\% of eligible cases ($n=\ConfNShown$), versus \ConfRaisedHidden\% when the confidence clause is hidden ($n=\ConfNHidden$; Table~\ref{tab:confidence}). Both groups also violate size or stop rules, so each receives a reason to revise. No new market evidence is supplied. The contrast shows sensitivity of the reported confidence to the gate; it does not establish a change in predictive information. In an exploratory profile-by-region standardized comparison, confidence-raised gpt-5-mini trades have lower hit rate and net decision P\&L than originally above-bar trades, while the other two models have intervals spanning zero (Appendix Table~\ref{tab:matched}). This observational comparison does not identify a causal effect of raising confidence.
 
