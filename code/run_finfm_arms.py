@@ -72,8 +72,8 @@ def trades(D: dict | None) -> bool:
     return bool(D) and D["action"] in ("BUY", "SELL") and D["size"] > 0
 
 
-def load_rows(model: str) -> list[dict]:
-    src = EXP / f"decisions_{model}.jsonl"
+def load_rows(model: str, directory: Path = EXP) -> list[dict]:
+    src = directory / f"decisions_{model}.jsonl"
     rows = [json.loads(l) for l in src.open() if l.strip()]
     return [r for r in rows if r["style"] == "nl" and r["date"] >= PRIMARY_START and trades(r["U"])]
 
@@ -191,6 +191,8 @@ def run_riskmgr(r: dict, reviewer: str, variant: str) -> dict:
 # --------------------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--decisions", default=str(EXP), help="directory containing proposal files")
+    ap.add_argument("--out", default=str(OUT), help="arm output directory")
     ap.add_argument("--arm", required=True, choices=["revise", "riskmgr"])
     ap.add_argument("--models", default="gpt-4o-mini", help="proposer models whose persona proposals are used")
     ap.add_argument("--reviewer", default="gpt-4o-mini", help="riskmgr arm: reviewer model")
@@ -204,13 +206,14 @@ def main():
     ap.add_argument("--seed", type=int, default=20261117)
     ap.add_argument("--workers", type=int, default=16)
     a = ap.parse_args()
-    OUT.mkdir(parents=True, exist_ok=True)
+    output = Path(a.out)
+    output.mkdir(parents=True, exist_ok=True)
     for model in a.models.split(","):
         caller = model if a.arm == "revise" else a.reviewer
         if not available(caller):
             print(f"skip {model}: no API key for {MODELS[caller]['provider']}")
             continue
-        rows = load_rows(model)
+        rows = load_rows(model, Path(a.decisions))
         if a.arm == "revise":
             rows = [r for r in rows if r["verdict"] == "VETOED"]
             if a.only_conf:
@@ -218,7 +221,7 @@ def main():
         rows = sample(rows, a.sample, a.seed)
         name = (f"revise_{model}_r{a.rounds}{'_hideconf' if a.hide_conf else ''}{'_confset' if a.only_conf else ''}"
                 if a.arm == "revise" else f"riskmgr_{model}_by_{a.reviewer}_{a.variant}")
-        path = OUT / f"{name}.jsonl"
+        path = output / f"{name}.jsonl"
         print(f"[{name}] {len(rows)} proposals -> {path}", flush=True)
         t0, n, fails = time.time(), 0, 0
 

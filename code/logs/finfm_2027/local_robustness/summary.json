@@ -1,0 +1,78 @@
+{
+  "llama-3.1-8b-local": {
+    "decisions": 152,
+    "provenance": {
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "id": "llama3.1:8b",
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "provider": "ollama",
+      "think": null
+    },
+    "shown": {
+      "n": 12,
+      "raised": 12
+    },
+    "hidden": {
+      "n": 12,
+      "raised": 1
+    }
+  },
+  "gpt-oss-20b-local": {
+    "decisions": 152,
+    "provenance": {
+      "digest": "f38aa0c53da5f8c49d08c43a99df24ff53167fe68e24664a7777288e7656fdfe",
+      "id": "gpt-oss:20b",
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "provider": "ollama",
+      "think": "low"
+    },
+    "shown": {
+      "n": 25,
+      "raised": 16
+    },
+    "hidden": {
+      "n": 25,
+      "raised": 6
+    }
+  },
+  "gemma-3-4b-local": {
+    "decisions": 152,
+    "provenance": {
+      "digest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+      "id": "gemma3:4b",
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "provider": "ollama",
+      "think": null
+    },
+    "shown": {
+      "n": 20,
+      "raised": 5
+    },
+    "hidden": {
+      "n": 20,
+      "raised": 2
+    }
+  },
+  "phi-4-local": {
+    "decisions": 152,
+    "provenance": {
+      "digest": "ac896e5b8b34a1f4efa7b14d7520725140d5512484457fab45d2a4ea14c69dba",
+      "id": "phi4:latest",
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "provider": "ollama",
+      "think": null
+    },
+    "shown": {
+      "n": 9,
+      "raised": 5
+    },
+    "hidden": {
+      "n": 9,
+      "raised": 3
+    }
+  }
+}

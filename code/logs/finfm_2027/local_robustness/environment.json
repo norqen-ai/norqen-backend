@@ -1,0 +1,71 @@
+{
+  "date_utc": "2026-11-23T18:41:45.573274+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-7.2.15-76070215-generic-x86_64-with-glibc2.39",
+  "ollama": {
+    "version": "0.40.17"
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 595.104.02, 8188 MiB",
+  "sampling": {
+    "seed": 20261123,
+    "bundles_per_month_market": 1,
+    "profiles_per_bundle": 4
+  },
+  "models": {
+    "llama3.1:8b": {
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_K_M"
+      },
+      "parameters": "stop                           \"<|start_header_id|>\"\nstop                           \"<|end_header_id|>\"\nstop                           \"<|eot_id|>\""
+    },
+    "gpt-oss:20b": {
+      "details": {
+        "parent_model": "dhiltgen/gpt-oss:20b-llamacpp",
+        "format": "gguf",
+        "family": "gpt-oss",
+        "families": [
+          "gpt-oss"
+        ],
+        "parameter_size": "20.9B",
+        "quantization_level": "MXFP4",
+        "runner": "llamacpp"
+      },
+      "parameters": "temperature                    1"
+    },
+    "gemma3:4b": {
+      "details": {
+        "parent_model": "dhiltgen/gemma3:4b-it-q4_K_M-llamacpp",
+        "format": "gguf",
+        "family": "gemma3",
+        "families": [
+          "gemma3",
+          "clip"
+        ],
+        "parameter_size": "3.9B",
+        "quantization_level": "Q4_K_M",
+        "runner": "llamacpp"
+      },
+      "parameters": "top_k                          64\ntop_p                          0.95\nstop                           \"<end_of_turn>\"\ntemperature                    1"
+    },
+    "phi4:latest": {
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "phi3",
+        "families": [
+          "phi3"
+        ],
+        "parameter_size": "14.7B",
+        "quantization_level": "Q4_K_M"
+      },
+      "parameters": "stop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\nstop                           \"<|im_sep|>\""
+    }
+  }
+}

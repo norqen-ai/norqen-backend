@@ -132,8 +132,39 @@ def confidence(macros: dict) -> str:
     return "\n".join(out) + "\n" if out else "\\multicolumn{6}{c}{(run run\\_finfm\\_arms.py first)} \\\\\n"
 
 
+def matched_table():
+    source = ARMS / "matched_confidence.json"
+    if not source.exists():
+        return
+    results = json.loads(source.read_text())
+    rows = []
+    for model, result in results.items():
+        if "hit" not in result:
+            continue
+        cells = []
+        for metric, scale in (("hit", 100), ("pnl", 1)):
+            d = result[metric]
+            lo, hi = d["ci95"]
+            cells.append(f"{scale*d['difference']:+.2f} [{scale*lo:+.2f}, {scale*hi:+.2f}]")
+        rows.append(f"{model} & {result['n_raised']} & {result['n_above']} & " + " & ".join(cells) + r" \\")
+    (PAPER / "tables" / "matched.tex").write_text(
+        r"\begin{tabular}{lrrll}" + "\n" + r"\toprule" + "\n" +
+        r"Model & Raised & Above & Hit difference (pp) & P\&L difference (bp) \\" + "\n" +
+        r"\midrule" + "\n" + "\n".join(rows) + "\n" + r"\bottomrule" + "\n" + r"\end{tabular}" + "\n")
+
+
 def main():
     (PAPER / "tables").mkdir(parents=True, exist_ok=True)
+    from src.core.policy import load_all_policies
+    from src.pit.outcomes import HORIZON
+    profiles = []
+    for name, policy in load_all_policies("config/policies").items():
+        profiles.append(f"{name.replace('_', ' ')} & {policy.max_position_pct:g} & {policy.stop_loss_pct:g} & {policy.confidence_to_act:g} & {HORIZON[name]}" + r" \\")
+    (PAPER / "tables" / "profiles.tex").write_text(
+        r"\begin{tabular}{lrrrr}" + "\n" + r"\toprule" + "\n" +
+        r"Profile & Cap & Stop & Bar & Horizon \\" + "\n" + r"\midrule" + "\n" +
+        "\n".join(profiles) + "\n" + r"\bottomrule" + "\n" + r"\end{tabular}" + "\n")
+    matched_table()
     macros: dict = {}
     (PAPER / "tables" / "enforcement.tex").write_text(
         "\\begin{tabular}{lrrrrrrrl}\n\\toprule\n"

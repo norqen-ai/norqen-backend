@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import random
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -63,7 +64,7 @@ def llm_proposal(bundle, pname, ev, model, style, rerun: str = "") -> tuple[dict
         action = "WAIT"
     return {"action": action, "size": float(r["position_size_pct"]), "stop": float(r["stop_loss_pct"]),
             "tp": float(r["take_profit_pct"]), "conf": max(0.0, min(1.0, float(r["confidence"]))),
-            "rationale": str(r["rationale"])[:400], "usage": r.get("_usage")}, h
+            "rationale": str(r["rationale"])[:400], "usage": r.get("_usage"), "model_metadata": r.get("_model")}, h
 
 
 def engine_verdict(U: dict, pname: str, ticker: str, ev) -> tuple[str, list[str]]:
@@ -81,14 +82,25 @@ def main():
     ap.add_argument("--styles", default="nl,explicit")
     ap.add_argument("--workers", type=int, default=24)
     ap.add_argument("--limit", type=int, default=0, help="first N bundles only (smoke test)")
+    ap.add_argument("--per-month-region", type=int, default=0, help="fixed seeded sample of bundles in each month x region")
+    ap.add_argument("--seed", type=int, default=20261123)
     ap.add_argument("--since", default="", help="only bundles dated on/after YYYY-MM-DD (primary window: 2025-01-15)")
     ap.add_argument("--out", default=str(OUT))
     ap.add_argument("--rerun", default="", help="tag for an independent re-run (noise floor), e.g. ':rerun1'")
     a = ap.parse_args()
     out = Path(a.out)
-    paths = sorted((out / "bundles").glob("*.json"))
+    paths = sorted((OUT / "bundles").glob("*.json"))
+    out.mkdir(parents=True, exist_ok=True)
     if a.since:   # bundle files are named <TICKER>_<YYYY-MM-DD>.json
         paths = [p for p in paths if p.stem.rsplit("_", 1)[1] >= a.since]
+    if a.per_month_region:
+        from src.pit.universe import region
+        strata = {}
+        for path in paths:
+            ticker, date = path.stem.rsplit("_", 1)
+            strata.setdefault((date[:7], region(ticker)), []).append(path)
+        rng = random.Random(a.seed)
+        paths = sorted(p for group in strata.values() for p in rng.sample(group, min(a.per_month_region, len(group))))
     if a.limit:
         paths = paths[:a.limit]
     bundles = {}
